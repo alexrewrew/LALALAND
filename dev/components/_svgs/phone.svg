@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="25px" viewBox="0 0 9 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-847.000000, -49.000000)" fill="#0FC0EA" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Телефон" transform="translate(847.000000, 49.000000)">
+                    <path d="M5.10733353,0 C-1.70244451,6.25 -1.70244451,18.75 5.10733353,25 L9,22.0660037 L6.73007398,17.7410037 C6.28081779,16.7910037 3.75956496,17.325 3.75956496,17.325 C2.38815133,14.925 2.38815133,10.125 3.75956496,7.7 C3.75956496,7.7 6.28081779,8.0561897 6.73007398,7.1061897 L9,2.7811897 L5.10733353,0 Z" id="Phone"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

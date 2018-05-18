@@ -1,158 +1,92 @@
-/* Proxima Nova */
-
-/* normal */
-
-/* 100 */
 @font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNovaT-Thin.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNovaT-Thin.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNovaT-Thin.ttf') format('truetype');
-	font-weight: 100;
-	font-style: normal;
-}
-/* 200 */
-
-/* 300 */
-@font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-Light.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-Light.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
-}
-/* 400 */
-@font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-Regular.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-Regular.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-Regular.ttf') format('truetype');
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu/Ubuntu-Regular.eot');
+	src: url('../fonts/Ubuntu/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Ubuntu/Ubuntu-Regular.woff2') format('woff2'),
+	url('../fonts/Ubuntu/Ubuntu-Regular.woff') format('woff'),
+	url('../fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
-/* 500 */
 
-/* 600 */
 @font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-Semibold.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-Semibold.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-Semibold.ttf') format('truetype');
-	font-weight: 600;
-	font-style: normal;
-}
-/* 700 */
-@font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-Bold.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-Bold.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-Bold.ttf') format('truetype');
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu/Ubuntu-BoldItalic.eot');
+	src: url('../fonts/Ubuntu/Ubuntu-BoldItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Ubuntu/Ubuntu-BoldItalic.woff2') format('woff2'),
+	url('../fonts/Ubuntu/Ubuntu-BoldItalic.woff') format('woff'),
+	url('../fonts/Ubuntu/Ubuntu-BoldItalic.ttf') format('truetype');
 	font-weight: bold;
-	font-style: normal;
-}
-/* 800 */
-@font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-Extrabld.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-Extrabld.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-Extrabld.ttf') format('truetype');
-	font-weight: 800;
-	font-style: normal;
-}
-/* 900 */
-@font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-Black.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-Black.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-Black.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
-}
-/* italic */
-
-/* 100 */
-@font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-ThinIt.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-ThinIt.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-ThinIt.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-ThinIt.ttf') format('truetype');
-	font-weight: 100;
 	font-style: italic;
 }
-/* 200 */
 
-/* 300 */
 @font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-LightIt.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-LightIt.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-LightIt.ttf') format('truetype');
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu/Ubuntu-Light.eot');
+	src: url('../fonts/Ubuntu/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Ubuntu/Ubuntu-Light.woff2') format('woff2'),
+	url('../fonts/Ubuntu/Ubuntu-Light.woff') format('woff'),
+	url('../fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu/Ubuntu-MediumItalic.eot');
+	src: url('../fonts/Ubuntu/Ubuntu-MediumItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Ubuntu/Ubuntu-MediumItalic.woff2') format('woff2'),
+	url('../fonts/Ubuntu/Ubuntu-MediumItalic.woff') format('woff'),
+	url('../fonts/Ubuntu/Ubuntu-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu/Ubuntu-Medium.eot');
+	src: url('../fonts/Ubuntu/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Ubuntu/Ubuntu-Medium.woff2') format('woff2'),
+	url('../fonts/Ubuntu/Ubuntu-Medium.woff') format('woff'),
+	url('../fonts/Ubuntu/Ubuntu-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu/Ubuntu-Italic.eot');
+	src: url('../fonts/Ubuntu/Ubuntu-Italic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Ubuntu/Ubuntu-Italic.woff2') format('woff2'),
+	url('../fonts/Ubuntu/Ubuntu-Italic.woff') format('woff'),
+	url('../fonts/Ubuntu/Ubuntu-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu/Ubuntu-LightItalic.eot');
+	src: url('../fonts/Ubuntu/Ubuntu-LightItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Ubuntu/Ubuntu-LightItalic.woff2') format('woff2'),
+	url('../fonts/Ubuntu/Ubuntu-LightItalic.woff') format('woff'),
+	url('../fonts/Ubuntu/Ubuntu-LightItalic.ttf') format('truetype');
 	font-weight: 300;
 	font-style: italic;
 }
 
-/* 400 */
 @font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-RegularIt.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-RegularIt.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-RegularIt.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-/* 500 */
-
-/* 600 */
-@font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-SemiboldIt.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-SemiboldIt.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-SemiboldIt.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-SemiboldIt.ttf') format('truetype');
-	font-weight: 600;
-	font-style: italic;
-}
-/* 700 */
-@font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-BoldIt.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-BoldIt.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-BoldIt.ttf') format('truetype');
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu/Ubuntu-Bold.eot');
+	src: url('../fonts/Ubuntu/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Ubuntu/Ubuntu-Bold.woff2') format('woff2'),
+	url('../fonts/Ubuntu/Ubuntu-Bold.woff') format('woff'),
+	url('../fonts/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
 	font-weight: bold;
-	font-style: italic;
+	font-style: normal;
 }
-/* 800 */
-@font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-ExtrabldIt.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-ExtrabldIt.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-ExtrabldIt.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-ExtrabldIt.ttf') format('truetype');
-	font-weight: 800;
-	font-style: italic;
-}
-/* 900 */
-@font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima_Nova/ProximaNova-BlackIt.eot');
-	src: url('../fonts/Proxima_Nova/ProximaNova-BlackIt.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Proxima_Nova/ProximaNova-BlackIt.woff') format('woff'),
-	url('../fonts/Proxima_Nova/ProximaNova-BlackIt.ttf') format('truetype');
-	font-weight: 900;
-	font-style: italic;
-}
+
+
 html {
 	font-size: 16px;
 }
@@ -165,7 +99,7 @@ body {
 	line-height: normal;
 	color: #000;
 	background-color: #fff;
-	font-family: 'Proxima Nova', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 ::-moz-selection {
 	background-color: #000;
@@ -176,7 +110,7 @@ body {
 	color: #fff;
 }
 h1, h2, h3, h4, h5, h6, p, ul li, ol li, blockquote, cite {
-	font-family: 'Proxima Nova', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color: #000;
 }
 h1 {
@@ -227,37 +161,37 @@ hr {
 	background-color: #000;
 	margin: .9375rem 0;
 }
+blockquote {
+	padding: .9375rem;
+	position: relative;
+	font-size: 1em;
+}
+blockquote:before, blockquote:after {
+	position: absolute;
+	display: block;
+	line-height: 1;
+}
+blockquote:before {
+	content: open-quote;
+	left: 0;
+	top: 0;
+}
+blockquote:after {
+	content: close-quote;
+	right: 0;
+	bottom: 0;
+}
+cite {
+	font-size: 1em;
+	font-style: italic;
+	color: #a9a9a9;
+}
 nav {
 	background-color: #fff;
-	padding: .625rem 0;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
-}
-.menu {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: end;
-	-ms-flex-pack: end;
-	justify-content: flex-end;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	height: 100%;
-}
-.menu li {
-	margin: 0 .9375rem;
-}
-.menu li:last-child {
-	margin-right: 0;
-}
-.menu li a {
-	display: block;
-	color: #add8e6;
-}
-.menu li a:hover, .menu li a.active {
-	color: #00f;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+	margin-bottom: 200px;
 }
 .nav-mobile {
 	display: none;
@@ -266,6 +200,12 @@ nav {
 	.nav-mobile {
 		display: block;
 	}
+}
+.col-nav-1 {
+	max-width: 170px;
+}
+.col-nav-3 {
+	max-width: 460px;
 }
 .nav-icon {
 	width: 30px;
@@ -277,9 +217,9 @@ nav {
 	    -ms-transform: rotate(0deg);
 	        transform: rotate(0deg);
 	float: right;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 .nav-icon span {
 	display: block;
@@ -293,9 +233,9 @@ nav {
 	-webkit-transform: rotate(0deg);
 	    -ms-transform: rotate(0deg);
 	        transform: rotate(0deg);
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 .nav-icon span:nth-child(1) {
 	top: 0;
@@ -306,6 +246,200 @@ nav {
 .nav-icon span:nth-child(4) {
 	top: 18px;
 }
+.nav-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+}
+.nav-menu li {
+	margin: 0 .5625rem;
+}
+.nav-menu li a {
+	display: block;
+	color: #5b5e74;
+	font-size: .8125em;
+	white-space: nowrap;
+	position: relative;
+	z-index: 10;
+}
+.nav-menu li a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+	right: 0;
+	background-color: #eb53c0;
+	height: 4px;
+	width: 0;
+	z-index: -1;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+.nav-menu li a:hover, .nav-menu li a.active {
+	color: #5b5e74;
+}
+.nav-menu li a:hover:after, .nav-menu li a.active:after {
+	width: 100%;
+}
+.nav-menu li a.active:after {
+	background-color: #fd0;
+}
+.nav-widgets {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+}
+.nav-widgets__phone {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #0fc0ea;
+	font-weight: 700;
+	font-size: 1.25em;
+}
+.nav-widgets__phone svg {
+	margin-right: .4375rem;
+}
+.nav-widgets__phone svg g {
+	fill: #0fc0ea;
+}
+.nav-widgets__phone:hover {
+	color: #83e7ff;
+}
+.nav-widgets__phone:hover svg g {
+	fill: #83e7ff;
+}
+.nav-widgets__star {
+	position: relative;
+	display: block;
+	margin: 0 .9375rem;
+}
+.nav-widgets__star_count {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #eb53c0;
+	color: #fff;
+	font-size: .5em;
+	position: absolute;
+	bottom: 7px;
+	right: 0;
+}
+.nav-widgets__star svg g {
+	fill: #fd0;
+}
+.nav-widgets__star:hover svg g {
+	fill: #ffeb6b;
+}
+.nav-widgets__camera {
+	display: block;
+	padding: .5rem;
+	position: relative;
+	z-index: 10;
+}
+.nav-widgets__camera__tooltip {
+	position: absolute;
+	font-size: 12px;
+	line-height: 1.33;
+	color: #969fb1;
+	width: 165px;
+	padding: 1.0625rem 2.125rem 1.0625rem 1.3125rem;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 9px 0 rgba(158,197,221,.4);
+	        box-shadow: 0 2px 9px 0 rgba(158,197,221,.4);
+	bottom: -72px;
+	right: 0;
+	border-radius: 5px;
+}
+.nav-widgets__camera__tooltip:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #fff;
+	top: -20px;
+	right: 0;
+	border-radius: 5px;
+}
+.nav-widgets__camera__tooltip_close {
+	width: 10px;
+	height: 10px;
+	display: block;
+}
+.nav-widgets__camera__tooltip_close:after, .nav-widgets__camera__tooltip_close:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 10px;
+	height: 2px;
+	background-color: #eb53c0;
+}
+.nav-widgets__camera__tooltip_close:after {
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+.nav-widgets__camera__tooltip_close:before {
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+.nav-widgets__camera:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 5px;
+	background-color: #0fc0ea;
+	height: 100px;
+	z-index: -1;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+.nav-widgets__camera:hover:after {
+	background-color: #83e7ff;
+}
+.link-logo {
+	display: block;
+	max-width: 130px;
+	padding: 2.1875rem 0;
+}
+.link-logo img {
+	width: 100%;
+}
 section {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -313,9 +447,9 @@ section {
 button {
 	border: none;
 	cursor: pointer;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 button:focus {
 	outline: none;
@@ -343,16 +477,16 @@ button:focus {
 }
 a {
 	text-decoration: none;
-	font-family: 'Proxima Nova', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color: #00f;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 a svg g {
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 a:hover {
 	text-decoration: none;
@@ -361,13 +495,6 @@ a:hover {
 a:focus {
 	text-decoration: none;
 	outline: none;
-}
-.link-logo {
-	display: block;
-	max-width: 50px;
-}
-.link-logo img {
-	width: 100%;
 }
 ul li {
 	list-style: none;
@@ -381,7 +508,7 @@ ul, ol {
 	margin: 0;
 }
 ul li, ol li {
-	font-family: 'Proxima Nova', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 ol {
 	margin-left: 1.25rem;
@@ -408,9 +535,9 @@ input {
 	border: 1px solid #ccc;
 	border-radius: 0;
 	padding: .6875rem .9375rem .75rem;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 input:-webkit-autofill {
 	-webkit-box-shadow: inset 0 0 0 50px #fff !important;
@@ -458,9 +585,9 @@ textarea {
 	width: 100%;
 	height: 100px;
 	padding: .6875rem .9375rem .75rem;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 textarea:focus {
 	outline: none;
@@ -518,9 +645,9 @@ textarea::-webkit-input-placeholder {
 	align-items: center;
 	width: 45px;
 	height: 100%;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 select {
 	width: 100%;
@@ -532,9 +659,9 @@ select {
 	margin-bottom: 1.25rem;
 	-webkit-appearance: none;
 	   -moz-appearance: none;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 select:focus {
 	outline: none;
@@ -570,9 +697,9 @@ select:focus {
 	padding: .75rem .9375rem .8125rem;
 	color: #000;
 	display: block;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 .tabs li a:hover {
 	color: #fff;
@@ -631,9 +758,9 @@ select:focus {
 	top: 0;
 	height: 0;
 	overflow: hidden;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 .volta--hidden svg {
 	width: 62px;

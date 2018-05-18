@@ -1,0 +1,94 @@
+.nav-widgets
+  df(row)
+  justify-content flex-end
+  align-items center
+  height 100%
+
+  &__phone
+    display flex
+    align-items center
+    co($ocean1)
+    fw(700)
+    fs(e(20))
+    svg
+      mr(r(7))
+      g
+        fill $ocean1
+    &:hover
+      co($ocean4)
+      svg g
+        fill $ocean4
+
+  &__star
+    position relative
+    display block
+    margin 0 r(15)
+    &_count
+      display flex
+      align-items center
+      justify-content center
+      width: 12px;
+      height: 12px;
+      border-radius 50%
+      bg($pink)
+      co($wt)
+      fs(e(8))
+      position absolute
+      bottom 7px
+      right 0
+
+    svg g
+      fill $yellow1
+    &:hover
+      svg g
+        fill $yellow2
+
+  &__camera
+    display block
+    padding r(8)
+    position relative
+    z-index 10
+    &__tooltip
+      position absolute
+      font-size: 12px;
+      line-height: 1.33;
+      color: $bltx2
+      width 165px
+      padding r(17) r(34) r(17) r(21)
+      bg($wt)
+      box-shadow 0 2px 9px 0 rgba(158, 197, 221, 0.4)
+      bottom -72px
+      right 0
+      border-radius 5px
+      &:before
+        triangle($wt, up, 20px)
+        top -20px
+        right 0
+        border-radius 5px
+      &_close
+        width: 10px;
+        height 10px
+        display block
+        &:after, &:before
+          ba()
+          width: 10px;
+          height: 2px;
+          bg($pink)
+        &:after
+          transform rotate(45deg)
+        &:before
+          transform rotate(-45deg)
+
+    &:after
+      ba()
+      left 0
+      right 0
+      bottom 5px
+      bg($ocean1)
+      height 100px
+      z-index -1
+      trans()
+
+    &:hover
+      &:after
+        bg($ocean4)

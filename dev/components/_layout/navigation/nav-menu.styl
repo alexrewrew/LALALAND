@@ -1,0 +1,31 @@
+.nav-menu
+  df(row)
+  justify-content flex-end
+  align-items center
+  height 100%
+  li
+    margin 0 r(9)
+    a
+      display block
+      co($bltx1)
+      fs(e(13))
+      white-space nowrap
+      position relative
+      z-index 10
+      &:after
+        ba()
+        bottom -12px
+        left 0
+        right 0
+        bg($pink)
+        height 4px
+        width 0
+        z-index -1
+        trans()
+      &:hover, &.active
+        co($bltx1)
+        &:after
+          width 100%
+      &.active
+        &:after
+          bg($yellow1)

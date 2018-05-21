@@ -1,17 +1,21 @@
 .discount
-  bg($yellow1)
   position relative
-  &__image
-    height 100%
-    position absolute
+  display flex
+  align-items center
+  z-index 30
+  &:after
+    ba()
+    bg($yellow1)
     top 0
     bottom 0
-    left -150px
+    right 0
+    left 95px
+    z-index -1
   &__description
-    pt(15)
-    pl(98)
+    padding r(15) r(12) r(30)
+  &__image
+    display flex
+    justify-content flex-end
+    max-width: 181px;
+    flex: 0 0 181px;
 
-  &.discount-header
-    position absolute
-    top -87px
-    left 15px

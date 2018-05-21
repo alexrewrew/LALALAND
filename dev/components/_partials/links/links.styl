@@ -12,6 +12,31 @@ a
     text-decoration none
     outline none
 
+.link-detail
+  display inline-block
+  position relative
+  font-size: e(14)
+  font-weight: bold;
+  color: $blue-dark
+  &:after
+    ba()
+    left 0
+    right 0
+    bottom: -12px;
+    width 40px
+    height 6px
+    bg($pink)
+    trans()
+  &:hover
+    color: $blue-dark
+    &:after
+      width 100%
+
+  &.link-detail-big
+    fs(16)
+    &:after
+      bottom -17px
+
 
 
 

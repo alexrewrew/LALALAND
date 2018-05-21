@@ -1,8 +1,8 @@
-mixin discount()
+mixin discount(img, heading, text)
     .discount.discount-header
         .discount__image
-            +img('img/illus/discount/discount1.svg')
+            +img(img)
         .discount__description
-            h3 Акція!
-            p Отримай знижку на місце для парковки до 25 березня
-            a(href='' title='').link-detail Детальніше
+            h3= heading
+            p= text
+            +link-detail('Детальніше')

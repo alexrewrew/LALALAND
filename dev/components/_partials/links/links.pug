@@ -4,3 +4,9 @@ mixin li-a(text, className)
 
 mixin a(text, className)
     a(href='' title='' class= className)= text
+
+mixin link-detail(text)
+    +a(text, 'link-detail')
+
+mixin link-detail-big(text)
+    +a(text, 'link-detail link-detail-big')

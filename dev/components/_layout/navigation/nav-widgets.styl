@@ -9,9 +9,9 @@
     align-items center
     co($ocean1)
     fw(700)
-    fs(e(20))
+    fs(20)
     svg
-      mr(r(7))
+      mr(7)
       g
         fill $ocean1
     &:hover
@@ -32,7 +32,7 @@
       border-radius 50%
       bg($pink)
       co($wt)
-      fs(e(8))
+      fs(8)
       position absolute
       bottom 7px
       right 0
@@ -48,36 +48,49 @@
     padding r(8)
     position relative
     z-index 10
+    a
+      display block
     &__tooltip
       position absolute
       font-size: 12px;
       line-height: 1.33;
       color: $bltx2
       width 165px
-      padding r(17) r(34) r(17) r(21)
+      padding r(20) r(34) r(17) r(21)
       bg($wt)
       box-shadow 0 2px 9px 0 rgba(158, 197, 221, 0.4)
-      bottom -72px
+      top 112%
       right 0
       border-radius 5px
+      animation ds-none .2s both
+      z-index 900
+      trans()
       &:before
         triangle($wt, up, 20px)
         top -20px
         right 0
         border-radius 5px
       &_close
-        width: 10px;
-        height 10px
-        display block
+        width: 13px;
+        height: 13px;
+        display: block;
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        cursor pointer
         &:after, &:before
           ba()
-          width: 10px;
+          width: 13px;
           height: 2px;
           bg($pink)
+          trans()
         &:after
           transform rotate(45deg)
         &:before
           transform rotate(-45deg)
+        &:hover
+          &:after, &:before
+            bg($pink-dark)
 
     &:after
       ba()

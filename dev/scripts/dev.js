@@ -13,18 +13,18 @@
 
         sliderFull : $('.slider-full'),
 
-        linkSmooth : $(".smooth")
+        linkSmooth : $(".smooth"),
+
+        cameraTooltipClose : $('.nav-widgets__camera__tooltip_close'),
+        cameraTooltip : $('.nav-widgets__camera__tooltip')
     };
 
-    // document.addEventListener('DOMContentLoaded', () => {
-    //     $('#tabs').rewTabs();
-    // });
-    //
-    // window.onload = function(event) {
-    //     alert();
-    // };
-
     $(document).ready(() => {
+
+        // CAMERA
+        DOMs.cameraTooltipClose.click(function () {
+           DOMs.cameraTooltip.hide();
+        });
 
 
         // ========== MENU ==========

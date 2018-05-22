@@ -22,77 +22,78 @@
 
 .chosen-container
   width 100%
-  mb(20)
-  &:after
-    triangle($bk, down, 4px)
-    top calc(50% - 2px)
-    right 15px
-    trans()
+  font-size r(16)
   &:focus
     outline none
+  .chosen-results
+    padding 0
+    margin 0
+  &:after
+    triangle(#bbc4d7, down, 4px)
+    top calc(50% - 2px)
+    right 8px
+    trans()
+
+.chosen-container-single
   .chosen-single
+    background $tr !important
     padding 0
     height auto
     border-radius 0
-    border 1px solid $gr2
-    bg($wt)
+    border none !important
     box-shadow none
     trans()
     span
-      padding r(10) r(15) r(11)
-      fs(16)
-  .chosen-default
-    span
-      opacity .5
+      padding r(10) 0 r(11)
+      co($blue-dark)
+      font-size: e(14)
+      line-height: 1.71;
+    div
+      display none
 
-.chosen-container-single
   .chosen-search
-    padding 0 r(5)
-    mb(12)
+    display none
     input[type='text']
-      fs(16)
-      border 1px solid $gr2
-      padding r(11) r(10) r(12)
-      background-image none !important
+      display none
 
-.chosen-container.chosen-with-drop
-  &:after
-    transform rotate(180deg)
 
 .chosen-container.chosen-container-active
   box-shadow none
   .chosen-single
     box-shadow none
-    border 1px solid blue
+    border none
     background none
+
 
 .chosen-container-single .chosen-drop
   border-radius 0
-  border 1px solid blue
+  border none
   border-top 0
   padding 0
   box-shadow none
-  .chosen-results
-    padding 0
-    margin 0
-    box-shadow none
-    .active-result
-      padding r(12) r(15) r(13)
-      fs(16)
-      line-height normal
-      &.highlighted
-        bg(blue)
-    .result-selected
-      bg($gr2)
+  bg($gray-text1)
+
+  .active-result
+    padding r(10) r(35) r(11)
+    fs(14)
+    co($wt)
+    line-height: 1.71;
+    &.highlighted
       co($wt)
+      background $grey1
+  .result-selected
+    bg($blue-dark)
+    co($wt)
 
-.chosen-container-single .chosen-single div b
-  display none
 
-.chosen-container
-  .chosen-results
-    li.no-results
-      bg($wt)
-      co($gr)
-      fs(14)
-      padding r(12) r(10) r(13)
+.chosen-container-single .chosen-default span
+  font-size: e(14)
+  padding r(10) 0 r(11)
+  co(#bbc4d7)
+  font-size: e(14)
+  line-height: 1.71;
+
+
+.chosen-container.chosen-with-drop
+  &:after
+    transform rotate(180deg)

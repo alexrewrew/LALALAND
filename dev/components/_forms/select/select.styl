@@ -1,29 +1,34 @@
-
-
-
 select
-  width 100%
-  bg($wt)
-  border 1px solid $gr2
-  padding r(12) r(15) r(13)
-  border-radius 0
-  display block
-  mb(20)
   -webkit-appearance none
   -moz-appearance none
+  width 100%
+  border none
+  font-size: e(14)
+  line-height: 1.71;
+  co($blue-dark)
+  bg($tr)
   trans()
+  padding r(10) 0 r(11)
+  display block
   &:focus
     outline none
-    border 1px solid blue
 
 .select-group
   position relative
-  mb(20)
+  z-index 20
+  mb(46)
   &:after
-    triangle($bk, down, 4px)
-    top calc(50% - 2px)
-    right 15px
+    +mob()
+      triangle(#bbc4d7, down, 4px)
+      top calc(50% - 2px)
+      right 8px
 
-.select-group-noarrow
-  &:after
-    display none
+  .chosen-container-single .chosen-default span, .chosen-container-single .chosen-single span
+    pl(31)
+
+  .chosen-container.chosen-with-drop
+    & ~ .input-group_icon
+      svg g
+        fill $gray-text2
+    & ~ .input-group_line
+      bg($gray-text2)

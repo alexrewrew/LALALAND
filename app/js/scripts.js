@@ -94,10 +94,10 @@
         // ========== SELECT ==========
 
         // ----- CHOSEN -----
-        // DOMs.selectChosen.chosen({
-        //     disable_search_threshold: 4,
-        //     no_results_text: "Нічого не знайдено"
-        // });
+        DOMs.selectChosen.chosen({
+            disable_search_threshold: 4000,
+            no_results_text: "Нічого не знайдено"
+        });
 
         // ----- SELECT2 -----
         // DOMs.selectSelect2.select2({

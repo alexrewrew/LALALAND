@@ -4,8 +4,10 @@ input
   border none
   font-size: e(14)
   line-height: 1.71;
+  co($blue-dark)
+  bg($tr)
   trans()
-
+  padding r(10) 0 r(11)
   &:-webkit-autofill
     -webkit-box-shadow: inset 0 0 0 50px #fff !important
     -webkit-text-fill-color: #999 !important
@@ -14,16 +16,87 @@ input
   +placeholder()
     color: #bbc4d7;
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none;
+  margin: 0;
 
-//
-//input[type=number]::-webkit-inner-spin-button,
-//input[type=number]::-webkit-outer-spin-button
-//  -webkit-appearance: none;
-//  margin: 0;
-//
-//input[type=number]
-//  -moz-appearance:textfield;
-//
+input[type=number]
+  -moz-appearance:textfield;
+
+
+.input-group
+  position relative
+  z-index 20
+  mb(35)
+  &_input, select
+    position relative
+    z-index 10
+    pl(31)
+    &.error
+      & ~ .input-group_icon
+        svg g
+          fill $pink-error
+      & ~ .input-group_error
+        opacity 1
+      & ~ .input-group_line
+        &:after
+          width 100%
+    &:focus
+      & ~ .input-group_icon
+        svg g
+          fill $gray-text2
+      & ~ .input-group_line
+        bg($gray-text2)
+
+
+
+  &_icon
+    position absolute
+    left 0
+    top 0
+    bottom 0
+    width 20px
+    z-index 1
+
+    display flex
+    align-items center
+    svg g
+      fill $gray-text1
+      trans()
+
+  &_error
+    position absolute
+    top -20px
+    left 0
+    right 0
+    co($pink)
+    font-size: e(14)
+    font-style: italic;
+    line-height: 1.71;
+    color: $pink-error
+    z-index 1
+    opacity 0
+    trans()
+
+  &_line
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    height 1px
+    bg($gray-text1)
+    z-index 1
+    &:after
+      ba()
+      top 0
+      left 0
+      right 0
+      bottom 0
+      width 0
+      trans()
+      bg($pink-error)
+
 //input[type=reset]
 //  border 0
 //  cursor pointer

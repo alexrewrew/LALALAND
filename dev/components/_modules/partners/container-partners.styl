@@ -1,0 +1,44 @@
+.container-partners
+  pt(190)
+
+.partners-list
+  pt(22)
+  display flex
+  justify-content space-between
+  &__li
+    height 47px
+    width 261px
+    padding 0 r(30)
+    position relative
+    &__heading
+      font-size: e(14)
+      font-weight: 500;
+      text-align: center;
+      color: $green-dark
+      position absolute
+      left 0
+      right 0
+      top 0
+      bottom 0
+      display flex
+      align-items center
+      justify-content center
+      opacity 0
+    &__image
+      display: flex
+      align-items center
+      justify-content center
+      width 100%
+      height 100%
+      svg
+        height 100%
+        width auto
+        g
+          fill $green-dark
+          trans()
+    &:hover
+      .partners-list__li__image
+        svg g
+          fill $green-light
+      .partners-list__li__heading
+        opacity 1

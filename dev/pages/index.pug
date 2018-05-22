@@ -10,7 +10,7 @@ block content
 
 
 
-    section
+    section.section-river
         .container
             .row
                 .col-5
@@ -21,9 +21,118 @@ block content
                     p Такой текст также называется как заполнитель.  Это очень удобный инструмент для моделей (макетов).
                     .spacer-20
                     +link-detail-big('Читати більше')
+        +img('img/illus/back/road.svg', 'img-back img-back-road1')
+        +img('img/illus/back/trees.svg', 'img-back img-back-trees')
+
+    section.section-map
+        .container
+            .row
+                .offset-1.col-3
+                    h2.color-white 25 хвилин  від центру
+                .col-12
+                    include ../components/_widgets/map/map
+
+        +img('img/illus/back/road2.svg', 'img-back img-back-road2')
+        +img('img/illus/back/car.svg', 'img-back img-back-car')
 
     section
         .container
+            .test-row
+                .test-row__description
+                    .test-row__image
+                        +img('img/illus/steps/step1.png')
+
+                    .test-row__text
+                        h2 Допоможемо обрати  вашу ідеальну квартиру
+                        .test-row__text__test
+                            p З якою метою ви шукаєте квартиру?
+                            +btn('Для себе')
+                            +btn('Для сім’ї')
+                            +btn('Для інвестицій')
+                            +btn('Для інвестицій')
+                .test-row__steps
+                    ul.test-steps
+                        li
+                            a(href='' title='').test-steps_link Етап 1
+                        li
+                            a(href='' title='').test-steps_link Етап 2
+                        li
+                            a(href='' title='').test-steps_link.active Етап 3
+
+    section.section-fundament
+        .container
+            .row.justify-content-center
+                .col-5
+                    +img('img/illus/fundament/fundament.svg', 'img-fundament')
+                    +img('img/illus/fundament/blocks.svg', 'img-back img-back-blocks')
+                .col-5
+                    p.color-white Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна.
+                    .spacer-50
+                    +link-detail-big('Читати більше')
+        .container.container-partners
             .row
                 .col-12
-                    h2.color-white 25 хвилин  від центру
+                    h2.text-center Партнери
+                    ul.partners-list
+                        li.partners-list__li
+                            .partners-list__li__image
+                                include ../components/_svgs/volta-logo.svg
+                            .partners-list__li__heading
+                                | діджитал-партнер
+
+                        li.partners-list__li
+                            .partners-list__li__image
+                                include ../components/_svgs/volta-logo.svg
+                            .partners-list__li__heading
+                                | діджитал-партнер
+
+                        li.partners-list__li
+                            .partners-list__li__image
+                                include ../components/_svgs/volta-logo.svg
+                            .partners-list__li__heading
+                                | діджитал-партнер
+
+                        li.partners-list__li
+                            .partners-list__li__image
+                                include ../components/_svgs/volta-logo.svg
+                            .partners-list__li__heading
+                                | діджитал-партнер
+
+        +img('img/illus/back/coub.svg', 'img-back img-back-coub')
+
+
+    section.section-manager
+        .container
+            .row
+                .col-5
+                    h2 Замовити консультацію менеджера
+            .row
+                .col-6
+                    include ../components/_modules/manager/manager-slider
+                .col-6
+                    form
+                        .input-group
+                            .input-group_error У номері недостатньо цифр!
+                            input(type='text' placeholder='Номер телефону').input-group_input
+                            .input-group_line
+                            .input-group_icon
+
+
+
+    section
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br

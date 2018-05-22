@@ -3,9 +3,56 @@
 
 .map
   width 100%
-  height 450px
+  position relative
+  &-block
+    bg($wt)
+    position absolute
+    left 97px
+    top 62px
+    pt(47)
+    pl(100)
+    pr(94)
+    max-width 457px
+    width 100%
+
+.map-list
+  ds(col)
+  pb(37)
+  li
+    mb(23)
+    .map-list__link
+      display flex
+      align-items center
+      justify-content space-between
+      font-size: e(14)
+      color: $gray-text1
+      &_icon
+        width 25px
+        height 25px
+        display flex
+        align-items center
+        justify-content center
+        mr(24)
+        svg g
+          fill $gray-text1
+      &_text, &_dest
+        width 100%
+        trans()
+      &_dest
+        font-weight: 500;
+        color: $gray-text2;
+        max-width 70px
+        text-align right
+      &:hover
+        .map-list__link_icon
+          svg g
+            fill $pink
+        .map-list__link_text, .map-list__link_dest
+          co($blue-dark)
 
 #map
   width 100%
-  height 450px
+  height 100%
   mb(30)
+  height 376px
+

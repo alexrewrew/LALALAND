@@ -182,7 +182,7 @@
           </div>
         </div>
       </header>
-      <section>
+      <section class="section-river">
         <div class="container">
           <div class="row">
             <div class="col-5"><img class="img-responsive" src="img/illus/pic/pic1.png" title="" alt=""/>
@@ -194,17 +194,689 @@
               <div class="spacer-20"></div><a class="link-detail link-detail-big" href="" title="">Читати більше</a>
             </div>
           </div>
-        </div>
+        </div><img class="img-back img-back-road1" src="img/illus/back/road.svg" title="" alt=""/><img class="img-back img-back-trees" src="img/illus/back/trees.svg" title="" alt=""/>
+      </section>
+      <section class="section-map">
+        <div class="container">
+          <div class="row">
+            <div class="offset-1 col-3">
+              <h2 class="color-white">25 хвилин  від центру</h2>
+            </div>
+            <div class="col-12">
+              <div class="map">
+                <div id="map"></div>
+                <script type="text/javascript">
+                  function init() {
+                      var mapOptions = {
+                          zoom: 15,
+                          center: new google.maps.LatLng(50.4393844, 30.5012227),
+                          // styles:
+                          //     [
+                          //         {
+                          //             "featureType": "all",
+                          //             "elementType": "labels.text.fill",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#000000"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "all",
+                          //             "elementType": "labels.text.stroke",
+                          //             "stylers": [
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 },
+                          //                 {
+                          //                     "color": "#ffffff"
+                          //                 },
+                          //                 {
+                          //                     "weight": "4"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "all",
+                          //             "elementType": "labels.icon",
+                          //             "stylers": [
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 },
+                          //                 {
+                          //                     "saturation": "-100"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "administrative",
+                          //             "elementType": "geometry.fill",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#ffffff"
+                          //                 },
+                          //                 {
+                          //                     "lightness": 20
+                          //                 },
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "administrative",
+                          //             "elementType": "geometry.stroke",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#000000"
+                          //                 },
+                          //                 {
+                          //                     "lightness": 17
+                          //                 },
+                          //                 {
+                          //                     "weight": 1.2
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "administrative.locality",
+                          //             "elementType": "all",
+                          //             "stylers": [
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "administrative.neighborhood",
+                          //             "elementType": "all",
+                          //             "stylers": [
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "administrative.land_parcel",
+                          //             "elementType": "all",
+                          //             "stylers": [
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 },
+                          //                 {
+                          //                     "lightness": "80"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "landscape",
+                          //             "elementType": "all",
+                          //             "stylers": [
+                          //                 {
+                          //                     "visibility": "simplified"
+                          //                 },
+                          //                 {
+                          //                     "color": "#797979"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "landscape",
+                          //             "elementType": "geometry",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#ffffff"
+                          //                 },
+                          //                 {
+                          //                     "lightness": 20
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "landscape.man_made",
+                          //             "elementType": "all",
+                          //             "stylers": [
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "landscape.natural.landcover",
+                          //             "elementType": "all",
+                          //             "stylers": [
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "landscape.natural.terrain",
+                          //             "elementType": "all",
+                          //             "stylers": [
+                          //                 {
+                          //                     "visibility": "off"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "poi",
+                          //             "elementType": "geometry",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#dfdfdf"
+                          //                 },
+                          //                 {
+                          //                     "lightness": 21
+                          //                 },
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "road.highway",
+                          //             "elementType": "geometry.fill",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#fed41c"
+                          //                 },
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 },
+                          //                 {
+                          //                     "weight": "3.00"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "road.highway",
+                          //             "elementType": "geometry.stroke",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#fed41c"
+                          //                 },
+                          //                 {
+                          //                     "gamma": "0.6"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "road.highway.controlled_access",
+                          //             "elementType": "geometry",
+                          //             "stylers": [
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 },
+                          //                 {
+                          //                     "color": "#fed41c"
+                          //                 },
+                          //                 {
+                          //                     "weight": "4.00"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "road.highway.controlled_access",
+                          //             "elementType": "geometry.stroke",
+                          //             "stylers": [
+                          //                 {
+                          //                     "weight": "1"
+                          //                 },
+                          //                 {
+                          //                     "gamma": "0.6"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "road.arterial",
+                          //             "elementType": "geometry",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#aeaeae"
+                          //                 },
+                          //                 {
+                          //                     "lightness": 18
+                          //                 },
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "road.arterial",
+                          //             "elementType": "geometry.stroke",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#b6b6b6"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "road.local",
+                          //             "elementType": "all",
+                          //             "stylers": [
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 },
+                          //                 {
+                          //                     "color": "#656565"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "road.local",
+                          //             "elementType": "geometry",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#c6c6c6"
+                          //                 },
+                          //                 {
+                          //                     "lightness": 16
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "road.local",
+                          //             "elementType": "geometry.stroke",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#b1b1b1"
+                          //                 },
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "road.local",
+                          //             "elementType": "labels.text.stroke",
+                          //             "stylers": [
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 },
+                          //                 {
+                          //                     "color": "#ffffff"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "transit",
+                          //             "elementType": "geometry",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#bdbdbd"
+                          //                 },
+                          //                 {
+                          //                     "lightness": 19
+                          //                 },
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 }
+                          //             ]
+                          //         },
+                          //         {
+                          //             "featureType": "water",
+                          //             "elementType": "geometry",
+                          //             "stylers": [
+                          //                 {
+                          //                     "color": "#c0d8e3"
+                          //                 },
+                          //                 {
+                          //                     "lightness": 17
+                          //                 },
+                          //                 {
+                          //                     "visibility": "on"
+                          //                 }
+                          //             ]
+                          //         }
+                          //     ],
+                          scrollwheel: false,
+                          navigationControl: false,
+                          scaleControl: false,
+                          draggable: false
+                      };
+                      var mapElement = document.getElementById('map');
+                      var map = new google.maps.Map(mapElement, mapOptions);
+                      var marker = new google.maps.Marker({
+                          position: new google.maps.LatLng(50.4393913, 30.5030251),
+                          map: map,
+                          title: 'Project',
+                          animation: google.maps.Animation.DROP,
+                          // icon: 'https://volta.one/img/icons/marker.png'
+                      });
+                  }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCghHhOudfnxm7aSYdRnLaR_Wk3-IBQox8&amp;callback=init" async="" defer=""></script>
+                <div class="map-block">
+                  <ul class="map-list">
+                    <li><a class="map-list__link" href="" title="">
+                        <div class="map-list__link_icon"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="20px" viewBox="0 0 25 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 31</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Головна" transform="translate(-427.000000, -1917.000000)" fill="#BBC4D7" fill-rule="nonzero">
+            <g id="Page-1" transform="translate(427.000000, 1917.000000)">
+                <g id="Group-32">
+                    <g id="Group-31">
+                        <polygon id="Shape" points="5.13157895 6.08695652 12.5 8.60869565 19.8684211 6.08695652 19.8684211 6.08695652 25 4.34782609 12.5 0 0 4.34782609"></polygon>
+                        <path d="M20.3947368,17.6521739 L20.3947368,7.82608696 L20.1315789,7.82608696 L12.6315789,10.4347826 C12.5657895,10.4347826 12.5,10.4347826 12.4342105,10.4347826 C12.3684211,10.4347826 12.3026316,10.4347826 12.2368421,10.4347826 L4.73684211,7.82608696 L4.60526316,7.82608696 L4.60526316,17.6521739 L4.67105263,17.6521739 L11.1184211,19.3913043 C12.0394737,19.6521739 12.9605263,19.6521739 13.8815789,19.3913043 L20.3947368,17.6521739 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div>
+                        <div class="map-list__link_text">Школи та дитсадки</div>
+                        <div class="map-list__link_dest">1 400 м</div></a></li>
+                    <li><a class="map-list__link" href="" title="">
+                        <div class="map-list__link_icon"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="22px" viewBox="0 0 25 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Головна" transform="translate(-428.000000, -1964.000000)" fill="#BBC4D7" fill-rule="nonzero">
+            <g id="Page-1" transform="translate(427.000000, 1917.000000)">
+                <g id="Group-32">
+                    <path d="M23.7796053,61.8848684 L26,51.6875 C26,51.6052632 26,51.4407895 25.9177632,51.3585526 C25.8355263,51.2763158 25.7532895,51.1940789 25.5888158,51.1940789 L7.25,51.1940789 L5.98797141,47 L1,47 L1,48.6447368 L4.86513158,48.6447368 C4.86513158,48.6447368 9.47039474,65.3388158 9.55263158,65.4210526 C9.38815789,65.75 9.30592105,66.0789474 9.30592105,66.4078947 C9.30592105,67.6414474 10.2927632,68.6282895 11.5263158,68.6282895 C12.7598684,68.6282895 13.7467105,67.6414474 13.7467105,66.4078947 C13.7467105,66.1611842 13.7467105,65.9967105 13.6644737,65.75 L20.8190789,65.75 C20.7368421,65.9144737 20.7368421,66.1611842 20.7368421,66.4078947 C20.7368421,67.6414474 21.7236842,68.6282895 22.9572368,68.6282895 C24.1907895,68.6282895 25.1776316,67.6414474 25.1776316,66.4078947 C25.1776316,65.3388158 24.3552632,64.4342105 23.3684211,64.1875 C23.2861842,64.1052632 10.8684211,64.1052632 10.8684211,64.1052632 L10.2927632,62.1315789 L23.3684211,62.1315789 C23.5328947,62.2138158 23.6973684,62.0493421 23.7796053,61.8848684 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div>
+                        <div class="map-list__link_text">Супермаркети</div>
+                        <div class="map-list__link_dest">400 м</div></a></li>
+                    <li><a class="map-list__link" href="" title="">
+                        <div class="map-list__link_icon"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="24px" viewBox="0 0 23 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Label</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Головна" transform="translate(-427.000000, -2011.000000)" fill="#BBC4D7" fill-rule="nonzero">
+            <g id="Page-1" transform="translate(427.000000, 1917.000000)">
+                <g id="Group-32">
+                    <path d="M0,94.0991683 L0,106.146787 L10.952381,117.099168 L23,105.051549 L12.047619,94.0991683 L0,94.0991683 Z M4.10714286,96.2896445 C5.16568856,96.2896445 6.02380952,97.1477655 6.02380952,98.2063112 C6.02380952,99.2648569 5.16568856,100.122978 4.10714286,100.122978 C3.04859715,100.122978 2.19047619,99.2648569 2.19047619,98.2063112 C2.19047619,97.1477655 3.04859715,96.2896445 4.10714286,96.2896445 Z" id="Label"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div>
+                        <div class="map-list__link_text">Торгові центри</div>
+                        <div class="map-list__link_dest">400 м</div></a></li>
+                    <li><a class="map-list__link" href="" title="">
+                        <div class="map-list__link_icon"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="23px" viewBox="0 0 25 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 29</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Головна" transform="translate(-427.000000, -2056.000000)" fill="#EB53C0" fill-rule="nonzero">
+            <g id="Page-1" transform="translate(427.000000, 1917.000000)">
+                <g id="Group-32">
+                    <g id="Group-29" transform="translate(0.000000, 139.000000)">
+                        <path d="M0,4.26782178 L1.02252475,9.86039604 L24.3653465,5.59257426 L23.3425743,0 L0,4.26782178 Z M11.9757426,3.58589109 L14.5747525,3.11064356 L12.3891089,6.27425743 L9.79034653,6.74950495 L11.9757426,3.58589109 Z M7.03960396,7.25272277 L4.44084158,7.72772277 L6.62648515,4.56410891 L9.22524752,4.08886139 L7.03960396,7.25272277 Z M17.325495,2.60767327 L19.9242574,2.13267327 L17.7386139,5.29628713 L15.1398515,5.77128713 L17.325495,2.60767327 Z M3.8759901,5.06683168 L2.11856436,7.61039604 L1.72524752,5.45990099 L3.8759901,5.06683168 Z M20.4891089,4.79356436 L22.2465347,2.24975248 L22.6398515,4.40024752 L20.4891089,4.79356436 Z" id="Shape"></path>
+                        <polygon id="Shape" points="1 9 1 22.8425743 24.7299505 22.8425743 24.7299505 9"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div>
+                        <div class="map-list__link_text">Кінотеатри</div>
+                        <div class="map-list__link_dest">400 м</div></a></li>
+                    <li><a class="map-list__link" href="" title="">
+                        <div class="map-list__link_icon"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Pharma</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Головна" transform="translate(-427.000000, -2104.000000)" fill="#BBC4D7" fill-rule="nonzero">
+            <g id="Page-1" transform="translate(427.000000, 1917.000000)">
+                <g id="Group-32">
+                    <polygon id="Pharma" points="25 194.598333 17.4016667 194.598333 17.4016667 187 7.59805556 187 7.59805556 194.598333 0 194.598333 0 204.401944 7.59805556 204.401944 7.59805556 212 17.4016667 212 17.4016667 204.401944 25 204.401944"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div>
+                        <div class="map-list__link_text">Лікарні та аптеки</div>
+                        <div class="map-list__link_dest">400 м</div></a></li>
+                    <li><a class="map-list__link" href="" title="">
+                        <div class="map-list__link_icon"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="31px" viewBox="0 0 25 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Головна" transform="translate(-427.000000, -2145.000000)" fill="#BBC4D7" fill-rule="nonzero">
+            <g id="Page-1" transform="translate(427.000000, 1917.000000)">
+                <g id="Group-32">
+                    <path d="M15.9616789,246.04192 L3.4310611,242.518545 L12.6754717,236.396226 L16.0699785,245.78042 L18.7139745,239.396226 L24.3824797,253.193192 L13,253.193192 L13.9965954,250.786812 L8.8817842e-16,250.786812 L3.08301887,243.396226 L15.6148513,246.879371 L15.9616789,246.04192 Z M12.3169811,235.629086 C12.209434,235.651618 12.1018868,235.696683 12.0301887,235.741747 L4,240.946702 L9.26981132,228.396226 L12.3169811,235.629086 Z M7,252.396226 L11.6603774,252.396226 L11.6603774,258.132075 L7,258.132075 L7,252.396226 Z M17,254.396226 L19.9433962,254.396226 L19.9433962,258.018868 L17,258.018868 L17,254.396226 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div>
+                        <div class="map-list__link_text">Парки</div>
+                        <div class="map-list__link_dest">400 м</div></a></li>
+                  </ul><a class="link-detail link-detail-big" href="" title="">Читати більше</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><img class="img-back img-back-road2" src="img/illus/back/road2.svg" title="" alt=""/><img class="img-back img-back-car" src="img/illus/back/car.svg" title="" alt=""/>
       </section>
       <section>
         <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="color-white">25 хвилин  від центру</h2>
+          <div class="test-row">
+            <div class="test-row__description">
+              <div class="test-row__image"><img src="img/illus/steps/step1.png" title="" alt=""/>
+              </div>
+              <div class="test-row__text">
+                <h2>Допоможемо обрати  вашу ідеальну квартиру</h2>
+                <div class="test-row__text__test">
+                  <p>З якою метою ви шукаєте квартиру?</p><a class="btn" href="" title="">Для себе</a><a class="btn" href="" title="">Для сім’ї</a><a class="btn" href="" title="">Для інвестицій</a><a class="btn" href="" title="">Для інвестицій</a>
+                </div>
+              </div>
+            </div>
+            <div class="test-row__steps">
+              <ul class="test-steps">
+                <li><a class="test-steps_link" href="" title="">Етап 1</a></li>
+                <li><a class="test-steps_link" href="" title="">Етап 2</a></li>
+                <li><a class="test-steps_link active" href="" title="">Етап 3</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
+      <section class="section-fundament">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-5"><img class="img-fundament" src="img/illus/fundament/fundament.svg" title="" alt=""/><img class="img-back img-back-blocks" src="img/illus/fundament/blocks.svg" title="" alt=""/>
+            </div>
+            <div class="col-5">
+              <p class="color-white">Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна.</p>
+              <div class="spacer-50"></div><a class="link-detail link-detail-big" href="" title="">Читати більше</a>
+            </div>
+          </div>
+        </div>
+        <div class="container container-partners">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-center">Партнери</h2>
+              <ul class="partners-list">
+                <li class="partners-list__li">
+                  <div class="partners-list__li__image"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="201px" height="47px" viewBox="0 0 201 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Головна" transform="translate(-554.000000, -3984.000000)" fill="#0D683C">
+            <g id="Group-25" transform="translate(259.000000, 3847.000000)">
+                <g id="Group-2" transform="translate(0.000000, 99.000000)">
+                    <g id="Партнер" transform="translate(293.000000, 0.000000)">
+                        <g id="Group-21" transform="translate(2.000000, 38.000000)">
+                            <g id="Page-1">
+                                <path d="M23.043183,45.7174371 L-0.000660130719,-0.000134285714 L6.17420261,0.04418 C10.0927386,8.07580857 15.2628824,18.6118657 18.9635752,25.95058 C21.568451,31.12058 23.3706078,35.1827229 23.3706078,35.1827229 C23.3706078,35.1827229 25.2797059,31.0480657 28.0139673,25.8015229 C31.8083987,18.5259229 37.0590784,8.18995143 41.0489085,0.291265714 L47.2198105,0.334237143 L23.5475229,45.7322086 L23.043183,45.7174371 Z M71.0439281,4.81669429 C61.3941373,4.74820857 53.5161373,12.8550371 53.4461634,22.92378 C53.3775098,32.99118 61.1446078,41.2094657 70.7943987,41.2779514 C80.4455098,41.3464371 88.3221895,33.2382657 88.3921634,23.1708657 C88.460817,13.1021229 80.6950392,4.88652286 71.0439281,4.81669429 Z M70.7613922,46.07598 C58.2426732,45.9873514 48.1651176,35.60438 48.2522549,22.8875229 C48.3393922,10.1693229 58.5582157,-0.0699628571 71.0769346,0.0186657143 C83.5969739,0.107294286 93.6745294,10.4902657 93.5873922,23.2084657 C93.5002549,35.9266657 83.2814314,46.1646086 70.7613922,46.07598 Z M123.746124,45.9712371 L101.576294,45.8141229 L101.885235,0.716951429 L107.075183,0.753208571 L106.801889,40.5742943 L123.783092,40.6938086 L123.746124,45.9712371 Z M140.999301,6.27235143 L124.019418,6.15283714 L124.055065,0.874065714 L146.223575,1.03118 L145.914634,46.1283514 L140.727327,46.0907514 L140.999301,6.27235143 Z M159.159497,6.40126571 C157.727013,6.39052286 156.574425,5.20075143 156.583667,3.74375143 C156.594229,2.28540857 157.76266,1.11309429 159.195144,1.12383714 C160.628948,1.13323714 161.781536,2.32300857 161.770974,3.78135143 C161.761732,5.23700857 160.593301,6.41066571 159.159497,6.40126571 Z M194.93066,46.4667514 C191.012124,38.43378 185.84198,27.8936943 182.141288,20.5536371 C179.536412,15.3822943 177.734255,11.3201514 177.734255,11.3201514 C177.734255,11.3201514 175.825157,15.4548086 173.090895,20.7040371 C169.296464,27.98098 164.045784,38.32098 160.055954,46.2196657 L153.885052,46.1753514 L177.55734,0.76798 L178.063,0.781408571 L201.105523,46.5110657 L194.93066,46.4667514 Z" id="Fill-1"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                  </div>
+                  <div class="partners-list__li__heading">діджитал-партнер</div>
+                </li>
+                <li class="partners-list__li">
+                  <div class="partners-list__li__image"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="201px" height="47px" viewBox="0 0 201 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Головна" transform="translate(-554.000000, -3984.000000)" fill="#0D683C">
+            <g id="Group-25" transform="translate(259.000000, 3847.000000)">
+                <g id="Group-2" transform="translate(0.000000, 99.000000)">
+                    <g id="Партнер" transform="translate(293.000000, 0.000000)">
+                        <g id="Group-21" transform="translate(2.000000, 38.000000)">
+                            <g id="Page-1">
+                                <path d="M23.043183,45.7174371 L-0.000660130719,-0.000134285714 L6.17420261,0.04418 C10.0927386,8.07580857 15.2628824,18.6118657 18.9635752,25.95058 C21.568451,31.12058 23.3706078,35.1827229 23.3706078,35.1827229 C23.3706078,35.1827229 25.2797059,31.0480657 28.0139673,25.8015229 C31.8083987,18.5259229 37.0590784,8.18995143 41.0489085,0.291265714 L47.2198105,0.334237143 L23.5475229,45.7322086 L23.043183,45.7174371 Z M71.0439281,4.81669429 C61.3941373,4.74820857 53.5161373,12.8550371 53.4461634,22.92378 C53.3775098,32.99118 61.1446078,41.2094657 70.7943987,41.2779514 C80.4455098,41.3464371 88.3221895,33.2382657 88.3921634,23.1708657 C88.460817,13.1021229 80.6950392,4.88652286 71.0439281,4.81669429 Z M70.7613922,46.07598 C58.2426732,45.9873514 48.1651176,35.60438 48.2522549,22.8875229 C48.3393922,10.1693229 58.5582157,-0.0699628571 71.0769346,0.0186657143 C83.5969739,0.107294286 93.6745294,10.4902657 93.5873922,23.2084657 C93.5002549,35.9266657 83.2814314,46.1646086 70.7613922,46.07598 Z M123.746124,45.9712371 L101.576294,45.8141229 L101.885235,0.716951429 L107.075183,0.753208571 L106.801889,40.5742943 L123.783092,40.6938086 L123.746124,45.9712371 Z M140.999301,6.27235143 L124.019418,6.15283714 L124.055065,0.874065714 L146.223575,1.03118 L145.914634,46.1283514 L140.727327,46.0907514 L140.999301,6.27235143 Z M159.159497,6.40126571 C157.727013,6.39052286 156.574425,5.20075143 156.583667,3.74375143 C156.594229,2.28540857 157.76266,1.11309429 159.195144,1.12383714 C160.628948,1.13323714 161.781536,2.32300857 161.770974,3.78135143 C161.761732,5.23700857 160.593301,6.41066571 159.159497,6.40126571 Z M194.93066,46.4667514 C191.012124,38.43378 185.84198,27.8936943 182.141288,20.5536371 C179.536412,15.3822943 177.734255,11.3201514 177.734255,11.3201514 C177.734255,11.3201514 175.825157,15.4548086 173.090895,20.7040371 C169.296464,27.98098 164.045784,38.32098 160.055954,46.2196657 L153.885052,46.1753514 L177.55734,0.76798 L178.063,0.781408571 L201.105523,46.5110657 L194.93066,46.4667514 Z" id="Fill-1"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                  </div>
+                  <div class="partners-list__li__heading">діджитал-партнер</div>
+                </li>
+                <li class="partners-list__li">
+                  <div class="partners-list__li__image"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="201px" height="47px" viewBox="0 0 201 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Головна" transform="translate(-554.000000, -3984.000000)" fill="#0D683C">
+            <g id="Group-25" transform="translate(259.000000, 3847.000000)">
+                <g id="Group-2" transform="translate(0.000000, 99.000000)">
+                    <g id="Партнер" transform="translate(293.000000, 0.000000)">
+                        <g id="Group-21" transform="translate(2.000000, 38.000000)">
+                            <g id="Page-1">
+                                <path d="M23.043183,45.7174371 L-0.000660130719,-0.000134285714 L6.17420261,0.04418 C10.0927386,8.07580857 15.2628824,18.6118657 18.9635752,25.95058 C21.568451,31.12058 23.3706078,35.1827229 23.3706078,35.1827229 C23.3706078,35.1827229 25.2797059,31.0480657 28.0139673,25.8015229 C31.8083987,18.5259229 37.0590784,8.18995143 41.0489085,0.291265714 L47.2198105,0.334237143 L23.5475229,45.7322086 L23.043183,45.7174371 Z M71.0439281,4.81669429 C61.3941373,4.74820857 53.5161373,12.8550371 53.4461634,22.92378 C53.3775098,32.99118 61.1446078,41.2094657 70.7943987,41.2779514 C80.4455098,41.3464371 88.3221895,33.2382657 88.3921634,23.1708657 C88.460817,13.1021229 80.6950392,4.88652286 71.0439281,4.81669429 Z M70.7613922,46.07598 C58.2426732,45.9873514 48.1651176,35.60438 48.2522549,22.8875229 C48.3393922,10.1693229 58.5582157,-0.0699628571 71.0769346,0.0186657143 C83.5969739,0.107294286 93.6745294,10.4902657 93.5873922,23.2084657 C93.5002549,35.9266657 83.2814314,46.1646086 70.7613922,46.07598 Z M123.746124,45.9712371 L101.576294,45.8141229 L101.885235,0.716951429 L107.075183,0.753208571 L106.801889,40.5742943 L123.783092,40.6938086 L123.746124,45.9712371 Z M140.999301,6.27235143 L124.019418,6.15283714 L124.055065,0.874065714 L146.223575,1.03118 L145.914634,46.1283514 L140.727327,46.0907514 L140.999301,6.27235143 Z M159.159497,6.40126571 C157.727013,6.39052286 156.574425,5.20075143 156.583667,3.74375143 C156.594229,2.28540857 157.76266,1.11309429 159.195144,1.12383714 C160.628948,1.13323714 161.781536,2.32300857 161.770974,3.78135143 C161.761732,5.23700857 160.593301,6.41066571 159.159497,6.40126571 Z M194.93066,46.4667514 C191.012124,38.43378 185.84198,27.8936943 182.141288,20.5536371 C179.536412,15.3822943 177.734255,11.3201514 177.734255,11.3201514 C177.734255,11.3201514 175.825157,15.4548086 173.090895,20.7040371 C169.296464,27.98098 164.045784,38.32098 160.055954,46.2196657 L153.885052,46.1753514 L177.55734,0.76798 L178.063,0.781408571 L201.105523,46.5110657 L194.93066,46.4667514 Z" id="Fill-1"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                  </div>
+                  <div class="partners-list__li__heading">діджитал-партнер</div>
+                </li>
+                <li class="partners-list__li">
+                  <div class="partners-list__li__image"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="201px" height="47px" viewBox="0 0 201 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Головна" transform="translate(-554.000000, -3984.000000)" fill="#0D683C">
+            <g id="Group-25" transform="translate(259.000000, 3847.000000)">
+                <g id="Group-2" transform="translate(0.000000, 99.000000)">
+                    <g id="Партнер" transform="translate(293.000000, 0.000000)">
+                        <g id="Group-21" transform="translate(2.000000, 38.000000)">
+                            <g id="Page-1">
+                                <path d="M23.043183,45.7174371 L-0.000660130719,-0.000134285714 L6.17420261,0.04418 C10.0927386,8.07580857 15.2628824,18.6118657 18.9635752,25.95058 C21.568451,31.12058 23.3706078,35.1827229 23.3706078,35.1827229 C23.3706078,35.1827229 25.2797059,31.0480657 28.0139673,25.8015229 C31.8083987,18.5259229 37.0590784,8.18995143 41.0489085,0.291265714 L47.2198105,0.334237143 L23.5475229,45.7322086 L23.043183,45.7174371 Z M71.0439281,4.81669429 C61.3941373,4.74820857 53.5161373,12.8550371 53.4461634,22.92378 C53.3775098,32.99118 61.1446078,41.2094657 70.7943987,41.2779514 C80.4455098,41.3464371 88.3221895,33.2382657 88.3921634,23.1708657 C88.460817,13.1021229 80.6950392,4.88652286 71.0439281,4.81669429 Z M70.7613922,46.07598 C58.2426732,45.9873514 48.1651176,35.60438 48.2522549,22.8875229 C48.3393922,10.1693229 58.5582157,-0.0699628571 71.0769346,0.0186657143 C83.5969739,0.107294286 93.6745294,10.4902657 93.5873922,23.2084657 C93.5002549,35.9266657 83.2814314,46.1646086 70.7613922,46.07598 Z M123.746124,45.9712371 L101.576294,45.8141229 L101.885235,0.716951429 L107.075183,0.753208571 L106.801889,40.5742943 L123.783092,40.6938086 L123.746124,45.9712371 Z M140.999301,6.27235143 L124.019418,6.15283714 L124.055065,0.874065714 L146.223575,1.03118 L145.914634,46.1283514 L140.727327,46.0907514 L140.999301,6.27235143 Z M159.159497,6.40126571 C157.727013,6.39052286 156.574425,5.20075143 156.583667,3.74375143 C156.594229,2.28540857 157.76266,1.11309429 159.195144,1.12383714 C160.628948,1.13323714 161.781536,2.32300857 161.770974,3.78135143 C161.761732,5.23700857 160.593301,6.41066571 159.159497,6.40126571 Z M194.93066,46.4667514 C191.012124,38.43378 185.84198,27.8936943 182.141288,20.5536371 C179.536412,15.3822943 177.734255,11.3201514 177.734255,11.3201514 C177.734255,11.3201514 175.825157,15.4548086 173.090895,20.7040371 C169.296464,27.98098 164.045784,38.32098 160.055954,46.2196657 L153.885052,46.1753514 L177.55734,0.76798 L178.063,0.781408571 L201.105523,46.5110657 L194.93066,46.4667514 Z" id="Fill-1"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                  </div>
+                  <div class="partners-list__li__heading">діджитал-партнер</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div><img class="img-back img-back-coub" src="img/illus/back/coub.svg" title="" alt=""/>
+      </section>
+      <section class="section-manager">
+        <div class="container">
+          <div class="row">
+            <div class="col-5">
+              <h2>Замовити консультацію менеджера</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="slider slider-manager">
+                <div>
+                  <div class="manager">
+                    <div class="manager__image"><img src="img/illus/manager/manager.png" title="" alt=""/>
+                    </div>
+                    <div class="manager__description">
+                      <h4>Христина  Христиненко</h4>
+                      <p>Ваш особистий помічник та менеджер з продажів компанії «Фундамент»</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="manager">
+                    <div class="manager__image"><img src="img/illus/manager/manager.png" title="" alt=""/>
+                    </div>
+                    <div class="manager__description">
+                      <h4>Христина  Христиненко</h4>
+                      <p>Ваш особистий помічник та менеджер з продажів компанії «Фундамент»</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <form>
+                <div class="input-group">
+                  <div class="input-group_error">У номері недостатньо цифр!</div>
+                  <input class="input-group_input" type="text" placeholder="Номер телефону">
+                  <div class="input-group_line"></div>
+                  <div class="input-group_icon"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></section>
       <footer>
         <div class="container">
           <div class="row">

@@ -1,0 +1,72 @@
+.test-row
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  bg($wt)
+  box-shadow: 0 2px 28px 0 rgba(119, 122, 185, 0.18)
+  padding r(78) r(97) r(48)
+  position relative
+  &__description
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    flex 0 0 100%
+    max-width 100%
+  &__image
+    flex 0 0 38.2%
+    max-width 38.2%
+    img
+      width 100%
+  &__text
+    flex 0 0 51.6%
+    max-width 51.6%
+    position relative
+    pt(57)
+    &__test
+      position absolute
+      bottom 0
+      left 0
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      p
+        max-width 100%
+        flex 0 0 100%
+        font-size: 20px;
+        line-height: 1.7;
+        color: $gray-text1
+      .btn
+        mt(15)
+        flex 0 0 229px
+  &__steps
+    flex 0 0 39%
+    max-width 39%
+
+.test-steps
+  display flex
+  align-items center
+  justify-content space-between
+  mt(37)
+  li
+    position relative
+    .test-steps_link
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 3.5px;
+      color: $green-text;
+      &.active
+        font-size: e(22)
+        font-weight: bold;
+        letter-spacing: 5.5px;
+        color: $yellow1
+    &:after
+      ba()
+      width: 19px;
+      height: 3px;
+      bg($green-text)
+      right -46px
+      top 50%
+    &:last-child
+      &:after
+        display none
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="24px" viewBox="0 0 23 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Label</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Головна" transform="translate(-427.000000, -2011.000000)" fill="#BBC4D7" fill-rule="nonzero">
+            <g id="Page-1" transform="translate(427.000000, 1917.000000)">
+                <g id="Group-32">
+                    <path d="M0,94.0991683 L0,106.146787 L10.952381,117.099168 L23,105.051549 L12.047619,94.0991683 L0,94.0991683 Z M4.10714286,96.2896445 C5.16568856,96.2896445 6.02380952,97.1477655 6.02380952,98.2063112 C6.02380952,99.2648569 5.16568856,100.122978 4.10714286,100.122978 C3.04859715,100.122978 2.19047619,99.2648569 2.19047619,98.2063112 C2.19047619,97.1477655 3.04859715,96.2896445 4.10714286,96.2896445 Z" id="Label"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

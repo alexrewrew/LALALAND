@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer" transform="translate(-762.000000, -213.000000)" fill="#BBC4D7" fill-rule="nonzero">
+            <g id="Group-9" transform="translate(-150.000000, 0.000000)">
+                <g id="Group-34">
+                    <g id="Group-36" transform="translate(912.000000, 178.000000)">
+                        <path d="M0,35 L0,60 L25,60 L25,35 L0,35 Z M16.9999456,41.9799206 L15.0646083,41.9799206 C14.6812848,41.9799206 14.2944242,42.3728107 14.2944242,42.6651037 L14.2944242,44.6222147 L16.9961363,44.6222147 C16.8873538,46.1229147 16.6640206,47.4952238 16.6640206,47.4952238 L14.2806019,47.4952238 L14.2806019,56 L10.7289282,56 L10.7289282,47.4943063 L9,47.4943063 L9,44.6324147 L10.7289282,44.6324147 L10.7289282,42.2925597 C10.7289282,41.864698 10.6415322,39 14.3679979,39 L17,39 L17,41.9799206 L16.9999456,41.9799206 Z" id="Hover"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

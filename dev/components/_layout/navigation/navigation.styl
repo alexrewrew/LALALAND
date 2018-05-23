@@ -1,20 +1,50 @@
+body.open
+
+  .nav-panel
+    transform none
+  .nav-icon
+    position: relative;
+    z-index: 9999;
+    span
+      &:nth-child(1)
+        top 18px
+        width 0
+        left 50%
+      &:nth-child(2)
+        transform rotate(45deg)
+      &:nth-child(3)
+        transform rotate(-45deg)
+      &:nth-child(4)
+        top 18px
+        width 0
+        left 50%
+
 nav
   bg($wt)
-  //padding r(10) 0
   trans()
-  //margin-bottom 200px
-  position relative
+  position fixed
+  top 0
+  left 0
+  right 0
   z-index 9999
+  .container
+    +tab()
+      max-width 100% !important
+    +port()
+      max-width 100% !important
 
-
+nav.scroll
+  .link-logo
+    padding r(15) 0 r(10)
+    +mob()
+      padding r(10) 0 r(5)
 
 .nav-mobile
   display none
   +mob()
-    display block
-
-
-
+    display flex
+    align-items center
+    justify-content flex-end
 
 //@import "../../../source/rew-ui-kit/rew-navigation/nav-right-left.styl"
 //@import "../../../source/rew-ui-kit/rew-navigation/nav-top-bottom.styl"

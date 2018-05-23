@@ -4,10 +4,18 @@
     top 39px
     height 44px
     width 26px
+    +mob()
+      width 16px
     svg
       height 100%
       width auto
     &.right
       right: 34px;
+      +mob()
+        right 10px
+        left auto
     &.left
-      right: 107px;
+      right: 107px
+      +mob()
+        right auto
+        left 10px

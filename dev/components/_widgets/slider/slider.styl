@@ -1,6 +1,3 @@
-
-
-
 .slick-loading .slick-list
   background: #fff url('../img/slick/ajax-loader.gif') center center no-repeat;
 
@@ -28,12 +25,21 @@
     align-items center
     justify-content center
     trans()
+    +mob()
+      bottom 16px
     &:hover
-      opacity .5
-  .arrow.left
-    right 91px
-  .arrow.right
-    right 46px
+      +mob()
+        opacity .5
+    &.left
+      right 91px
+      +mob()
+        right auto
+        left 42px
+    &.right
+      right 46px
+      +mob()
+        right auto
+        left 87px
   .slide
     display flex !important
     justify-content center

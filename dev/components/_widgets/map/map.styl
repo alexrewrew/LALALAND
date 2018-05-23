@@ -1,9 +1,9 @@
-
-
-
 .map
   width 100%
   position relative
+  +mob()
+    margin: 0 -15px;
+    width: calc(100% + 30px);
   &-block
     bg($wt)
     position absolute
@@ -14,12 +14,27 @@
     pr(94)
     max-width 457px
     width 100%
+    +port()
+      left 0
+      max-width 400px
+      pl(40)
+      pr(40)
+      pt(37)
+    +mob()
+      position static
+      pl(15)
+      pr(26)
+      pt(28)
 
 .map-list
   ds(col)
   pb(37)
+  +mob()
+    pb(32)
   li
     mb(23)
+    +mob()
+      mb(16)
     .map-list__link
       display flex
       align-items center
@@ -33,6 +48,10 @@
         align-items center
         justify-content center
         mr(24)
+        +mob()
+          width 20px
+          height 20px
+          mr(14)
         svg g
           fill $gray-text1
       &_text, &_dest
@@ -46,6 +65,12 @@
       &:hover
         .map-list__link_icon
           svg g
+            fill $blue-dark
+        .map-list__link_text, .map-list__link_dest
+          co($blue-dark)
+      &.active
+        .map-list__link_icon
+          svg g
             fill $pink
         .map-list__link_text, .map-list__link_dest
           co($blue-dark)
@@ -55,4 +80,7 @@
   height 100%
   mb(30)
   height 376px
+  +mob()
+    height: 136px
+    mb(0)
 

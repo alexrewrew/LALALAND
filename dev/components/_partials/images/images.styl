@@ -6,23 +6,60 @@
 .img-back
   position absolute
 
-.img-back-road1
+.img-back-river
   top 250px
   left 0
   z-index -1
+  +mob()
+    display none
+  &-mob
+    display none
+    +mob()
+      width 100%
+      display block
+      bottom 0
+
 
 .img-back-trees
   top 0
   left calc(59% - 585px)
+  +tab()
+    left calc(59% - 465px)
+  +port()
+    left calc(59% - 360px)
+  +mob()
+    display none
+  &-mob
+    display none
+    +mob()
+      width 100%
+      display block
+      top 0
+      left 15px
 
-.img-back-road2
+
+.img-back-road
   top: 481px;
   left: calc(51.4% - 585px);
   z-index -1
+  +mob()
+    display none
 
 .img-back-car
   top: 623px;
   left: calc(67.3% - 55px);
+  +tab()
+    left calc(67.3% - 1px)
+  +port()
+    left calc(67.3% + 40px)
+  +mob()
+    display none
+  &-mob
+    display none
+    +mob()
+      display block
+      bottom: -90px;
+      left: 0;
 
 .img-back-blocks
   right 14px
@@ -31,6 +68,24 @@
 .img-back-coub
   right: calc(56.6% - 585px);
   bottom -39px
+  +tab()
+    right calc(56.6% - 465px)
+  +port()
+    right calc(56.6% - 360px)
+  +mob()
+    right: 26px;
+    max-width: 119px;
+    bottom: -25px;
 
-.img-fundament
-  margin r(6) 0
+
+
+
+.img-change {}
+.img-change_image
+    +mob()
+      mb(25)
+.img-change_heading {}
+
+.img-change_place
+  +mob()
+    display none

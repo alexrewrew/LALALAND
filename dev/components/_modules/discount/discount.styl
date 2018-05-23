@@ -11,11 +11,25 @@
     right 0
     left 95px
     z-index -1
+    +mob()
+      left 0
   &__description
     padding r(15) r(12) r(30)
+    +mob()
+      pl(20)
+    p
+      co($yellow-text)
+      +mob()
+        font-size: r(12)
+        line-height: 1.5
+        mb(16)
   &__image
     display flex
     justify-content flex-end
     max-width: 181px;
     flex: 0 0 181px;
-
+    +mob()
+      max-width 105px
+      pl(25)
+    img
+      max-width 100%

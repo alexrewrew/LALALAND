@@ -1,15 +1,29 @@
 .container-partners
   pt(190)
+  +mob()
+    pt(150)
 
 .partners-list
   pt(22)
   display flex
   justify-content space-between
+  flex-wrap wrap
+  +mob()
+    pt(18)
   &__li
     height 47px
-    width 261px
+    max-width 25%
     padding 0 r(30)
     position relative
+    +tab()
+      mb(20)
+    +port()
+      max-width 33.33333%
+      mb(20)
+    +mob()
+      max-width calc(50% - 15px)
+      padding 0
+      mb(34)
     &__heading
       font-size: e(14)
       font-weight: 500;
@@ -33,12 +47,13 @@
       svg
         height 100%
         width auto
-        g
+        polygon, path, circle, rect
           fill $green-dark
           trans()
     &:hover
       .partners-list__li__image
-        svg g
-          fill $green-light
+        svg
+          polygon, path, circle, rect
+            fill $green-light
       .partners-list__li__heading
         opacity 1

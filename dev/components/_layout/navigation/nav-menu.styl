@@ -3,15 +3,49 @@
   justify-content flex-end
   align-items center
   height 100%
+  +port()
+    flex-wrap wrap
+    align-items flex-start
+    height auto
+  +mob()
+    flex-wrap wrap
+    height auto
+  +xs()
+    pt(108)
+  +land()
+    pt(68)
   li
     margin 0 r(9)
+    +tab()
+      margin 0 r(5)
+    +port()
+      max-width 25%
+      flex 0 0 25%
+      margin 0 0 r(10)
+      padding 0 r(5)
+
+    +land()
+      flex 0 0 33.3333333%
+      max-width 33.3333333%
+      margin-left 0
+      margin-right 0
+      mb(12)
+    +xs()
+      flex 0 0 100%
+      max-width 100%
+      text-align center
+      mb(21)
+
     a
-      display block
+      display inline-block
       co($bltx1)
       fs(13)
       white-space nowrap
       position relative
       z-index 10
+      +mob()
+        font-size: e(20)
+        font-weight: bold;
       &:after
         ba()
         bottom -12px
@@ -22,6 +56,8 @@
         width 0
         z-index -1
         trans()
+        +mob()
+          bottom: -9px;
       &:hover, &.active
         co($bltx1)
         &:after

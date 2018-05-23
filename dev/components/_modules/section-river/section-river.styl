@@ -1,5 +1,10 @@
 .section-river
-
+  +mob()
+    pt(190)
+    pb(269)
+  &__text
+    position relative
+    z-index 200
   &:after
     ba()
     top 231px
@@ -8,3 +13,5 @@
     bottom -481px
     bg($ocean6)
     z-index -2
+    +mob()
+      top 349px

@@ -12,32 +12,48 @@ h1, h2, h3, h4, h5, h6, p, ul li, ol li, blockquote, cite
 h1
   font(e(46), 700, 1.22)
   mb(30)
-
   color: $blue;
+  +mob()
+    font-size: e(26)
 
 h2
   font(e(34), 700, 1.29)
   margin r(20) 0 r(66)
 
   color: $ocean2;
+  +mob()
+    font-size: e(26)
+    line-height: 1.23;
+    mt(0)
+    mb(34)
 
 h3
   font(e(30), 700, normal)
   mb(8)
   color: $wt
+  +mob()
+    fs(20)
 
 h4
   font(e(22), 700, 1.36)
   mb(21)
   co($bltx1)
-
-h5
-  font(e(18), 700, 1.5)
-  mb(44)
+  +mob()
+    text-align center
+    fs(16)
+    mb(10)
+//
+//h5
+//  font(e(18), 700, 1.5)
+//  mb(44)
 
 h6
-  font(e(14), 700, 1.5)
-  mb(50)
+  font(e(18), 700, 1.5)
+  mb(23)
+  color: $bltx4
+  +mob()
+    fs(16)
+    mb(9)
 
 p
   font(e(14), 400, 1.71)
@@ -45,11 +61,12 @@ p
 
   color: $bltx2;
 
+
 hr
   border: 0;
   height: 1px;
-  bg($bk)
-  margin r(15) 0
+  bg($bk2)
+  //margin r(15) 0
 
 .color-white
   co($wt)

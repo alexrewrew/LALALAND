@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="59px" viewBox="0 0 41 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 64</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-64">
+            <g id="Пин-Copy-2">
+                <g id="Group-25-Copy-4">
+                    <g id="Group-24" transform="translate(12.000000, 41.000000)">
+                        <polygon id="Path-2" fill="#DB44B0" points="0.599975586 0 8.55149683 17.8284943 11.5883126 6.68103832"></polygon>
+                        <polygon id="Path-2-Copy" fill="#B4288C" transform="translate(12.515739, 8.914247) scale(-1, 1) translate(-12.515739, -8.914247) " points="8.53997803 0 16.4914993 17.8284943 16.4914993 5.4805496"></polygon>
+                    </g>
+                    <g id="Group-23">
+                        <g id="Group-22">
+                            <g id="Page-1">
+                                <polygon id="Fill-1" fill="#F679D2" points="20.4756299 0.0760131788 0.0410873267 12.2689596 20.4756299 24.450022 40.9101724 12.2689596"></polygon>
+                                <polygon id="Fill-2" fill="#EB53C0" points="0.0445391075 39.232484 20.4790816 51.4254304 20.4790816 24.4488336 0.0445391075 12.2677712"></polygon>
+                                <polygon id="Fill-3" fill="#CC39A2" points="20.4756299 24.4512104 20.4756299 51.4278072 40.9101724 39.2348608 40.9101724 12.270148"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <path d="M3.67987576,22 L3.67987576,29.7577329 L10.7323602,40.9879623 L18.4900932,37.8257487 L11.4376087,26.5955194 L3.67987576,22 Z M6.32455744,24.9771512 C7.00617883,25.3809295 7.55874223,26.26082 7.55874223,26.9424414 C7.55874223,27.6240628 7.00617883,27.8492991 6.32455744,27.4455208 C5.64293605,27.0417425 5.09037266,26.161852 5.09037266,25.4802307 C5.09037266,24.7986093 5.64293605,24.5733729 6.32455744,24.9771512 Z" id="Label" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

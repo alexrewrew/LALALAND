@@ -1,4 +1,115 @@
+footer
+  bg($bk1)
+  pt(48)
+  +mob()
+    pt(54)
+
+.spacer-footer-mob
+  +xs()
+    height 35px
+
+.link-footer
+  font-size: e(14)
+  font-weight: 300;
+  line-height: 1.71;
+  color: $gray-text1
+  position relative
+  display inline-block
+  +port()
+    fs(10)
+  &:after
+    ba()
+    bottom 0
+    left 0
+    right 0
+    height 1px
+    bg($pink)
+    width 100%
+    trans()
+  &:hover
+    &:after
+      width 0
 
 
+.link-fund
+  display block
+  margin r(6) 0
+  +mob()
+    mb(37)
+  img
+    max-width 100%
+    +mob()
+      width 100%
 
-footer {}
+.footer-list
+  df(row)
+  flex-wrap wrap
+  mt(6)
+  mb(23)
+  +mob()
+    mb(9)
+  +land()
+    mt(78)
+  +xs()
+    mt(58)
+  li
+    flex 0 0 50%
+    max-width 50%
+    mb(9)
+    +mob()
+      flex 0 0 33.333333%
+      max-width 33.33333333%
+  &_link
+    display block
+    co($gray-text1)
+    fs(14)
+    &:hover
+      co($pink)
+
+.footer-social
+  df(row)
+  +mob()
+    padding r(5) 0
+  li
+    mr(17)
+  &__link
+    svg g
+      fill $gray-text1
+    &:hover
+      svg g
+        fill $pink
+
+.footer-row
+  mt(44)
+  pb(10)
+  +mob()
+    mt(0)
+
+.footer-copyright
+  font-size: e(12)
+  line-height: 2;
+  color: $gray2
+  padding r(25) 0
+  +xs()
+    padding r(11) 0
+    fs(11)
+
+.footer-agency-link
+  display inline-block
+  float right
+  padding r(25) 0
+  +xs()
+    padding r(11) 0
+  svg
+    height 15px
+    width auto
+    +xs()
+      height auto
+      max-width 100%
+    g, polygon, path, circle, rect
+      fill $gray2
+      trans()
+  &:hover
+    svg
+      g, polygon, path, circle, rect
+        fill $pink

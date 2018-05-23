@@ -1,9 +1,18 @@
 .section-manager
   pt(165)
+  pb(142)
+  +mob()
+    padding-bottom: r(107)
+    h2
+      text-align center
 
 .manager
   display flex
   padding r(23) r(130) r(25) 0
+  +mob()
+    flex-wrap wrap
+    padding r(23) 0 r(3)
+    justify-content center
   &__image
     width: 138px;
     height: 138px;
@@ -12,9 +21,22 @@
     flex 0 0 138px
     max-width 138px
     mr(26)
+    +mob()
+      flex 0 0 116px
+      max-width 116px
+      width 116px
+      height 116px
+      mr(0)
+      mb(20)
     img
       width 100%
   &__description
     pt(5)
+    +mob()
+      flex 0 0 100%
+      max-width 100%
     p
       co($gray-text1)
+      +mob()
+        text-align center
+        fs(12)

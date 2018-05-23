@@ -1,13 +1,13 @@
 a
   text-decoration none
   font-family $m-font, sans-serif
-  co(blue)
+  co($gray-text1)
   trans()
   svg g 
     trans()
   &:hover
     text-decoration none
-    co(lightblue)
+    co($pink)
   &:focus
     text-decoration none
     outline none
@@ -27,6 +27,8 @@ a
     height 6px
     bg($pink)
     trans()
+    +mob()
+      width 100%
   &:hover
     color: $blue-dark
     &:after
@@ -34,8 +36,14 @@ a
 
   &.link-detail-big
     fs(16)
+    +mob()
+      float right
+      fs(14)
+      mr(28)
     &:after
       bottom -17px
+      +mob()
+        bottom -11px
 
 
 

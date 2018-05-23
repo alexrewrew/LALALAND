@@ -12,38 +12,42 @@ block content
 
     section.section-river
         .container
-            .row
-                .col-5
-                    +img('img/illus/pic/pic1.png', 'img-responsive')
-                .offset-1.col-5
-                    h2 Дихай вільно,  живи весело в місті!
-                    p Lorem ipsum – псевдо-латинский текст, который используется  для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение  не на содержание, а на элементы дизайна.
-                    p Такой текст также называется как заполнитель.  Это очень удобный инструмент для моделей (макетов).
-                    .spacer-20
-                    +link-detail-big('Читати більше')
-        +img('img/illus/back/road.svg', 'img-back img-back-road1')
+            .row.img-change
+                .col-md-5.img-change_place
+                    +img('img/illus/pic/pic1.png', 'img-responsive img-change_image')
+                .offset-lg-1.col-lg-5.col-md-7.section-river__text
+                        h2.img-change_heading Дихай вільно,  живи весело в місті!
+                        p Lorem ipsum – псевдо-латинский текст, который используется  для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение  не на содержание, а на элементы дизайна.
+                        p Такой текст также называется как заполнитель.  Это очень удобный инструмент для моделей (макетов).
+                        .spacer-20
+                        +link-detail-big('Читати більше')
+        +img('img/illus/back/river.svg', 'img-back img-back-river')
         +img('img/illus/back/trees.svg', 'img-back img-back-trees')
+
+        +img('img/illus/back/river-mob.svg', 'img-back img-back-river-mob')
+        +img('img/illus/back/trees-mob.svg', 'img-back img-back-trees-mob')
 
     section.section-map
         .container
             .row
-                .offset-1.col-3
+                .col-7.offset-md-1.col-lg-3.col-md-5
                     h2.color-white 25 хвилин  від центру
                 .col-12
                     include ../components/_widgets/map/map
 
-        +img('img/illus/back/road2.svg', 'img-back img-back-road2')
+        +img('img/illus/back/road.svg', 'img-back img-back-road')
         +img('img/illus/back/car.svg', 'img-back img-back-car')
+        +img('img/illus/back/car-mob.svg', 'img-back img-back-car-mob')
 
     section
         .container
             .test-row
-                .test-row__description
-                    .test-row__image
-                        +img('img/illus/steps/step1.png')
+                .test-row__description.img-change
+                    .test-row__image.img-change_place
+                        +img('img/illus/steps/step1.png', 'img-change_image')
 
                     .test-row__text
-                        h2 Допоможемо обрати  вашу ідеальну квартиру
+                        h2.img-change_heading Допоможемо обрати  вашу ідеальну квартиру
                         .test-row__text__test
                             p З якою метою ви шукаєте квартиру?
                             +btn('Для себе')
@@ -59,20 +63,23 @@ block content
                         li
                             a(href='' title='').test-steps_link.active Етап 3
 
+
+
+
     section.section-fundament
         .container
             .row.justify-content-center
-                .col-5
+                .col-md-6.col-lg-5
                     +img('img/illus/fundament/fundament.svg', 'img-fundament')
                     +img('img/illus/fundament/blocks.svg', 'img-back img-back-blocks')
-                .col-5
+                .col-md-6.col-lg-5
                     p.color-white Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна.
                     .spacer-50
                     +link-detail-big('Читати більше')
         .container.container-partners
             .row
                 .col-12
-                    h2.text-center Партнери
+                    h2.text-center.color-white Партнери
                     ul.partners-list
                         li.partners-list__li
                             .partners-list__li__image
@@ -101,58 +108,5 @@ block content
         +img('img/illus/back/coub.svg', 'img-back img-back-coub')
 
 
-    section.section-manager
-        .container
-            .row
-                .col-5
-                    h2 Замовити консультацію менеджера
-            .row
-                .col-6
-                    include ../components/_modules/manager/manager-slider
-                .col-6
-                    form.form-manager
-                        .input-group
-                            input(type='text' placeholder='Номер телефону').input-group_input
-                            .input-group_error У номері недостатньо цифр!
-                            .input-group_line
-                            .input-group_icon
-                                include ../components/_svgs/form-phone.svg
-                        .input-group
-                            input(type='text' placeholder='Номер телефону').input-group_input.error
-                            .input-group_error У номері недостатньо цифр!
-                            .input-group_line
-                            .input-group_icon
-                                include ../components/_svgs/form-phone.svg
-                        .input-group.select-group
-                            select.chosen-select(data-placeholder='Зручний час для дзвінка')
-                                //select
-                                option
-                                option Найближчим часом
-                                option з 9:00 до 12:00
-                                option з 12:00 до 15:00
-                            .input-group_error У номері недостатньо цифр!
-                            .input-group_line
-                            .input-group_icon
-                                include ../components/_svgs/form-phone.svg
-                        +btn-submit('Замовити')
+    include ../components/_modules/manager/manager-section
 
-
-
-
-    section
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br

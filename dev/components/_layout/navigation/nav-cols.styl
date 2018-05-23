@@ -1,5 +1,25 @@
 .col-nav-1
   max-width 170px
+  +port()
+    max-width 100px
+  +mob()
+    flex: 0 0 50%;
+    max-width: 50%;
+
+.col-nav-2
+  +port()
+    padding 0
+    display flex
+    align-items center
+  +mob()
+    order 2
+    max-width 100%
+    flex 0 0 100%
 
 .col-nav-3
   max-width 460px
+  +port()
+    max-width 245px
+  +mob()
+    max-width 100%
+    flex 0 0 100%

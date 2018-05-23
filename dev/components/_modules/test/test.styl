@@ -6,6 +6,12 @@
   box-shadow: 0 2px 28px 0 rgba(119, 122, 185, 0.18)
   padding r(78) r(97) r(48)
   position relative
+  +tab()
+    padding r(58) r(67) r(48)
+  +port()
+    padding r(30)
+  +mob()
+    padding r(26) r(20) r(18)
   &__description
     display flex
     flex-wrap wrap
@@ -15,6 +21,9 @@
   &__image
     flex 0 0 38.2%
     max-width 38.2%
+    +port()
+      flex 0 0 36.2%
+      max-width 36.2%
     img
       width 100%
   &__text
@@ -22,6 +31,26 @@
     max-width 51.6%
     position relative
     pt(57)
+    +tab()
+      flex 0 0 53.6%
+      max-width 53.6%
+    +port()
+      flex 0 0 59.6%
+      max-width 59.6%
+      pt(0)
+      h2
+        fs(30)
+        mt(10)
+    +mob()
+      pt(0)
+      flex 0 0 100%
+      max-width 100%
+      img
+        width 100%
+        mb(14)
+      h2
+        fs(20)
+        mb(17)
     &__test
       position absolute
       bottom 0
@@ -29,24 +58,52 @@
       display flex
       flex-wrap wrap
       justify-content space-between
+      +mob()
+        position static
       p
         max-width 100%
         flex 0 0 100%
         font-size: 20px;
         line-height: 1.7;
         color: $gray-text1
+        +port()
+          mb(0)
+        +mob()
+          fs(14)
+          mb(13)
       .btn
         mt(15)
-        flex 0 0 229px
+        flex 0 0 calc(50% - 15px)
+        max-width calc(50% - 15px)
+        +mob()
+          mt(0)
+          mb(10)
+          flex 1 1 100%
+          max-width 100%
+          pt(10)
+          pb(13)
+
   &__steps
     flex 0 0 39%
     max-width 39%
+    +tab()
+      flex 0 0 49%
+      max-width 49%
+    +port()
+      flex 0 0 60%
+      max-width 60%
+    +mob()
+      flex 0 0 100%
+      max-width 100%
 
 .test-steps
   display flex
   align-items center
   justify-content space-between
   mt(37)
+  +mob()
+    padding 0 r(7)
+    mt(3)
   li
     position relative
     .test-steps_link
@@ -54,11 +111,17 @@
       font-weight: 500;
       letter-spacing: 3.5px;
       color: $green-text;
+      +mob()
+        font-size: e(12)
+        letter-spacing: 1px;
       &.active
         font-size: e(22)
         font-weight: bold;
         letter-spacing: 5.5px;
         color: $yellow1
+        +mob()
+          fs(16)
+          letter-spacing: 1px;
     &:after
       ba()
       width: 19px;
@@ -66,7 +129,14 @@
       bg($green-text)
       right -46px
       top 50%
+      +mob()
+        width 10px
+        height 2px
+        top 65%
+        right -30px
     &:last-child
       &:after
         display none
+
+
 

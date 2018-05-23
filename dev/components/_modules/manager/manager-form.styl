@@ -3,9 +3,65 @@
   display flex
   flex-wrap wrap
   justify-content space-between
+  +mob()
+    pt(0)
   .input-group, .select-group, .btn
     flex 0 0 calc(50% - 15px)
     max-width calc(50% - 15px)
+    +mob()
+      flex 1 1 100%
+      max-width 100%
   .btn
     mb(35)
+  &_back
+    position relative
+    display inline-block
+    fs(12)
+    co($blue-dark)
+    &:after
+      ba()
+      bottom -4px
+      left 0
+      right 0
+      height 1px
+      bg($blue-dark)
+      width 100%
+      trans()
+    &:hover
+      &:after
+        width 0
+  &__image
+    display flex
+    align-items center
+    height 100%
+    img
+      max-width 100%
+  &__text
+    display flex
+    align-items center
+    height 100%
+    &__content
+      h2
+        mt(0)
+        mb(25)
+      p
+        mb(25)
 
+.manager-block
+  position relative
+  &-row-form
+    trans()
+    &.hidden
+      opacity 0
+  &-row-success
+    position absolute
+    top 0
+    left 0
+    right 0
+    bg($wt)
+    z-index 200
+    trans()
+    &.hidden
+      visibility hidden
+      z-index -20
+      opacity 0

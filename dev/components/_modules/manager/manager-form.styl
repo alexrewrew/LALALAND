@@ -51,8 +51,11 @@
   position relative
   &-row-form
     trans()
+    +land()
+      justify-content space-around
     &.hidden
       opacity 0
+
   &-row-success
     position absolute
     top 0
@@ -61,6 +64,8 @@
     bg($wt)
     z-index 200
     trans()
+    +land()
+      justify-content space-around
     &.hidden
       visibility hidden
       z-index -20

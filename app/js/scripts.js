@@ -94,9 +94,9 @@
                 var heading = $(this).find(IMGs.imgChangeHead);
                 var place = $(this).find(IMGs.imgChangePlace);
 
-                if (window.matchMedia("(max-width: 767px)").matches) {
+                if (window.matchMedia("(max-width: 567px)").matches) {
                     image.insertAfter(heading);
-                } else if (window.matchMedia("(min-width: 768px)").matches) {
+                } else if (window.matchMedia("(min-width: 568px)").matches) {
                     image.appendTo(place);
                 }
             };

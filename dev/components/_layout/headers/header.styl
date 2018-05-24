@@ -5,7 +5,8 @@ header
   mb(170)
   +mob()
     height auto
-    mb(42)
+  +xs()
+    mb(227)
   &:after
     ba()
     top 0
@@ -14,14 +15,16 @@ header
     bg($ocean5)
     z-index -1
     left 5vw
-    +mob()
-      bottom 185px
+    //+xs()
+    //  bottom 185px
 
 
 .header_image
   position relative
   z-index 90
   height 100%
+  //+land()
+  //  height auto
   img
     max-width: 100%;
     position absolute
@@ -30,6 +33,8 @@ header
     z-index -1
     +port()
       max-width 500px
+    +land()
+      max-width 350px
 
 .header-container
   height 100%
@@ -42,7 +47,9 @@ header
   padding r(94) 0
   position relative
   z-index 400
-  +mob()
+  +land()
+    padding r(29) 0
+  +xs()
     padding r(29) r(25)
   p
     +mob()

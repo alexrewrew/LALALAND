@@ -1,1 +1,16 @@
-article {}
+article
+
+  ul
+    li
+      position relative
+      pl(20)
+      mb(13)
+      fs(14)
+      &:before
+        ba()
+        width: 6px;
+        height: 6px;
+        bg($ocean2)
+        top 6px
+        left 0
+        border-radius 50%

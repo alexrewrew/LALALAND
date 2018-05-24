@@ -25,7 +25,7 @@ module.exports = function () {
 
     $.gulp.task('scripts', function () {
         return $.gulp.src([
-            'dev/scripts/rew.accordion.js',
+            // 'dev/scripts/rew.accordion.js',
             'dev/scripts/rew.tabs.js',
             'dev/scripts/dev.js',
             'dev/scripts/mail.js'

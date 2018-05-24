@@ -1,28 +1,51 @@
-
-
-
 .tabs
   df(row)
+  width 100%
   mb(16)
 
-.tabs li
-  a
-    cursor: pointer;
-    padding r(12) r(15) r(13)
-    co($bk)
-    display block
-    trans()
-    &:hover
-      co($wt)
-      bg(lightblue)
-    &.active
-      co($wt)
-      bg(blue)
+  li
+    width 100%
+    &:first-child
+      a
+        border-bottom-left-radius 13px
+        border-top-left-radius 13px
+    &:last-child
+      a
+        border-bottom-right-radius 13px
+        border-top-right-radius 13px
+        border-right solid 2px $ocean6
+    a
+      text-align center
+      border solid 2px $ocean6
+      border-right 0
+      color: $blue-dark;
+      padding-top: r(18)
+      padding-bottom: r(20)
+
+
+      display block
+      trans()
+      &:hover
+        color: $blue-dark;
+        bg($ocean7)
+      &.active
+        color: $blue-dark;
+        bg($ocean6)
 
 .tabs-content
   display: none;
-  padding: r(10) r(15)
+  padding: r(14) 0
   animation: fadeEffect 1s;
+  &__description
+    pt(42)
+    ul
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      mb(32)
+      li
+        flex 0 0 40%
+        max-width 40%
 
 .tabs-content.active
   display block

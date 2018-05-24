@@ -1,0 +1,17 @@
+mixin documnet-link()
+    a(href='' title='').documents-list__link
+        .documents-list__link_icon
+            include ../../_svgs/pdf.svg
+        .documents-list__link_text
+            | Документ #1234567.  Дозвіл на використання  земельної ділянки.
+
+
+mixin document()
+    ul.documents-list
+        li
+            +documnet-link()
+
+
+    ul.documnets-list-image
+        li
+            +img('')

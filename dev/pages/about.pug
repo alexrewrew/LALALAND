@@ -1,0 +1,107 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | LALALAND - Про комплекс
+
+block content
+
+    +breadcrumbs-section('Про комплекс')
+
+    +header-about()
+
+    section.section-bus
+        .container
+            .row
+                .col-7
+                    +img('img/illus/back/bus-pipt.svg', 'img-back img-back-bus-pipt')
+                .col-4
+                    h2 30 хвилин до центру,  15 хв до метро
+                    +link-detail-big('Більше про розташування')
+
+
+
+    section.section-back
+        .container
+            .row.img-change
+                .col-sm-6.offset-lg-1.col-lg-5.col-md-6.section-back__text
+                    h2.img-change_heading Дихай вільно,  живи весело в місті!
+                    p Пішохідні зони з дитячими майданчиками - це окрема дворова територія. Парковки винесені за межі двору. В складі комплексу є садки, школи, гуртки для розвитку, музична школа.
+                    p В комплексі будуються ігрові та спортивні майданчики для дітей і підлітків.
+
+                .col-sm-6.offset-md-1.col-md-5.img-change_place
+                    +img('img/illus/pic/pic2.png', 'img-responsive img-change_image')
+
+        +img('img/illus/back/trees-two.svg', 'img-back img-back-trees-two1')
+
+
+
+
+    section.section-back.section-baum
+        .container
+            .row.img-change
+                .col-sm-6.col-md-5.img-change_place
+                    +img('img/illus/pic/pic3.png', 'img-responsive img-change_image')
+                    +img('img/illus/back/trees-two2.svg', 'img-back img-back-trees-two2')
+
+                .col-sm-6.offset-lg-1.col-lg-5.col-md-7.section-back__text
+                    h2.img-change_heading Велосипедні  парковки та доріжки
+                    p Лавочки з зарядкою і Wi-Fi. Велопарковки на території всього комплексу та зарядки  для електромобілів
+                    p Освітлення, яке підлаштовується під час доби та дорожня навігація для людей з проблемами зору
+
+
+        +img('img/illus/back/road-baum.svg', 'img-back img-back-baum')
+
+
+    section.section-security
+        .container
+            .row.justify-content-center
+                .col-10
+                    h2 Безпека, турбота, чистота
+                .col-4
+                    p Обгороджений периметр, КПП, контроль доступу  в будинку і відеоконтроль всій території комплексу.
+                    p Власна експлуатуюча компанія створена спеціально  для всіх потреб кварталу.
+                .offset-1.col-5
+                    p Квартал розташований уздовж чудового соснового лісу,  і все  доповнено озелененням самого кварталу.
+                    p Окремі зони для прогулянок, йоги і пікніків, альтанки, тенісні і баскетбольні майданчики.
+
+    section.section-back.section-back-big
+        .container
+            .row.img-change
+                .offset-1.col-5.section-back__text
+                    h2.img-change_heading Смарт-простір  та енергоефективність
+                    p Кожна квартира і кожен м2 в квартирі продумані, що позбавити  вас від непотрібних метрів. Якісна система утеплення стін  з використання базальтової вати  Paroc (160 мм), що водночас звукофзолює та посилює протипожежну безпеку. Європейська сиситема економії енергетичних ресурсів та лічильники у кожній  квартирі.
+                    +btn('Обрати планування')
+                .offset-1.col-5.img-change_place
+                    +img('img/illus/pic/pic4.png', 'img-responsive img-change_image img-margin-top')
+                    +img('img/illus/back/chair.svg', 'img-back img-back-chair')
+
+            .test-row.test-row-repair
+                .test-row__description
+                    h2 Обирайте тип ремонту у квартирі
+                    #tabs
+                        ul.tabs
+                            li
+                                a(href='#' title='' data-tab='tab1') Базовий
+                            li
+                                a(href='#' title='' data-tab='tab2') Початковий
+                            li
+                                a(href='#' title='' data-tab='tab3') Заходь і живи
+                            li
+                                a(href='#' title='' data-tab='tab4').active Дизайнерський
+                        +tab('Базовий')
+                        +tab('Початковий')
+                        +tab('Заходь і живи')
+                        +tab-active('Дизайнерський')
+            .row
+                .offset-1.col-5
+                    h2.color-white Дозвільна  документація
+                    p Надійні теплі будинки. Будівництво виконано по панельній технології з дотриманням всіх нормативів і з досвідом будівництва  та всією необхідною дозвільною документацією.
+                .offset-1.col-5
+                    +document()
+
+
+    +fundament-white()
+
+    +section-manager()
+

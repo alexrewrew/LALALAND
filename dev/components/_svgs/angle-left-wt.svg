@@ -1,0 +1,22 @@
+<svg width="51px" height="61px" viewBox="0 0 51 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M15.7071068,23.2529471 L13.0191823,25.9408716 L0.292893219,13.2145825 L0.448001591,13.0594741 L0.407709756,13.0191823 L13.1339988,0.292893219 L15.6981222,2.8570166 L5.50464925,13.0504896 L15.7071068,23.2529471 Z" id="path-1"></path>
+        <filter x="-201.1%" y="-113.1%" width="502.2%" height="341.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.6 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Про-комплекс" transform="translate(-1143.000000, -4130.000000)" fill-rule="nonzero">
+            <g id="Group-29" transform="translate(232.000000, 3640.000000)">
+                <g id="Group-25" transform="translate(928.000000, 505.000000)">
+                    <g id="Combined-Shape-Copy">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,13 +1,29 @@
-header
-    .container.header-container
-        .row.header-container__row
-            .offset-sm-1.col-sm-7.offset-md-1.col-md-6.col-lg-5
-                .header-description
-                    h1 LaLaLand: Живи граючи!
-                    p Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста .
-            .col-sm-4.col-md-5
-                .header_image
-                    +img('img/illus/header/header1.png')
-        .row
-            .col-xl-5.col-lg-6.col-md-8.col-sm-8
-                include ../../_modules/discount/slider-discount/slider-discount
+mixin header-index()
+    header.header-index
+        .container.header-container
+            .row.header-container__row
+                .offset-sm-1.col-sm-7.col-md-6.col-lg-5
+                    .header-description
+                        h1 LaLaLand: Живи граючи!
+                        p Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста .
+                .col-sm-4.col-md-5
+                    .header_image
+                        +img('img/illus/header/header1.png')
+            .row
+                .col-xl-5.col-lg-6.col-md-8.col-sm-8
+                    include ../../_modules/discount/slider-discount/slider-discount
+
+mixin header-about()
+    header.header-about
+        .container.header-container
+            .row.header-container__row
+                .col-sm-7.col-md-6.col-lg-6
+                    .header-description
+                        h1 Комплекс  щасливого життя
+
+                .col-sm-4.col-md-5
+                    .header-description
+                        p Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста .
+                        .spacer-50
+                        +btn('Обрати планування')
+                    +img('img/illus/back/bus-pipt-trees.svg', 'img-back img-back-bus-pipt-trees')

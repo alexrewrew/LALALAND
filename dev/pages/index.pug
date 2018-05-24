@@ -2,20 +2,20 @@
 extend layouts/_layout.pug
 
 block title
-    | Главная страница
+    | LALALAND - Головна сторінка
 
 block content
 
-    include ../components/_layout/headers/header
+    +header-index()
 
 
 
-    section.section-river
+    section.section-back.section-river
         .container
             .row.img-change
                 .col-sm-6.col-md-5.img-change_place
                     +img('img/illus/pic/pic1.png', 'img-responsive img-change_image')
-                .col-sm-6.offset-lg-1.col-lg-5.col-md-7.section-river__text
+                .col-sm-6.offset-lg-1.col-lg-5.col-md-7.section-back__text
                         h2.img-change_heading Дихай вільно,  живи весело в місті!
                         p Lorem ipsum – псевдо-латинский текст, который используется  для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение  не на содержание, а на элементы дизайна.
                         p Такой текст также называется как заполнитель.  Это очень удобный инструмент для моделей (макетов).
@@ -26,6 +26,7 @@ block content
 
         +img('img/illus/back/river-mob.svg', 'img-back img-back-river-mob')
         +img('img/illus/back/trees-mob.svg', 'img-back img-back-trees-mob')
+
 
     section.section-map
         .container
@@ -68,47 +69,7 @@ block content
 
 
 
-    section.section-fundament
-        .container
-            .row.justify-content-center
-                .col-md-6.col-lg-5
-                    +img('img/illus/fundament/fundament.svg', 'img-fundament')
-                    +img('img/illus/fundament/blocks.svg', 'img-back img-back-blocks')
-                .col-md-6.col-lg-5
-                    p.color-white Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна.
-                    .spacer-50
-                    +link-detail-big('Читати більше')
-        .container.container-partners
-            .row
-                .col-12
-                    h2.text-center.color-white Партнери
-                    ul.partners-list
-                        li.partners-list__li
-                            .partners-list__li__image
-                                include ../components/_svgs/volta-logo.svg
-                            .partners-list__li__heading
-                                | діджитал-партнер
+    +fundament-index()
 
-                        li.partners-list__li
-                            .partners-list__li__image
-                                include ../components/_svgs/volta-logo.svg
-                            .partners-list__li__heading
-                                | діджитал-партнер
-
-                        li.partners-list__li
-                            .partners-list__li__image
-                                include ../components/_svgs/volta-logo.svg
-                            .partners-list__li__heading
-                                | діджитал-партнер
-
-                        li.partners-list__li
-                            .partners-list__li__image
-                                include ../components/_svgs/volta-logo.svg
-                            .partners-list__li__heading
-                                | діджитал-партнер
-
-        +img('img/illus/back/coub.svg', 'img-back img-back-coub')
-
-
-    include ../components/_modules/manager/manager-section
+    +section-manager()
 

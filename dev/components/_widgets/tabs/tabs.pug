@@ -1,0 +1,46 @@
+mixin tab(heading)
+    article.tabs-content
+        .row
+            .col-6
+                .tabs-content__description
+                    h5= heading
+                    ul
+                        li Покриття стін, підлоги,  стелі
+                        li Міжкімнатні та  вхідні двері
+                        li Встановлена сантехніка
+                        li Підведено всі комунікації
+                        li Повністю мебльоване помешкання
+                        li Можливість швидкого заселення
+                    +link-detail-big('Читати більше')
+            .col-6
+                .slider.slider-repair
+                    div
+                        .slide-img
+                            +img('img/illus/repair/repair-slide1.png')
+                    div
+                        .slide-img
+                            +img('img/illus/repair/repair-slide1.png')
+
+mixin tab-active(heading)
+    article.tabs-content.active
+        .row
+            .col-6
+                .tabs-content__description
+                    h5= heading
+                    ul
+                        li Покриття стін, підлоги,  стелі
+                        li Міжкімнатні та  вхідні двері
+                        li Встановлена сантехніка
+                        li Підведено всі комунікації
+                        li Повністю мебльоване помешкання
+                        li Можливість швидкого заселення
+
+                    +link-detail-big('Читати більше')
+            .col-6
+                .slider.slider-repair
+                    div
+                        .slide-img
+                            +img('img/illus/repair/repair-slide1.png')
+                    div
+                        .slide-img
+                            +img('img/illus/repair/repair-slide1.png')

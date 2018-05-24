@@ -2,3 +2,10 @@ mixin breadcrumbs(heading)
     ul.breadcrumbs
         +li-a('Головна')
         +li-a(heading)
+
+mixin breadcrumbs-section(heading)
+    section.section-breadcrumbs
+        .container
+            .row
+                .col-12
+                    +breadcrumbs(heading)

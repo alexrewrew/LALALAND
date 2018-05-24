@@ -1,0 +1,57 @@
+mixin fundament-index()
+    section.section-fundament.section-fundament-index
+        .container
+            .row.justify-content-center
+                .col-md-6.col-lg-5
+                    +img('img/illus/fundament/fundament.svg', 'img-fundament')
+                    +img('img/illus/fundament/blocks.svg', 'img-back img-back-blocks')
+                .col-md-6.col-lg-5
+                    p.color-white Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна.
+                    .spacer-50
+                    +link-detail-big('Читати більше')
+        .container.container-partners
+            .row
+                .col-12
+                    h2.text-center.color-white Партнери
+                    ul.partners-list
+                        li.partners-list__li
+                            .partners-list__li__image
+                                include ../../_svgs/volta-logo.svg
+                            .partners-list__li__heading
+                                | діджитал-партнер
+
+                        li.partners-list__li
+                            .partners-list__li__image
+                                include ../../_svgs/volta-logo.svg
+                            .partners-list__li__heading
+                                | діджитал-партнер
+
+                        li.partners-list__li
+                            .partners-list__li__image
+                                include ../../_svgs/volta-logo.svg
+                            .partners-list__li__heading
+                                | діджитал-партнер
+
+                        li.partners-list__li
+                            .partners-list__li__image
+                                include ../../_svgs/volta-logo.svg
+                            .partners-list__li__heading
+                                | діджитал-партнер
+
+        +img('img/illus/back/coub.svg', 'img-back img-back-coub')
+
+
+mixin fundament-white()
+    section.section-fundament
+        .container
+            .row.justify-content-center
+                .col-md-6.col-lg-5
+                    +img('img/illus/fundament/fundament2.svg', 'img-fundament')
+                    +img('img/illus/fundament/blocks2.svg', 'img-back img-back-blocks')
+                .col-md-6.col-lg-5
+                    p Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна.
+                    .spacer-50
+                    +link-detail-big('Читати більше')
+
+
+        +img('img/illus/back/coub2.svg', 'img-back img-back-coub')

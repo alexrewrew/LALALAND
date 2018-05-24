@@ -1,28 +1,30 @@
+.section-breadcrumbs
+  pt(0)
+  pb(34)
+
 .breadcrumbs
   df(row)
-  mb(15)
   li
     position relative
-    pr(15)
-    mr(15)
+    pr(7)
+    mr(3)
     &:after
-      pseudo(block, absolute)
+      ba()
       right 0
-      top 0
-      height 100%
+      bottom 1px
+      height 12px
       width 1px
-      bg($bk)
-      transform rotate(25deg)
+      bg($gray-text3)
+      transform rotate(20deg)
     &:last-child
       &:after
         display none
-
-    a
-      display inline-block
-      co($bk)
-      &:hover
-        co(lightblue)
-      &.active
+      a
         cursor default
         pointer-events: none
-        co(blue)
+    a
+      display inline-block
+      co($gray-text3)
+      fs(12)
+      &:hover
+        co($pink)

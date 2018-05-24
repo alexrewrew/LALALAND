@@ -1,52 +1,27 @@
 'use strict';
 
 (function ($) {
-    $.fn.rewAccordion = function () {
+    $.fn.rewTabs = function () {
+        var make = function make() {
 
-        var accordionLinks = $(this).find('.accordion--heading');
-        var accordionContent = $(this).find('.accordion--panel');
+            var tabLinks = $(this).find('.tabs li a');
+            var tabContent = $(this).find('.tabs-content');
 
-        for (var i = 0; i < accordionLinks.length; i++) {
-            $(accordionLinks[i]).click(function (e) {
-                e.preventDefault();
+            for (var i = 0; i < tabLinks.length; i++) {
+                $(tabLinks[i]).click(function (e) {
+                    e.preventDefault();
 
-                var j = $(accordionLinks).index(this);
+                    $(tabLinks).removeClass('active');
+                    $(tabContent).removeClass('active');
 
-                if ($(this).hasClass('active')) {
-
-                    $(this).removeClass('active');
-                    $(accordionContent[j]).slideUp();
-                } else {
-
-                    $(accordionLinks).removeClass('active');
-                    $(accordionContent).slideUp();
+                    var j = $(tabLinks).index(this);
 
                     $(this).addClass('active');
-                    $(accordionContent[j]).slideDown();
-                }
-            });
-        }
-    };
-})(jQuery);
-(function ($) {
-    $.fn.rewTabs = function () {
-
-        var tabLinks = $(this).find('.tabs li a');
-        var tabContent = $(this).find('.tabs-content');
-
-        for (var i = 0; i < tabLinks.length; i++) {
-            $(tabLinks[i]).click(function (e) {
-                e.preventDefault();
-
-                $(tabLinks).removeClass('active');
-                $(tabContent).removeClass('active');
-
-                var j = $(tabLinks).index(this);
-
-                $(this).addClass('active');
-                $(tabContent[j]).addClass('active');
-            });
-        }
+                    $(tabContent[j]).addClass('active');
+                });
+            }
+        };
+        return this.each(make);
     };
 })(jQuery);
 (function ($) {
@@ -75,11 +50,16 @@
 
         sliderManager: $('.slider-manager'),
 
+        sliderRepair: $('.slider-repair'),
+
         cookieClose: $('#close-cookie'),
         cookie: $('.cookie'),
 
         angleLeft: '<div class="arrow left"><svg width="16px" height="25px" viewBox="0 0 16 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Головна" transform="translate(-575.000000, -638.000000)" fill="#064778" stroke="#064778"> <g id="Group-28" transform="translate(256.000000, 516.000000)"> <g id="Акция-3"> <path d="M323.797542,134.05049 L334,144.252947 L332.019182,146.233765 L320,134.214583 L320.155108,134.059474 L320.114817,134.019182 L332.133999,122 L333.991015,123.857017 L323.797542,134.05049 Z" id="Combined-Shape-Copy"></path> </g> </g> </g> </g></svg></div>',
-        angleRight: '<div class="arrow right"><svg width="16px" height="25px" viewBox="0 0 16 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Головна" transform="translate(-620.000000, -638.000000)" fill="#064778" stroke="#064778"> <g id="Group-28" transform="translate(256.000000, 516.000000)"> <g id="Акция-3"> <path d="M378.844892,134.059474 L379,134.214583 L366.980818,146.233765 L365,144.252947 L375.202458,134.05049 L365.008985,123.857017 L366.866001,122 L378.885183,134.019182 L378.844892,134.059474 Z" id="Combined-Shape-Copy-2"></path> </g> </g> </g> </g></svg></div>'
+        angleRight: '<div class="arrow right"><svg width="16px" height="25px" viewBox="0 0 16 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Головна" transform="translate(-620.000000, -638.000000)" fill="#064778" stroke="#064778"> <g id="Group-28" transform="translate(256.000000, 516.000000)"> <g id="Акция-3"> <path d="M378.844892,134.059474 L379,134.214583 L366.980818,146.233765 L365,144.252947 L375.202458,134.05049 L365.008985,123.857017 L366.866001,122 L378.885183,134.019182 L378.844892,134.059474 Z" id="Combined-Shape-Copy-2"></path> </g> </g> </g> </g></svg></div>',
+
+        angleLeftWt: '<div class="arrow left"><svg width="51px" height="61px" viewBox="0 0 51 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <path d="M15.7071068,23.2529471 L13.0191823,25.9408716 L0.292893219,13.2145825 L0.448001591,13.0594741 L0.407709756,13.0191823 L13.1339988,0.292893219 L15.6981222,2.8570166 L5.50464925,13.0504896 L15.7071068,23.2529471 Z" id="path-1"></path> <filter x="-201.1%" y="-113.1%" width="502.2%" height="341.7%" filterUnits="objectBoundingBox" id="filter-2"> <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset> <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur> <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix> </filter> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Про-комплекс" transform="translate(-1143.000000, -4130.000000)" fill-rule="nonzero"> <g id="Group-29" transform="translate(232.000000, 3640.000000)"> <g id="Group-25" transform="translate(928.000000, 505.000000)"> <g id="Combined-Shape-Copy"> <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use> <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use> </g> </g> </g> </g> </g></svg></div>',
+        angleRightWt: '<div class="arrow right"><svg width="51px" height="61px" viewBox="0 0 51 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <path d="M15.7071068,23.2529471 L13.0191823,25.9408716 L0.292893219,13.2145825 L0.448001591,13.0594741 L0.407709756,13.0191823 L13.1339988,0.292893219 L15.6981222,2.8570166 L5.50464925,13.0504896 L15.7071068,23.2529471 Z" id="path-1"></path> <filter x="-201.1%" y="-113.1%" width="502.2%" height="341.7%" filterUnits="objectBoundingBox" id="filter-2"> <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset> <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur> <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix> </filter> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Про-комплекс" transform="translate(-1142.000000, -4130.000000)" fill-rule="nonzero"> <g id="Group-29" transform="translate(232.000000, 3640.000000)"> <g id="Group-25" transform="translate(936.000000, 518.000000) scale(-1, 1) translate(-936.000000, -518.000000) translate(928.000000, 505.000000)"> <g id="Combined-Shape-Copy"> <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use> <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use> </g> </g> </g> </g> </g></svg></div>'
     };
 
     // IMG CHANGE SNIPPET
@@ -177,6 +157,12 @@
         DOMs.sliderManager.slick({
             prevArrow: DOMs.angleLeft,
             nextArrow: DOMs.angleRight,
+            dots: false
+        });
+        DOMs.sliderRepair.slick({
+            prevArrow: DOMs.angleLeftWt,
+            nextArrow: DOMs.angleRightWt,
+
             dots: false
         });
 

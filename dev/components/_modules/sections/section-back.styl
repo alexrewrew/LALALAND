@@ -1,0 +1,23 @@
+.section-back
+  pb(85)
+  mb(107)
+  &__text
+    position relative
+    z-index 200
+  &:after
+    ba()
+    top 231px
+    right 0
+    left 0
+    z-index -2
+    bottom 0
+    bg($ocean7)
+    +mob()
+      top 349px
+
+.section-back-big
+  pt(42)
+  &:after
+    top 0
+    right calc(67% - 585px)
+    bg($ocean6)

@@ -36,11 +36,19 @@
     height 100%
     img
       max-width 100%
+      +port()
+        margin 0 auto r(30)
+      +mob()
+        margin 0 auto r(30)
   &__text
     display flex
     align-items center
     height 100%
     &__content
+      +port()
+        margin 0 auto
+      +mob()
+        margin 0 auto
       h2
         mt(0)
         mb(25)

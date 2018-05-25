@@ -13,23 +13,11 @@ footer
   font-weight: 300;
   line-height: 1.71;
   color: $gray-text1
-  position relative
   display inline-block
+  text-decoration underline
+  text-decoration-color $pink
   +port()
     fs(10)
-  &:after
-    ba()
-    bottom 0
-    left 0
-    right 0
-    height 1px
-    bg($pink)
-    width 100%
-    trans()
-  &:hover
-    &:after
-      width 0
-
 
 .link-fund
   display block

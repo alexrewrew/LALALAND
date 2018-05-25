@@ -972,30 +972,15 @@ footer {
 	font-weight: 300;
 	line-height: 1.71;
 	color: #bbc4d7;
-	position: relative;
 	display: inline-block;
+	text-decoration: underline;
+	-webkit-text-decoration-color: #eb53c0;
+	        text-decoration-color: #eb53c0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.link-footer {
 		font-size: .625em;
 	}
-}
-.link-footer:after {
-	content: '';
-	display: block;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 1px;
-	background-color: #eb53c0;
-	width: 100%;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
-}
-.link-footer:hover:after {
-	width: 0;
 }
 .link-fund {
 	display: block;
@@ -1183,6 +1168,7 @@ article ul li {
 	padding-left: 1.25rem;
 	margin-bottom: .8125rem;
 	font-size: .875em;
+	color: #8f91a3;
 }
 article ul li:before {
 	content: '';
@@ -2378,6 +2364,14 @@ select:focus {
 	text-align: center;
 	margin-top: 0rem;
 	margin-bottom: 2.6875rem;
+}
+.documents-list__link_text {
+	text-decoration: underline;
+	-webkit-text-decoration-color: #eb53c0;
+	        text-decoration-color: #eb53c0;
+}
+.documents-list__link:hover {
+	text-decoration: none;
 }
 .slider-repair .arrow {
 	height: 60px;

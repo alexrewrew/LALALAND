@@ -79,9 +79,25 @@
 .img-back-bus-pipt
   top: -175px;
   z-index -1
+  +port()
+    right -400px
+  +land()
+    max-width 100%
+    top -148px
+  +xs()
+    display none
   &-trees
     right: -17%;
     top: 108px;
+    +mob()
+      display none
+  &-mob
+    display none
+    top: -208px;
+    left: 0px;
+    +xs()
+      display block
+
 
 .img-back-trees-two1
   bottom: -52px;
@@ -90,6 +106,8 @@
     left calc(85.25% - 465px)
   +port()
     left calc(85.25% - 360px)
+  +land()
+    left calc(85.25% - 120px)
 
 .img-back-trees-two2
   bottom -81px
@@ -98,12 +116,42 @@
 .img-back-chair
   bottom -112px
   right 180px
+  +land()
+    bottom: 0;
+    right: 3px;
 
 
 .img-back-baum
   top -240px
   right -88px
   z-index -1
+  +port()
+    right -200px
+    top -350px
+  +land()
+    top: -340px;
+  +xs()
+    display none
+  &-mob
+    display none
+    +xs()
+      display block
+      //bottom -493px
+      right 0
+      bottom 0
+
+.img-back-lavochka-mob
+  display none
+  +xs()
+    display block
+    top: -165px;
+    right: 15px;
+
+.img-back-green-box
+  bottom: -39px;
+  right: 107%;
+  +xs()
+    right 20px
 
 
 .img-change_image
@@ -118,3 +166,5 @@
 
 .img-margin-top
   mt(68)
+  +xs()
+    mt(0)

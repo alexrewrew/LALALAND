@@ -10,12 +10,14 @@ block content
 
     +header-about()
 
+
     section.section-bus
         .container
             .row
-                .col-7
+                .col-lg-7.col-md-6
                     +img('img/illus/back/bus-pipt.svg', 'img-back img-back-bus-pipt')
-                .col-4
+                    +img('img/illus/back/bus-pipt-mob.svg', 'img-back img-back-bus-pipt-mob')
+                .offset-3.col-9.offset-sm-4.col-sm-8.offset-md-0.col-md-6.col-lg-5.col-xl-4
                     h2 30 хвилин до центру,  15 хв до метро
                     +link-detail-big('Більше про розташування')
 
@@ -49,30 +51,32 @@ block content
                     p Лавочки з зарядкою і Wi-Fi. Велопарковки на території всього комплексу та зарядки  для електромобілів
                     p Освітлення, яке підлаштовується під час доби та дорожня навігація для людей з проблемами зору
 
-
         +img('img/illus/back/road-baum.svg', 'img-back img-back-baum')
+
+        +img('img/illus/back/lavochka-mob.svg', 'img-back img-back-lavochka-mob')
+        +img('img/illus/back/road-baum-mob.svg', 'img-back img-back-baum-mob')
 
 
     section.section-security
         .container
             .row.justify-content-center
-                .col-10
+                .col-md-10
                     h2 Безпека, турбота, чистота
-                .col-4
+                .col-sm-6.col-md-5.col-lg-4
                     p Обгороджений периметр, КПП, контроль доступу  в будинку і відеоконтроль всій території комплексу.
                     p Власна експлуатуюча компанія створена спеціально  для всіх потреб кварталу.
-                .offset-1.col-5
+                .col-sm-6.offset-lg-1.col-md-5
                     p Квартал розташований уздовж чудового соснового лісу,  і все  доповнено озелененням самого кварталу.
                     p Окремі зони для прогулянок, йоги і пікніків, альтанки, тенісні і баскетбольні майданчики.
 
     section.section-back.section-back-big
         .container
             .row.img-change
-                .offset-1.col-5.section-back__text
+                .col-sm-6.offset-lg-1.col-lg-5.section-back__text
                     h2.img-change_heading Смарт-простір  та енергоефективність
                     p Кожна квартира і кожен м2 в квартирі продумані, що позбавити  вас від непотрібних метрів. Якісна система утеплення стін  з використання базальтової вати  Paroc (160 мм), що водночас звукофзолює та посилює протипожежну безпеку. Європейська сиситема економії енергетичних ресурсів та лічильники у кожній  квартирі.
                     +btn('Обрати планування')
-                .offset-1.col-5.img-change_place
+                .col-6.offset-lg-1.col-lg-5.img-change_place
                     +img('img/illus/pic/pic4.png', 'img-responsive img-change_image img-margin-top')
                     +img('img/illus/back/chair.svg', 'img-back img-back-chair')
 
@@ -94,11 +98,13 @@ block content
                         +tab('Заходь і живи')
                         +tab-active('Дизайнерський')
             .row
-                .offset-1.col-5
+                .col-sm-6.offset-lg-1.col-md-5
                     h2.color-white Дозвільна  документація
                     p Надійні теплі будинки. Будівництво виконано по панельній технології з дотриманням всіх нормативів і з досвідом будівництва  та всією необхідною дозвільною документацією.
-                .offset-1.col-5
+                .col-sm-6.offset-md-1.col-md-6.col-lg-5
                     +document()
+                    +img('img/illus/back/green-box.svg', 'img-back img-back-green-box')
+
 
 
     +fundament-white()

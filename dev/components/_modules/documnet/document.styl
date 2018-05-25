@@ -1,9 +1,53 @@
 .documents-list
+  padding r(23) 0 r(29)
+  +xs()
+    pb(149)
   &__link
-    &_icon {
-    }
+    display flex
+    mb(26)
+    &_icon
+      pt(7)
+      mr(23)
     &_text
+      font-size: e(14)
+      font-weight: 500;
+      line-height: 1.71;
+      color $blue-dark
       text-decoration underline
       text-decoration-color $pink
+      trans()
     &:hover
-      text-decoration none
+      .documents-list__link_text
+        text-decoration none
+        co($pink)
+
+.documents-list-image
+  position absolute
+  bottom 0
+  right 15px
+  li
+    display flex
+    align-items center
+    justify-content center
+    overflow hidden
+    width: 263px;
+    height: 395px;
+    bg($wt)
+    box-shadow: 0 2px 21px 0 rgba(181, 195, 205, 0.36);
+    position absolute
+    right 0
+    bottom 0
+
+    visibility hidden
+    z-index -1
+    opacity 0
+    trans()
+
+    img
+      height 100%
+      width auto
+      flex 0 0 auto
+    &.visible
+      visibility visible
+      z-index 1
+      opacity 1

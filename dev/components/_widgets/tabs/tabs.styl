@@ -2,9 +2,17 @@
   df(row)
   width 100%
   mb(16)
-
+  +mob()
+    flex-wrap wrap
+  +land()
+    justify-content space-between
   li
     width 100%
+    +mob()
+      mb(20)
+    +land()
+      flex 0 0 calc(50% - 10px)
+      max-width calc(50% - 10px)
     &:first-child
       a
         border-bottom-left-radius 13px
@@ -21,10 +29,11 @@
       color: $blue-dark;
       padding-top: r(18)
       padding-bottom: r(20)
-
-
       display block
       trans()
+      +mob()
+        border-right solid 2px $ocean6
+        border-radius 13px
       &:hover
         color: $blue-dark;
         bg($ocean7)
@@ -38,6 +47,10 @@
   animation: fadeEffect 1s;
   &__description
     pt(42)
+    h5
+      +xs()
+        display none
+
     ul
       display flex
       flex-wrap wrap
@@ -46,13 +59,19 @@
       li
         flex 0 0 40%
         max-width 40%
+        +port()
+          flex 0 0 49%
+          max-width 49%
+        +xs()
+          flex 0 0 100%
+          max-width 100%
 
 .tabs-content.active
   display block
 
 @keyframes fadeEffect
-  from 
+  from
     opacity: 0;
-  to 
+  to
     opacity: 1;
   

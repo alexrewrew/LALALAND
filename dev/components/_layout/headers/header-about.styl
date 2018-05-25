@@ -1,11 +1,31 @@
 header.header-about
   height: 358px;
+  +land()
+    height 300px
+  +xs()
+    height 402px
+    mb(0)
   &:after
     bg($yellow1)
+  .header-container
+    +mob()
+      height auto
+  .header-container__row
+    +mob()
+      min-height unset
   .header-description
     pt(50)
+    +mob()
+      pt(29)
+      pb(0)
+      .spacer-50
+        height 10px
     h1
       co($wt)
+      +mob()
+        mb(0)
     p
       mt(6)
       co($yellow-text)
+      +xs()
+        mt(0)

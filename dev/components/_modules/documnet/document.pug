@@ -1,17 +1,34 @@
-mixin documnet-link()
+mixin documnet-link(text)
     a(href='' title='').documents-list__link
         .documents-list__link_icon
             include ../../_svgs/pdf.svg
-        .documents-list__link_text
-            | Документ #1234567.  Дозвіл на використання  земельної ділянки.
+        .documents-list__link_text= text
+
+mixin document-img(img)
+    li.documents-list-image__li
+        img(src=img alt='' title='')
 
 
 mixin document()
     ul.documents-list
         li
-            +documnet-link()
-
-
-    ul.documnets-list-image
+            +documnet-link('Документ #1234567. Дозвіл на використання земельної ділянки')
         li
-            +img('')
+            +documnet-link('Документ #1234567. Дозвіл на використання земельної ділянки')
+        li
+            +documnet-link('Документ #1234567. Дозвіл на використання земельної ділянки')
+        li
+            +documnet-link('Документ #1234567. Дозвіл на використання земельної ділянки')
+        li
+            +documnet-link('Документ #1234567. Дозвіл на використання земельної ділянки')
+        li
+            +documnet-link('Документ #1234567. Дозвіл на використання земельної ділянки')
+
+
+    ul.documents-list-image
+        +document-img('img/illus/document/document1.png')
+        +document-img('img/illus/document/document1.png')
+        +document-img('img/illus/document/document1.png')
+        +document-img('img/illus/document/document1.png')
+        +document-img('img/illus/document/document1.png')
+        +document-img('img/illus/document/document1.png')

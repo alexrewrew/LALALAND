@@ -13,9 +13,15 @@
         selectChosen: $(".chosen-select"),
         selectSelect2: $('.select2-select'),
 
+        docLink : $('.documents-list__link'),
+        docImg : $('.documents-list-image__li'),
+
         sliderFull: $('.slider-full'),
 
         linkSmooth: $(".smooth"),
+
+        tabsList : $('.tabs'),
+        tabs : $('#tabs'),
 
         cameraTooltipClose: $('#close-tooltip'),
         cameraTooltip: $('.nav-widgets__camera__tooltip'),
@@ -63,10 +69,38 @@
         };
     })(jQuery);
 
-    $(window).on('load resize', function () {
-        IMGs.imgChange.rewImgChange();
+    // DOCS
+    const docsHover = function() {
+        const docArr = DOMs.docLink;
+        const docImgArr = DOMs.docImg;
 
-    });
+        for (let i = 0; i < docArr.length; i++) {
+            $(docArr[i]).hover(function () {
+                docImgArr.removeClass('visible');
+                $(docImgArr[i]).addClass('visible');
+            }, function() {
+                docImgArr.removeClass('visible');
+            });
+        }
+    }
+    const docsClick = function() {
+        const docArr = DOMs.docLink;
+        const docImgArr = DOMs.docImg;
+
+        for (let i = 0; i < docArr.length; i++) {
+            $(docArr[i]).click(function (e) {
+                e.preventDefault();
+                if ($(this).hasClass('active')) {
+                    docImgArr.removeClass('visible');
+                } else {
+                    $(this).addClass('active');
+                    docImgArr.removeClass('visible');
+                    $(docImgArr[i]).addClass('visible');
+                }
+            });
+        }
+    }
+
 
     $(document).ready(() => {
 
@@ -101,6 +135,9 @@
         DOMs.cookieClose.click(function () {
             DOMs.cookie.fadeOut('fast');
         });
+
+
+
 
 
         // ========== MENU ==========
@@ -143,15 +180,41 @@
         DOMs.sliderRepair.slick({
             prevArrow: DOMs.angleLeftWt,
             nextArrow: DOMs.angleRightWt,
-
-            dots: false
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 567,
+                    settings: {
+                        dots: true,
+                        arrows: false
+                    }
+                }
+            ]
         });
 
         // ========== ACCORDION ==========
         // $('#accordion').rewAccordion();
 
         // ========== TABS ==========
-        $('#tabs').rewTabs();
+        DOMs.tabs.rewTabs();
+
+        // DOMs.tabsList.slick({
+        //     // prevArrow: DOMs.angleLeft,
+        //     // nextArrow: DOMs.angleRight,
+        //     responsive: [
+        //         {
+        //             breakpoint: 40000,
+        //             settings: "unslick"
+        //         },
+        //         {
+        //             breakpoint: 568,
+        //             setting: {
+        //                 prevArrow: DOMs.angleLeft,
+        //                 nextArrow: DOMs.angleRight,
+        //             }
+        //         }
+        //     ]
+        // });
 
         // ========== DATEPICKER ==========
         // $(".datepicker").flatpickr();
@@ -194,13 +257,17 @@
 
 // ========== !!! RESPONSIVE SCRIPTS !!! ===========
 
-    // $(window).on('load resize', function () {
-    //     if (window.matchMedia("(max-width: 767px)").matches) {
-    //         imgChanging();
-    //     } else if (window.matchMedia("(min-width: 768px)").matches) {
-    //         imgChangingBack();
-    //     }
-    // });
+    $(window).on('load resize', function () {
+        IMGs.imgChange.rewImgChange();
+
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            docsClick();
+
+        } else if (window.matchMedia("(min-width: 768px)").matches) {
+            docsHover();
+
+        }
+    });
 
 })(jQuery);
 

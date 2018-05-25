@@ -1,7 +1,7 @@
 mixin tab(heading)
     article.tabs-content
         .row
-            .col-6
+            .col-md-6.order-md-1.order-2
                 .tabs-content__description
                     h5= heading
                     ul
@@ -12,7 +12,7 @@ mixin tab(heading)
                         li Повністю мебльоване помешкання
                         li Можливість швидкого заселення
                     +link-detail-big('Читати більше')
-            .col-6
+            .col-md-6
                 .slider.slider-repair
                     div
                         .slide-img
@@ -24,7 +24,7 @@ mixin tab(heading)
 mixin tab-active(heading)
     article.tabs-content.active
         .row
-            .col-6
+            .col-md-6.order-md-1.order-2
                 .tabs-content__description
                     h5= heading
                     ul
@@ -36,7 +36,7 @@ mixin tab-active(heading)
                         li Можливість швидкого заселення
 
                     +link-detail-big('Читати більше')
-            .col-6
+            .col-md-6
                 .slider.slider-repair
                     div
                         .slide-img

@@ -27,3 +27,17 @@ mixin header-about()
                         .spacer-50
                         +btn('Обрати планування')
                     +img('img/illus/back/bus-pipt-trees.svg', 'img-back img-back-bus-pipt-trees')
+
+mixin header-builder()
+    header.header-builder
+        .container.header-container
+            .row.header-container__row
+                .col-sm-5.offset-sm-1.col-md-5.offset-xl-1.col-xxl-6
+                    .header-description
+                        h1.color-white Забудовник
+                    +img('img/illus/back/builder.svg', 'img-back img-back-builder')
+
+                .col-sm-5
+                    .header-description
+                        +img('img/illus/fundament/fundament2.svg','img-fundament')
+                        p.color-green-dark Будівельна група компаній "Фундамент" одна з найбільших девелоперських компаній України. За цей час ми збудували кожну шосту квартиру в Києві. Будинки по всьому місту в житлових масивах Чоколівка, Відрадний, Шулявка, Нивки, Оболонь

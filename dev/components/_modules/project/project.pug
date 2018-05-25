@@ -1,0 +1,22 @@
+mixin project()
+    a(href='' title='').project
+        .row
+            .col-xl-6.col-lg-5
+                .project__image
+                    .project__image_co
+                        +img('img/illus/project/project1.png')
+                    .project__image_wt
+                        +img('img/illus/project/project2.png')
+            .col-xl-6.col-lg-7
+                h5 Welcome Home  на Стеценка
+                ul.project-statistics
+                    li.project-statistics__li
+                        .project-statistics__li_heading Збудовано
+                        .project-statistics__li_description 23 будинки
+                    li.project-statistics__li
+                        .project-statistics__li_heading Заселено
+                        .project-statistics__li_description 2 345 квартир
+
+                    li.project-statistics__li
+                        .project-statistics__li_heading Статус здачі
+                        .project-statistics__li_description в експлуатації 

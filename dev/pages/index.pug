@@ -35,7 +35,7 @@ block content
                 .col-7.col-sm-6.offset-md-1.col-lg-3.col-md-5
                     h2.color-white 25 хвилин  від центру
                 .col-12
-                    include ../components/_widgets/map/map
+                    +map()
 
         +img('img/illus/back/road.svg', 'img-back img-back-road')
         +img('img/illus/back/car.svg', 'img-back img-back-car')
@@ -44,30 +44,7 @@ block content
 
     section
         .container
-            .test-row
-                .test-row__description.img-change
-                    .test-row__image.img-change_place
-                        +img('img/illus/steps/step1.png', 'img-change_image')
-
-                    .test-row__text
-                        h2.img-change_heading Допоможемо обрати  вашу ідеальну квартиру
-                        .test-row__text__test
-                            p З якою метою ви шукаєте квартиру?
-                            +btn('Для себе')
-                            +btn('Для сім’ї')
-                            +btn('Для інвестицій')
-                            +btn('Для інвестицій')
-                .test-row__steps
-                    ul.test-steps
-                        li
-                            a(href='' title='').test-steps_link Етап 1
-                        li
-                            a(href='' title='').test-steps_link Етап 2
-                        li
-                            a(href='' title='').test-steps_link.active Етап 3
-
-
-
+            +test()
 
 
     +fundament-index()

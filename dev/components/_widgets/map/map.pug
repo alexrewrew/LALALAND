@@ -1,7 +1,16 @@
-.map
-    #map
-    include map-snazzy
-    .map-block
-        include map-list
 
-        +link-detail-big('Читати більше')
+mixin map()
+    .map
+        #map
+        include map-snazzy
+        .map-block
+            include map-list
+
+            +link-detail-big('Читати більше')
+
+mixin map-after()
+    .map.map-after
+        #map
+        include map-snazzy
+        .map-block
+            include map-list

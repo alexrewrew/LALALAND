@@ -1,0 +1,40 @@
+header.header-location
+  height: 358px;
+  mb(0)
+  +land()
+    height 300px
+  +xs()
+    height 402px
+    mb(0)
+  &:after
+    bg($green)
+  //.header-container
+  //  +mob()
+  //    height auto
+  //.header-container__row
+  //  +mob()
+  //    min-height unset
+  .header-description
+    pt(50)
+
+    //
+    +mob()
+      pt(29)
+      pb(0)
+      .spacer-50
+        height 10px
+    //
+
+    h1
+      co($green-lightest)
+
+      //
+      +mob()
+        mb(0)
+      //
+
+    p
+      mt(6)
+      co($wt)
+  //    +xs()
+  //      mt(0)

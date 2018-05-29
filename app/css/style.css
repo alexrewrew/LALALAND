@@ -202,6 +202,11 @@ h5 {
 	margin-bottom: 2rem;
 	color: #bbc4d7;
 }
+.h5-blue {
+	font-weight: 700;
+	margin-bottom: .25rem;
+	color: #61c8e0;
+}
 h6 {
 	font-size: 1.125em;
 	font-weight: 700;
@@ -230,14 +235,26 @@ hr {
 .color-white {
 	color: #fff;
 }
+.color-yellow {
+	color: #968200;
+}
 .text-center {
 	text-align: center;
 }
 .color-green-dark {
 	color: #0d683c;
 }
+.color-bltx3 {
+	color: #3d6c7d;
+}
 .text-18 {
 	font-size: 1.125em;
+	line-height: 1.56;
+	font-weight: 500;
+}
+.text-14 {
+	color: #bbc4d7;
+	font-size: .875em;
 	line-height: 1.56;
 	font-weight: 500;
 }
@@ -414,6 +431,13 @@ header.header-builder {
 	padding-top: 3.3125rem;
 	padding-bottom: 3.625rem;
 }
+@media (max-width: 567px) {
+	header.header-builder {
+		padding-top: 0rem;
+		padding-bottom: 7.25rem;
+		margin-bottom: 6.25rem;
+	}
+}
 header.header-builder:after {
 	background-color: #2dc689;
 }
@@ -426,6 +450,54 @@ header.header-builder .img-fundament {
 	header.header-builder .img-fundament {
 		margin-top: 1.25rem;
 	}
+}
+@media (max-width: 767px) {
+	header.header-builder .img-fundament {
+		margin-top: 0rem;
+		width: 100%;
+	}
+}
+header.header-location {
+	height: 358px;
+	margin-bottom: 0rem;
+}
+@media (min-width: 568px) and (max-width: 767px) {
+	header.header-location {
+		height: 300px;
+	}
+}
+@media (max-width: 567px) {
+	header.header-location {
+		height: 402px;
+		margin-bottom: 0rem;
+	}
+}
+header.header-location:after {
+	background-color: #2dc689;
+}
+header.header-location .header-description {
+	padding-top: 3.125rem;
+}
+@media (max-width: 767px) {
+	header.header-location .header-description {
+		padding-top: 1.8125rem;
+		padding-bottom: 0rem;
+	}
+	header.header-location .header-description .spacer-50 {
+		height: 10px;
+	}
+}
+header.header-location .header-description h1 {
+	color: #2dfc9d;
+}
+@media (max-width: 767px) {
+	header.header-location .header-description h1 {
+		margin-bottom: 0rem;
+	}
+}
+header.header-location .header-description p {
+	margin-top: .375rem;
+	color: #fff;
 }
 body.open .nav-panel {
 	-webkit-transform: none;
@@ -1533,8 +1605,40 @@ button:focus {
 	}
 }
 .img-back-builder {
-	left: -68px;
+	left: calc(-585px + 28px);
 	top: calc(100% - 145px);
+}
+@media (min-width: 568px) and (max-width: 767px) {
+	.img-back-builder {
+		left: calc(-320px + 28px);
+		max-width: 520px;
+		bottom: -195px;
+	}
+}
+@media (max-width: 567px) {
+	.img-back-builder {
+		left: -24px;
+		top: auto;
+		bottom: -195px;
+		max-width: 300px;
+	}
+}
+.img-back-trees-location {
+	left: calc(-585px - 83px);
+	top: 113px;
+}
+.img-back-tram {
+	top: -44px;
+	left: calc(50% - 570px);
+}
+.img-back-river2 {
+	top: 124px;
+	right: -6vw;
+	z-index: -1;
+}
+.img-back-garden {
+	top: 74px;
+	right: -6vw;
 }
 @media (max-width: 567px) {
 	.img-change_image {
@@ -1929,6 +2033,9 @@ select:focus {
 	-webkit-transform: rotate(180deg);
 	    -ms-transform: rotate(180deg);
 	        transform: rotate(180deg);
+}
+.map-after {
+	margin-bottom: 18.75rem;
 }
 .map {
 	width: 100%;
@@ -2616,6 +2723,11 @@ select:focus {
 	font-weight: bold;
 	color: #eb53c0;
 }
+@media (max-width: 567px) {
+	.pink-number {
+		margin-bottom: 5rem;
+	}
+}
 .documents-list {
 	padding: 1.4375rem 0 1.8125rem;
 }
@@ -3168,6 +3280,11 @@ select:focus {
 		margin-top: 8.1875rem;
 	}
 }
+.section-tram {
+	padding-top: 17.875rem;
+	padding-bottom: 7rem;
+	z-index: 600;
+}
 .section-security {
 	padding-bottom: 7.5625rem;
 }
@@ -3221,6 +3338,31 @@ select:focus {
 }
 .section-numbers {
 	padding-bottom: 8.625rem;
+}
+@media (max-width: 567px) {
+	.section-numbers {
+		text-align: center;
+	}
+}
+.section-location {
+	padding-bottom: 1.25rem;
+}
+.section-location:after {
+	top: 455px;
+	bottom: 90px;
+	background-color: #b4ebff;
+}
+.section-garden {
+	padding-top: 4.25rem;
+	padding-bottom: 0rem;
+}
+.section-garden:after {
+	background-color: #fd0;
+	top: 104px;
+	bottom: 29%;
+}
+.container-garden {
+	padding-bottom: 24.25rem;
 }
 .discount {
 	position: relative;
@@ -3310,6 +3452,11 @@ select:focus {
 		padding: .625rem 1.5625rem 1.25rem;
 	}
 }
+@media (max-width: 567px) {
+	.project {
+		padding: 0rem 2.1875rem 2.9375rem;
+	}
+}
 .project h5 {
 	color: #61c8e0;
 	margin-bottom: 1.4375rem;
@@ -3317,11 +3464,21 @@ select:focus {
 	     -o-transition: all .2s ease;
 	        transition: all .2s ease;
 }
+@media (max-width: 567px) {
+	.project h5 {
+		text-align: center;
+	}
+}
 .project__image {
 	position: relative;
 	height: 100%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
+	.project__image {
+		min-height: 200px;
+	}
+}
+@media (max-width: 567px) {
 	.project__image {
 		min-height: 200px;
 	}

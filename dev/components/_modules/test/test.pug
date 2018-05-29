@@ -1,0 +1,22 @@
+mixin test()
+            .test-row
+                .test-row__description.img-change
+                    .test-row__image.img-change_place
+                        +img('img/illus/steps/step1.png', 'img-change_image')
+
+                    .test-row__text
+                        h2.img-change_heading Допоможемо обрати  вашу ідеальну квартиру
+                        .test-row__text__test
+                            p З якою метою ви шукаєте квартиру?
+                            +btn('Для себе')
+                            +btn('Для сім’ї')
+                            +btn('Для інвестицій')
+                            +btn('Для інвестицій')
+                .test-row__steps
+                    ul.test-steps
+                        li
+                            a(href='' title='').test-steps_link Етап 1
+                        li
+                            a(href='' title='').test-steps_link Етап 2
+                        li
+                            a(href='' title='').test-steps_link.active Етап 3

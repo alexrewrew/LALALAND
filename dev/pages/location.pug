@@ -1,0 +1,67 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | LALALAND - Розташування
+
+block content
+
+    +breadcrumbs-section('Розташування')
+
+    +header-location()
+
+
+    section.section-tram
+
+        +img('img/illus/back/tram.svg', 'img-back img-back-tram')
+
+        .container
+            .row
+
+                .offset-1.col-4
+                    h5.h5-blue 15 хвилин
+                    p.text-14 на громадському транспорті до  м. Сирець та Академмістечко
+
+                .offset-3.col-4
+                    h5.h5-blue 20 хвилин
+                    p.text-14 власним автомобілем до центра  Києва
+
+    section.section-back.section-location
+        .container
+            .row
+                .col-7.col-sm-6.offset-md-1.col-lg-4.col-md-5
+                    h2 Коли все  необхідне поряд
+                .col-12
+                    +map-after()
+
+
+        .container
+            .row.img-change
+                .col-sm-6.col-md-5.img-change_place
+                    +img('img/illus/pic/pic5.png', 'img-responsive img-change_image')
+                .col-sm-6.offset-lg-1.col-lg-5.col-md-6.section-back__text
+                    h2.color-white.img-change_heading Активне  соціальне життя
+                    p.color-bltx3 У пішої доступності знаходиться ТРЦ Lavina mall. Його площа становить 170 тис. квадратних метрів. У ньому розмістилися торгові ряди, ресторани, супермаркети та салони краси, парк розваг, кінотеатр. Тут же, по сусідству, знаходяться гіпермаркети  «Ашан» і «Епіцентр».
+
+
+
+        +img('img/illus/back/river2.svg', 'img-back img-back-river2')
+
+
+
+    section.section-back.section-garden
+        +img('img/illus/back/garden.svg', 'img-back img-back-garden')
+
+        .container.container-garden
+            .row
+                .col-3
+                    h2 Здоровий  відпочинок
+                .offset-6.col-4
+                    p.color-yellow Зовсім поряд —справжнісінький сосновий ліс.  Від ЖК LaLaLand - 10 хвилин до Міжнародної тенісної академії  (парк Пуща-Водиця).  На території Академії 19 тенісних кортів, 25-метровий басейн  на чотири доріжки, фітнес-клуб з професійними тренерами.
+
+
+        .container
+            +test()
+
+    +section-manager()
+

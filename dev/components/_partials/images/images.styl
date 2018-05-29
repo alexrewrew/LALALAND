@@ -154,8 +154,34 @@
     right 20px
 
 .img-back-builder
-  left -68px
-  top: calc(100% - 145px);
+  left calc(-585px + 28px)
+  top: calc(100% - 145px)
+  +land()
+    left calc(-320px + 28px)
+    max-width 520px
+    bottom -195px
+  +xs()
+    left -24px
+    top auto
+    bottom -195px
+    max-width 300px
+
+.img-back-trees-location
+  left: calc(-585px - 83px);
+  top: 113px;
+
+.img-back-tram
+  top -44px
+  left: calc(50% - 570px)
+
+.img-back-river2
+  top: 124px;
+  right: -6vw;
+  z-index -1
+
+.img-back-garden
+  top 74px
+  right -6vw
 
 
 .img-change_image

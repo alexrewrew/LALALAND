@@ -17,15 +17,20 @@ $visible
   mb(30)
   +port()
     padding r(10) r(25) r(20)
-
+  +xs()
+    padding r(0) r(35) r(47)
   h5
     co($ocean2)
     mb(23)
     trans()
+    +xs()
+      text-align center
   &__image
     position relative
     height 100%
     +port()
+      min-height 200px
+    +xs()
       min-height 200px
   &__image_co, &__image_wt
     display flex
@@ -39,6 +44,7 @@ $visible
     trans()
     +tab()
       pl(15)
+
     img
       max-width 100%
 

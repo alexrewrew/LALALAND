@@ -169,19 +169,53 @@
 .img-back-trees-location
   left: calc(-585px - 83px);
   top: 113px;
+  +tab()
+    top 160px
+  +xs()
+    max-width 320px
+    left 0
+    top auto
+    bottom -130px
 
 .img-back-tram
   top -44px
   left: calc(50% - 570px)
+  +tab()
+    left: calc(50% - 500px)
+  +port()
+    left: calc(50% - 500px)
+  +xs()
+    max-width 700px
+    left calc(50% - 350px)
+    top 150px
 
 .img-back-river2
   top: 124px;
   right: -6vw;
   z-index -1
+  +tab()
+    right -30vw
+  +port()
+    right -70vw
+  +xs()
+    top: 49px;
+    right: -105vw;
 
 .img-back-garden
   top 74px
   right -6vw
+  +tab()
+    right -30vw
+  +port()
+    right -70vw
+  +land()
+    right -75vw
+    max-width 200vw
+  +xs()
+    max-width 950px
+    right -165vw
+
+
 
 
 .img-change_image

@@ -58,3 +58,45 @@ mixin header-builder()
                         +img('img/illus/fundament/fundament2.svg','img-fundament')
                         p.color-green-dark Будівельна група компаній "Фундамент" одна з найбільших девелоперських компаній України. За цей час ми збудували кожну шосту квартиру в Києві. Будинки по всьому місту в житлових масивах Чоколівка, Відрадний, Шулявка, Нивки, Оболонь
                     +img('img/illus/back/builder.svg', 'img-back img-back-builder')
+
+
+mixin header-online()
+    header.header-online
+        .container.header-container
+            .row.header-container__row
+                .col-sm-5.offset-sm-1.col-md-6.offset-xl-1.col-xl-5
+                    .header-description
+                        h1.h1-small.color-white Онлайн-трансляція  з будівництва
+                        +img('img/illus/back/coub3.svg', 'img-back img-back-coub3')
+
+
+                .col-sm-6.col-md-4.col-xl-5
+                    .header-description
+                        p.color-yellow Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста .
+
+
+
+
+mixin header-planning()
+    header.header-planning
+        .container.header-container
+            .row.header-container__row
+                .col-sm-5.offset-sm-1.col-md-5.offset-xl-1.col-xl-6
+                    .header-description
+                        h1.color-white Забудовник
+
+                .col-sm-5
+                    .header-description
+                        +img('img/illus/fundament/fundament2.svg','img-fundament')
+                        p.color-green-dark Будівельна група компаній "Фундамент" одна з найбільших девелоперських компаній України. За цей час ми збудували кожну шосту квартиру в Києві. Будинки по всьому місту в житлових масивах Чоколівка, Відрадний, Шулявка, Нивки, Оболонь
+                    +img('img/illus/back/builder.svg', 'img-back img-back-builder')
+
+
+
+mixin header-contacts()
+    header.header-contacts
+        .container.header-container
+            .row.header-container__row
+                .offset-lg-1.col-10
+                    .header-description
+                        h1 Контакти

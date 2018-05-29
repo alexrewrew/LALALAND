@@ -1,0 +1,49 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | LALALAND - Контакти
+
+block content
+
+    +breadcrumbs-section('Контакти')
+
+    +header-contacts()
+
+    section.section-contacts
+        +map-contacts()
+
+        .container.container-contacts
+            .row
+                .offset-lg-1.col-xl-5.col-lg-6.col-md-8
+                    .map-contacts__block
+                        ul.map-contacts__list
+                            li.map-contacts__list__li
+                                .map-contacts__list__li_icon
+                                    include ../components/_svgs/map.svg
+                                .map-contacts__list__li_name Відділ  продажу
+
+                                .map-contacts__list__li_link
+                                    a(href='' title='') Україна, м. Київ,  просп. Відрадний, 103
+                            li.map-contacts__list__li
+                                .map-contacts__list__li_icon
+                                    include ../components/_svgs/phone2.svg
+                                .map-contacts__list__li_name Телефон
+                                .map-contacts__list__li_link
+                                    a(href='' title='') +38 (044) 299 48 52
+                                    a(href='' title='')  +38 (044) 299 48 52
+                            li.map-contacts__list__li
+                                .map-contacts__list__li_icon
+                                    include ../components/_svgs/mail.svg
+                                .map-contacts__list__li_name E-mail
+                                .map-contacts__list__li_link
+                                    a(href='' title='')  info@lalaland.kiev.ua
+                        +btn('замовити консультацію')
+
+
+    +section-manager()
+
+
+
+
+

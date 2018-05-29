@@ -1,0 +1,52 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | LALALAND - Забудовник
+
+block content
+
+    +breadcrumbs-section('Забудовник')
+
+    +header-planning()
+
+
+
+    section.section-numbers
+        .container
+            .row
+
+                .col-sm-6.offset-md-4.col-md-4.offset-xl-6.offset-lg-4.col-xl-3
+                    p.text-18 Загальна площа  побудованого житла
+                    +pink-number('1,5 млн')
+                .col-sm-6.col-md-4.col-xl-3
+                    p.text-18 Кількість сімей, що живуть  в наших квартирах
+                    +pink-number('24 654')
+
+
+
+    section.section-back.section-projects
+        .container
+            .row
+                .col-12
+                    h2.text-center.color-white Наші проекти
+
+                .col-md-6
+                    +project()
+
+                .col-md-6
+                    +project()
+
+                .col-md-6
+                    +project()
+
+                .col-md-6
+                    +project()
+                .col-12
+                    .spacer-70
+                    +btn-center('На сайт забудовника')
+
+
+
+
+

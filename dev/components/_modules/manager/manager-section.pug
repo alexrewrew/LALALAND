@@ -1,3 +1,30 @@
+mixin manager-form()
+    form.form-manager
+        .input-group
+            input(type='text' placeholder='Номер телефону').input-group_input
+            .input-group_error У номері недостатньо цифр!
+            .input-group_line
+            .input-group_icon
+                include ../../_svgs/form-phone.svg
+        .input-group
+            input(type='text' placeholder='Номер телефону').input-group_input.error
+            .input-group_error У номері недостатньо цифр!
+            .input-group_line
+            .input-group_icon
+                include ../../_svgs/form-phone.svg
+        .input-group.select-group
+            select.chosen-select(data-placeholder='Зручний час для дзвінка')
+                option
+                option Найближчим часом
+                option з 9:00 до 12:00
+                option з 12:00 до 15:00
+            .input-group_error У номері недостатньо цифр!
+            .input-group_line
+            .input-group_icon
+                include ../../_svgs/form-phone.svg
+        +btn-submit('Замовити')
+
+
 mixin section-manager()
 
     section.section-manager
@@ -10,30 +37,7 @@ mixin section-manager()
                     .col-sm-8.col-md-12.col-lg-6.col-md-10
                         include manager-slider
                     .col-sm-8.col-md-12.col-lg-6
-                        form.form-manager
-                            .input-group
-                                input(type='text' placeholder='Номер телефону').input-group_input
-                                .input-group_error У номері недостатньо цифр!
-                                .input-group_line
-                                .input-group_icon
-                                    include ../../_svgs/form-phone.svg
-                            .input-group
-                                input(type='text' placeholder='Номер телефону').input-group_input.error
-                                .input-group_error У номері недостатньо цифр!
-                                .input-group_line
-                                .input-group_icon
-                                    include ../../_svgs/form-phone.svg
-                            .input-group.select-group
-                                select.chosen-select(data-placeholder='Зручний час для дзвінка')
-                                    option
-                                    option Найближчим часом
-                                    option з 9:00 до 12:00
-                                    option з 12:00 до 15:00
-                                .input-group_error У номері недостатньо цифр!
-                                .input-group_line
-                                .input-group_icon
-                                    include ../../_svgs/form-phone.svg
-                            +btn-submit('Замовити')
+                        +manager-form()
                 .row.manager-block-row-success.hidden
                     .offset-lg-2.col-lg-4
                         .form-manager__image

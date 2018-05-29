@@ -1,0 +1,27 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | LALALAND - Форма
+
+block content
+
+    +breadcrumbs-section('Форма')
+
+
+    section.section-form
+        .container
+            .row
+                .col-6
+                    h1 Ваша мрія  вже зовсім поряд!
+                    p.color-blue.text-20 Заповніть форму і наш менеджер  
+                        br
+                        | з Вами зв’яжеться
+                    .spacer-50
+                    +manager-form()
+                .col-6
+                    +img('img/illus/pic/pic-flat.svg', 'img-flat')
+
+
+
+

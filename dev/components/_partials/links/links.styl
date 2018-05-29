@@ -45,6 +45,39 @@ a
       +mob()
         bottom -11px
 
+.link-video
+  position relative
+  display block
+  &_img
+    width 100%
+  &__play
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    display flex
+    align-items center
+    justify-content center
+    z-index 10
+    img
+      +xs()
+        width 15px
+
+    &:after
+      ba()
+      bg(#191919)
+      opacity .33
+      left 0
+      right 0
+      top 0
+      bottom 0
+      z-index -1
+      trans()
+  &:hover
+    .link-video__play
+      &:after
+        bg(#ababab)
 
 
 

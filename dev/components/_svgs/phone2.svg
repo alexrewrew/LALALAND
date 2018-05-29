@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="27px" viewBox="0 0 11 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Контакти" transform="translate(-402.000000, -453.000000)">
+            <g id="Group-3" transform="translate(397.000000, 380.000000)">
+                <g id="Phone" transform="translate(5.000000, 73.000000)">
+                    <path d="M6.2986985,0 C-1.40269848,6.68524044 -1.40269848,20.0557213 6.2986985,26.7409617 L10.7010402,23.6026464 L8.13390786,18.97646 C7.62582959,17.9603035 4.77446368,18.5314865 4.77446368,18.5314865 C3.2234879,15.9643542 3.2234879,10.8300895 4.77446368,8.23621622 C4.77446368,8.23621622 7.62582959,8.61721043 8.13390786,7.60105388 L10.7010402,2.9748675 L6.2986985,0 Z" fill="#BBC4D7" fill-rule="nonzero"></path>
+                    <rect id="Rectangle" x="10.7010402" y="0" width="4.43409494" height="27"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

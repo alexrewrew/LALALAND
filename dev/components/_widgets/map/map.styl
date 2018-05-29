@@ -102,3 +102,53 @@
   +xs()
     mb(414)
 
+.map-contacts
+
+  #map
+    width 100%
+    height 376px
+    +mob()
+      height 136px
+  &__block
+    bg($wt)
+    padding r(65) r(68) 0 r(68)
+    +xs()
+      padding r(26) 0
+    .btn
+      mc()
+      max-width 263px
+      position relative
+      bottom -22px
+      +xs()
+        display none
+
+
+.map-contacts__list
+  &__li
+    display flex
+    mb(27)
+    &_icon
+      flex 0 0 28px
+      max-width 28px
+      display flex
+      justify-content center
+      mr(24)
+    &_name
+      co($gray-text1)
+      fw(700)
+      width 100%
+    &_link
+      flex 0 0 144px
+      max-width 144px
+      a
+        font-size: e(14)
+        font-weight: 300;
+        line-height: 1.71;
+        color: $gray-text2
+        text-decoration underline
+        text-decoration-color $pink
+        width 100%
+        &:hover
+          co($pink)
+          text-decoration-color $tr
+

@@ -1,0 +1,28 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | LALALAND - Онлайн-трансляція  з будівництва
+
+block content
+
+    +breadcrumbs-section('Онлайн-трансляція з будівництва')
+
+    +header-online()
+
+    section.section-online
+        .container
+            .row.justify-content-center
+                .col-11.col-md-10
+                    a(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").link-video
+                        +img('img/illus/pic/pic-video.png', 'link-video_img')
+                        .link-video__play
+                            +img('img/icons/play.svg')
+
+
+    +section-manager()
+
+
+
+
+

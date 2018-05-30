@@ -1,0 +1,24 @@
+include ../../utilities/pug/utilities.pug
+
+doctype html
+
+html
+
+    include ../../components/_layout/head/head
+
+    body
+        //include ../../components/_layout/preloader/preloader
+
+        include ../../components/_layout/navigation/navigation
+
+        main
+
+            block content
+
+            include ../../components/_layout/footer/footer
+
+            //+cookie()
+
+        script(type="text/javascript" src="js/vendor.js")
+        script(type="text/javascript" src="js/noui.js")
+        script(type="text/javascript" src="js/scripts.js")

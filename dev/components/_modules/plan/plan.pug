@@ -1,0 +1,65 @@
+mixin plan()
+   .plan
+        .plan_star
+            include ../../_svgs/star.svg
+        .plan_percent %
+        +plan-description()
+
+mixin plan-discount()
+    .plan.plan-discount
+        .plan_star
+            include ../../_svgs/star.svg
+        .plan_percent %
+        +plan-description()
+
+mixin plan-address()
+    .plan.plan-address
+        .plan_star
+            include ../../_svgs/star.svg
+        .plan_percent %
+        +plan-description()
+        .plan-address__block Ви не обрали будинок та поверх
+
+mixin plan-discount-address()
+    .plan.plan-discount.plan-address
+        .plan_star
+            include ../../_svgs/star.svg
+        .plan_percent %
+        +plan-description()
+        .plan-address__block Ви не обрали будинок та поверх
+
+mixin plan-address-choosed()
+    .plan.plan-address.plan-address-choosed
+        .plan_star
+            include ../../_svgs/star.svg
+        .plan_percent %
+        +plan-description()
+        .plan-address__block Берковецька, 1, кв. 365 (11 поверх)
+
+mixin plan-discount-address-choosed()
+    .plan.plan-discount.plan-address.plan-address-choosed
+        .plan_star
+            include ../../_svgs/star.svg
+        .plan_percent %
+        +plan-description()
+        .plan-address__block Берковецька, 1, кв. 365 (11 поверх)
+
+
+mixin plan-description()
+    a(href='' title='').plan__link
+        .plan__image
+            +img('img/illus/planning/plan1.png')
+        .plan__description
+            h5 1-кімнатна, 1Л
+            ul.project-statistics
+                li.project-statistics__li
+                    .project-statistics__li_heading Загальна
+                    .project-statistics__li_description 35,91  м²
+                li.project-statistics__li
+                    .project-statistics__li_heading Житлова
+                    .project-statistics__li_description 17,01  м²
+
+                li.project-statistics__li
+                    .project-statistics__li_heading Балкон
+                    .project-statistics__li_description 4,52  м²
+        .btn Переглянути

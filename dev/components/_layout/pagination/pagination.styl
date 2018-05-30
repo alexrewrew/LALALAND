@@ -1,21 +1,25 @@
 .pagination
   df(row)
   justify-content center
-  margin 0 auto
+  align-items center
+  margin r(68) auto
   li
     margin 0 r(15)
     a
       display inline-block
-      co($bk)
-      fs(18)
+      co(#064778)
+      fs(14)
+      fw(500)
       &:hover
-        co(lightblue)
+        co($pink)
     .arrow
       df(row)
       justify-content center
       align-items center
       height 100%
     .active
-      co(blue)
       cursor default
       pointer-events: none;
+      fs(23)
+      &:hover
+        co(#064778)

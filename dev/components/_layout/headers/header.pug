@@ -80,16 +80,46 @@ mixin header-online()
 mixin header-planning()
     header.header-planning
         .container.header-container
-            .row.header-container__row
-                .col-sm-5.offset-sm-1.col-md-5.offset-xl-1.col-xl-6
-                    .header-description
-                        h1.color-white Забудовник
+            form.row.header-container__row
+                .col-sm-6.col-md-12.col-lg-3.col-xl-4
+                        h1.h1-small Вибір планування
 
-                .col-sm-5
-                    .header-description
-                        +img('img/illus/fundament/fundament2.svg','img-fundament')
-                        p.color-green-dark Будівельна група компаній "Фундамент" одна з найбільших девелоперських компаній України. За цей час ми збудували кожну шосту квартиру в Києві. Будинки по всьому місту в житлових масивах Чоколівка, Відрадний, Шулявка, Нивки, Оболонь
-                    +img('img/illus/back/builder.svg', 'img-back img-back-builder')
+                .col-sm-6.col-md-4.col-lg-3
+                    p.text-14.color-gray-text2 Кількість кімнат
+                    ul.tabs-flat
+                        li
+                            +a('Будь-яка', 'tabs-flat_link')
+                        li
+                            +a('1', 'tabs-flat_link')
+                        li
+                            +a('2', 'tabs-flat_link')
+                .col-sm-6.col-md-4.col-lg-3.col-xl-2
+                    p.text-14.color-gray-text2 Площа житла
+                    .range-slider
+                        .range-slider__block
+                            span Від
+                            input(type='number')#nouislider-input0
+                            span м
+                                sup 2
+                        .range-slider__block
+                            span до
+                            input(type='number')#nouislider-input1
+                            span м
+                                sup 2
+
+                        .nouislider
+                            #nouislider
+                .col-sm-6.col-md-4.col-lg-3
+                    +btn-filter()
+
+
+mixin header-choosed()
+    header.header-planning
+        .container.header-container
+            .row.header-container__row
+                .col-12
+                        h1.h1-small Вибране
+
 
 
 
@@ -99,4 +129,4 @@ mixin header-contacts()
             .row.header-container__row
                 .offset-lg-1.col-10
                     .header-description
-                        h1 Контакти
+                        h1.h1-small Контакти

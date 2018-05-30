@@ -1,0 +1,22 @@
+.tabs-flat
+  df(row)
+  justify-content space-between
+  +mob()
+    mb(30)
+  li
+    max-width 79px
+    width 100%
+  &_link
+    text-align center
+    display block
+    border 1px solid $pink
+    bg($wt)
+    co($pink)
+    border-radius: 13px
+    fs(12)
+    padding r(5) 0 r(6)
+    &:hover
+      bg(#ffddf6)
+    &.active
+      bg($pink)
+      co($wt)

@@ -28,7 +28,7 @@
     <meta name="twitter:description" content="">
     <!--link(rel='canonical' href='')-->
     <!-- title-->
-    <title>LALALAND - Забудовник
+    <title>LALALAND - Вибір планування
     </title>
     <!-- favicon-->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
@@ -150,7 +150,7 @@
             <div class="col-12">
               <ul class="breadcrumbs">
                 <li><a href="" title="">Головна</a></li>
-                <li><a href="" title="">Забудовник</a></li>
+                <li><a href="" title="">Вибір планування</a></li>
               </ul>
             </div>
           </div>
@@ -158,158 +158,711 @@
       </section>
       <header class="header-planning">
         <div class="container header-container">
-          <div class="row header-container__row">
-            <div class="col-sm-5 offset-sm-1 col-md-5 offset-xl-1 col-xl-6">
-              <div class="header-description">
-                <h1 class="color-white">Забудовник</h1>
+          <form class="row header-container__row">
+            <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
+              <h1 class="h1-small">Вибір планування</h1>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <p class="text-14 color-gray-text2">Кількість кімнат</p>
+              <ul class="tabs-flat">
+                <li><a class="tabs-flat_link" href="" title="">Будь-яка</a>
+                </li>
+                <li><a class="tabs-flat_link" href="" title="">1</a>
+                </li>
+                <li><a class="tabs-flat_link" href="" title="">2</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <p class="text-14 color-gray-text2">Площа житла</p>
+              <div class="range-slider">
+                <div class="range-slider__block"><span>Від</span>
+                  <input type="number" id="nouislider-input0"/><span>м<sup>2</sup></span>
+                </div>
+                <div class="range-slider__block"><span>до</span>
+                  <input type="number" id="nouislider-input1"/><span>м<sup>2</sup></span>
+                </div>
+                <div class="nouislider">
+                  <div id="nouislider"></div>
+                </div>
               </div>
             </div>
-            <div class="col-sm-5">
-              <div class="header-description"><img class="img-fundament" src="img/illus/fundament/fundament2.svg" title="" alt=""/>
-                <p class="color-green-dark">Будівельна група компаній "Фундамент" одна з найбільших девелоперських компаній України. За цей час ми збудували кожну шосту квартиру в Києві. Будинки по всьому місту в житлових масивах Чоколівка, Відрадний, Шулявка, Нивки, Оболонь</p>
-              </div><img class="img-back img-back-builder" src="img/illus/back/builder.svg" title="" alt=""/>
+            <div class="col-sm-6 col-md-4 col-lg-3"><a class="btn btn-filter" href="" title="">
+                <div class="btn-filter_empty">Обрати квартиру  на генплані</div>
+                <div class="btn-filter_choosed">Оновити  фільтр</div><img class="btn-filter_img-empty btn-filter_img" src="img/illus/button/button-arrow.svg" title="" alt=""/><img class="btn-filter_img-choosed btn-filter_img" src="img/illus/button/button-circle.svg" title="" alt=""/></a>
             </div>
-          </div>
+          </form>
         </div>
       </header>
-      <section class="section-numbers">
+      <section class="section-planning section-back">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6 offset-md-4 col-md-4 offset-xl-6 offset-lg-4 col-xl-3">
-              <p class="text-18">Загальна площа  побудованого житла</p>
-              <div class="pink-number">1,5 млн</div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-xl-3">
-              <p class="text-18">Кількість сімей, що живуть  в наших квартирах</p>
-              <div class="pink-number">24 654</div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan plan-discount">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan plan-discount">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan plan-discount">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan plan-discount">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="section-back section-projects">
-        <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2 class="text-center color-white">Наші проекти</h2>
-            </div>
-            <div class="col-md-6"><a class="project" href="" title="">
-                <div class="row">
-                  <div class="col-sm-5 col-md-12 col-xl-6 col-lg-5">
-                    <div class="project__image">
-                      <div class="project__image_co"><img src="img/illus/project/project1.png" title="" alt=""/>
-                      </div>
-                      <div class="project__image_wt"><img src="img/illus/project/project2.png" title="" alt=""/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-7 col-md-12 col-xl-6 col-lg-7">
-                    <h5>Welcome Home  на Стеценка</h5>
-                    <ul class="project-statistics">
-                      <li class="project-statistics__li">
-                        <div class="project-statistics__li_heading">Збудовано</div>
-                        <div class="project-statistics__li_description">23 будинки</div>
-                      </li>
-                      <li class="project-statistics__li">
-                        <div class="project-statistics__li_heading">Заселено</div>
-                        <div class="project-statistics__li_description">2 345 квартир</div>
-                      </li>
-                      <li class="project-statistics__li">
-                        <div class="project-statistics__li_heading">Статус здачі</div>
-                        <div class="project-statistics__li_description">в експлуатації </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div></a>
-            </div>
-            <div class="col-md-6"><a class="project" href="" title="">
-                <div class="row">
-                  <div class="col-sm-5 col-md-12 col-xl-6 col-lg-5">
-                    <div class="project__image">
-                      <div class="project__image_co"><img src="img/illus/project/project1.png" title="" alt=""/>
-                      </div>
-                      <div class="project__image_wt"><img src="img/illus/project/project2.png" title="" alt=""/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-7 col-md-12 col-xl-6 col-lg-7">
-                    <h5>Welcome Home  на Стеценка</h5>
-                    <ul class="project-statistics">
-                      <li class="project-statistics__li">
-                        <div class="project-statistics__li_heading">Збудовано</div>
-                        <div class="project-statistics__li_description">23 будинки</div>
-                      </li>
-                      <li class="project-statistics__li">
-                        <div class="project-statistics__li_heading">Заселено</div>
-                        <div class="project-statistics__li_description">2 345 квартир</div>
-                      </li>
-                      <li class="project-statistics__li">
-                        <div class="project-statistics__li_heading">Статус здачі</div>
-                        <div class="project-statistics__li_description">в експлуатації </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div></a>
-            </div>
-            <div class="col-md-6"><a class="project" href="" title="">
-                <div class="row">
-                  <div class="col-sm-5 col-md-12 col-xl-6 col-lg-5">
-                    <div class="project__image">
-                      <div class="project__image_co"><img src="img/illus/project/project1.png" title="" alt=""/>
-                      </div>
-                      <div class="project__image_wt"><img src="img/illus/project/project2.png" title="" alt=""/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-7 col-md-12 col-xl-6 col-lg-7">
-                    <h5>Welcome Home  на Стеценка</h5>
-                    <ul class="project-statistics">
-                      <li class="project-statistics__li">
-                        <div class="project-statistics__li_heading">Збудовано</div>
-                        <div class="project-statistics__li_description">23 будинки</div>
-                      </li>
-                      <li class="project-statistics__li">
-                        <div class="project-statistics__li_heading">Заселено</div>
-                        <div class="project-statistics__li_description">2 345 квартир</div>
-                      </li>
-                      <li class="project-statistics__li">
-                        <div class="project-statistics__li_heading">Статус здачі</div>
-                        <div class="project-statistics__li_description">в експлуатації </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div></a>
-            </div>
-            <div class="col-md-6"><a class="project" href="" title="">
-                <div class="row">
-                  <div class="col-sm-5 col-md-12 col-xl-6 col-lg-5">
-                    <div class="project__image">
-                      <div class="project__image_co"><img src="img/illus/project/project1.png" title="" alt=""/>
-                      </div>
-                      <div class="project__image_wt"><img src="img/illus/project/project2.png" title="" alt=""/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-7 col-md-12 col-xl-6 col-lg-7">
-                    <h5>Welcome Home  на Стеценка</h5>
-                    <ul class="project-statistics">
-                      <li class="project-statistics__li">
-                        <div class="project-statistics__li_heading">Збудовано</div>
-                        <div class="project-statistics__li_description">23 будинки</div>
-                      </li>
-                      <li class="project-statistics__li">
-                        <div class="project-statistics__li_heading">Заселено</div>
-                        <div class="project-statistics__li_description">2 345 квартир</div>
-                      </li>
-                      <li class="project-statistics__li">
-                        <div class="project-statistics__li_heading">Статус здачі</div>
-                        <div class="project-statistics__li_description">в експлуатації </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div></a>
-            </div>
-            <div class="col-12">
-              <div class="spacer-70"></div><a class="btn btn-center" href="" title="">На сайт забудовника</a>
+              <ul class="pagination">
+                <li class="arrow left"><a href="" title=""><?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="26px" viewBox="0 0 16 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Планування_фільтр_після" transform="translate(-717.000000, -1882.000000)" fill="#EB53C0" fill-rule="nonzero">
+            <g id="Group-15" transform="translate(717.000000, 1881.000000)">
+                <path d="M15.7071068,24.2529471 L13.0191823,26.9408716 L0.292893219,14.2145825 L0.44800159,14.0594741 L0.407709756,14.0191823 L13.1339988,1.29289322 L15.6981222,3.8570166 L5.50464925,14.0504896 L15.7071068,24.2529471 Z" id="Combined-Shape-Copy"></path>
+            </g>
+        </g>
+    </g>
+</svg></a></li>
+                <li><a href="" title="">1</a></li>
+                <li><a class="active" href="" title="">2</a></li>
+                <li><a href="" title="">3</a></li>
+                <li class="arrow right"><a href="" title=""><?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="26px" viewBox="0 0 16 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Планування_фільтр_після" transform="translate(-867.000000, -1882.000000)" fill="#EB53C0" fill-rule="nonzero">
+            <g id="Group-15" transform="translate(717.000000, 1881.000000)">
+                <path d="M165.707107,14.2145825 L152.980818,26.9408716 L150.292893,24.2529471 L160.495351,14.0504896 L150.301878,3.8570166 L152.866001,1.29289322 L165.59229,14.0191823 L165.551998,14.0594741 L165.707107,14.2145825 Z" id="Combined-Shape-Copy-2"></path>
+            </g>
+        </g>
+    </g>
+</svg></a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -431,7 +984,7 @@
       <!--+cookie()-->
     </main>
     <script type="text/javascript" src="js/vendor.js"></script>
-    <!--script(type="text/javascript" src="js/noui.js")-->
+    <script type="text/javascript" src="js/noui.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>

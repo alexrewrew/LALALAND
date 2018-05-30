@@ -1,0 +1,50 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | LALALAND - Вибір планування
+
+
+block content
+
+    +breadcrumbs-section('Вибір планування')
+
+    +header-choosed()
+
+    section.section-planning.section-planning-choosed.section-back
+
+        .container
+            .row
+                .col-sm-6.col-lg-4.col-xl-3
+                    +plan-address-choosed()
+                .col-sm-6.col-lg-4.col-xl-3
+                    +plan-discount-address-choosed()
+                .col-sm-6.col-lg-4.col-xl-3
+                    +plan-address()
+                .col-sm-6.col-lg-4.col-xl-3
+                    +plan-address()
+
+
+            .row
+                .col-12
+                    .spacer-70
+                    h2.text-center.color-yellow Ви також переглядали
+
+            .row.slider-planning
+                .col-sm-6.col-lg-4.col-xl-3
+                    +plan()
+                .col-sm-6.col-lg-4.col-xl-3
+                    +plan-discount()
+                .col-sm-6.col-lg-4.col-xl-3
+                    +plan()
+                .col-sm-6.col-lg-4.col-xl-3
+                    +plan()
+
+
+    +section-manager()
+
+
+
+
+
+

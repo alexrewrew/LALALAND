@@ -1,0 +1,77 @@
+.plan
+  background-color: $wt
+  box-shadow: 0 2px 25px 0 rgba(78, 78, 78, 0.2)
+  mb(30)
+  position relative
+
+  &_star
+    position absolute
+    right 0
+    top 0
+    padding r(10)
+    svg g
+      fill #bbc4d7
+      transition .1s all ease
+    &:hover, &.active
+      svg g
+        fill #ffdd00
+  &_percent
+    display none
+    position absolute
+    top 0
+    right 45px
+    co($wt)
+    bg(#ffdd00)
+    width 30px
+    height 35px
+    justify-content center
+    align-items center
+  &__link
+    display block
+    padding r(32) r(50) r(36)
+    +xs()
+      pb(100)
+    .btn
+      display none
+      position absolute
+      bottom 30px
+      left 25px
+      right 25px
+      width auto
+      +xs()
+        display block
+  &__image
+    text-align center
+    mb(22)
+    img
+      height 160px
+  &__description
+    h5
+      co(#61c8e0)
+      text-align center
+      mb(16)
+    .project-statistics
+      padding-left r(15)
+      fs(14)
+      li
+        mb(2)
+
+  &.plan-discount
+    .plan_percent
+      display flex
+
+  &.plan-address
+    max-height unset
+    .plan__link .btn
+      +xs()
+        bottom 90px
+    .plan-address__block
+      bg(#ebf7ff)
+      font-size: e(12)
+      font-weight: 500;
+      color: #3d6c7d;
+      text-align center
+      padding r(23) r(15) r(25)
+    &.plan-address-choosed
+      .plan-address__block
+        bg(#b4ebff)

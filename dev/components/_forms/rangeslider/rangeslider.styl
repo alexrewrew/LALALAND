@@ -2,41 +2,70 @@
   display flex
   flex-wrap wrap
   justify-content space-between
-  input
-    flex 1 1 25%
-    max-width 25%
+  +mob()
+    mb(30)
+  +xs()
+    padding 0 r(15)
+  &__block
+    flex 1 1 50%
+    max-width 50%
+    input
+      display inline-block
+      width auto
+      padding 0
+      max-width 26px
+      border-bottom: solid 1px #bbc4d7;
+      text-align right
+      mr(2)
+      co(#bbc4d7)
+      fs(12)
+
+    span
+      fs(14)
+      co(#bbc4d7)
+      display inline-block
+
+
+
+
   .nouislider
     flex 1 1 100%
     max-width 100%
+    pt(16)
+    pb(16)
 
   .noUi-target
     border 0
     border-radius 0
     box-shadow none
-    bg($gr2)
+    bg(#e6e6ef)
 
   .noUi-horizontal
-    height 10px
+    height 2px
     .noUi-handle
-      box-shadow none
       border none
-      bg(blue)
-      border-radius 0
+      bg(#eb53c0)
+      border-radius 50%
+      box-shadow: 0 0 7px 0 #ff85dc;
+      width: 15px;
+      height: 15px;
+      +mob()
+        width: 22px;
+        height: 22px;
+        top -10px
       &:focus
         outline none
       &:before, &:after
         display none
 
   .noUi-base
-    width calc(100% - 30px)
-    margin 0 r(15)
-
+    width calc(100% - 20px)
+    //margin 0 r(15)
   .noUi-connect
-    bg(lightblue)
+    left: 4px;
+    right -4px
+    bg(#eb53c0)
     border 0
     border-radius 0
     box-shadow none
 
-  .noUi-horizontal .noUi-handle
-    width: 34px;
-    height: 22px;

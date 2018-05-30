@@ -1,8 +1,20 @@
 mixin btn(text)
     a(href='' title='').btn= text
 
+mixin btn-wt(text)
+    a(href='' title='').btn.btn-white= text
+
 mixin btn-submit(text)
     button(type='submit').btn= text
 
 mixin btn-center(text)
     a(href='' title='').btn.btn-center= text
+
+mixin btn-filter()
+    a(href='' title='').btn.btn-filter
+        .btn-filter_empty
+            | Обрати квартиру  на генплані
+        .btn-filter_choosed
+            | Оновити  фільтр
+        +img('img/illus/button/button-arrow.svg', 'btn-filter_img-empty btn-filter_img')
+        +img('img/illus/button/button-circle.svg', 'btn-filter_img-choosed btn-filter_img')

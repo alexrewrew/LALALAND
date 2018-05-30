@@ -28,7 +28,7 @@
     <meta name="twitter:description" content="">
     <!--link(rel='canonical' href='')-->
     <!-- title-->
-    <title>LALALAND - Контакти
+    <title>LALALAND - Вибір планування
     </title>
     <!-- favicon-->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
@@ -150,443 +150,370 @@
             <div class="col-12">
               <ul class="breadcrumbs">
                 <li><a href="" title="">Головна</a></li>
-                <li><a href="" title="">Контакти</a></li>
+                <li><a href="" title="">Вибір планування</a></li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-      <header class="header-contacts">
+      <header class="header-planning">
         <div class="container header-container">
           <div class="row header-container__row">
-            <div class="offset-lg-1 col-10">
-              <div class="header-description">
-                <h1 class="h1-small">Контакти</h1>
-              </div>
+            <div class="col-12">
+              <h1 class="h1-small">Вибране</h1>
             </div>
           </div>
         </div>
       </header>
-      <section class="section-contacts">
-        <div class="map-contacts">
-          <div id="map"></div>
-          <script type="text/javascript">
-            function init() {
-                var mapOptions = {
-                    zoom: 15,
-                    center: new google.maps.LatLng(50.4393844, 30.5012227),
-                    // styles:
-                    //     [
-                    //         {
-                    //             "featureType": "all",
-                    //             "elementType": "labels.text.fill",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#000000"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "all",
-                    //             "elementType": "labels.text.stroke",
-                    //             "stylers": [
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 },
-                    //                 {
-                    //                     "color": "#ffffff"
-                    //                 },
-                    //                 {
-                    //                     "weight": "4"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "all",
-                    //             "elementType": "labels.icon",
-                    //             "stylers": [
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 },
-                    //                 {
-                    //                     "saturation": "-100"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "administrative",
-                    //             "elementType": "geometry.fill",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#ffffff"
-                    //                 },
-                    //                 {
-                    //                     "lightness": 20
-                    //                 },
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "administrative",
-                    //             "elementType": "geometry.stroke",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#000000"
-                    //                 },
-                    //                 {
-                    //                     "lightness": 17
-                    //                 },
-                    //                 {
-                    //                     "weight": 1.2
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "administrative.locality",
-                    //             "elementType": "all",
-                    //             "stylers": [
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "administrative.neighborhood",
-                    //             "elementType": "all",
-                    //             "stylers": [
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "administrative.land_parcel",
-                    //             "elementType": "all",
-                    //             "stylers": [
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 },
-                    //                 {
-                    //                     "lightness": "80"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "landscape",
-                    //             "elementType": "all",
-                    //             "stylers": [
-                    //                 {
-                    //                     "visibility": "simplified"
-                    //                 },
-                    //                 {
-                    //                     "color": "#797979"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "landscape",
-                    //             "elementType": "geometry",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#ffffff"
-                    //                 },
-                    //                 {
-                    //                     "lightness": 20
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "landscape.man_made",
-                    //             "elementType": "all",
-                    //             "stylers": [
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "landscape.natural.landcover",
-                    //             "elementType": "all",
-                    //             "stylers": [
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "landscape.natural.terrain",
-                    //             "elementType": "all",
-                    //             "stylers": [
-                    //                 {
-                    //                     "visibility": "off"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "poi",
-                    //             "elementType": "geometry",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#dfdfdf"
-                    //                 },
-                    //                 {
-                    //                     "lightness": 21
-                    //                 },
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "road.highway",
-                    //             "elementType": "geometry.fill",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#fed41c"
-                    //                 },
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 },
-                    //                 {
-                    //                     "weight": "3.00"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "road.highway",
-                    //             "elementType": "geometry.stroke",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#fed41c"
-                    //                 },
-                    //                 {
-                    //                     "gamma": "0.6"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "road.highway.controlled_access",
-                    //             "elementType": "geometry",
-                    //             "stylers": [
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 },
-                    //                 {
-                    //                     "color": "#fed41c"
-                    //                 },
-                    //                 {
-                    //                     "weight": "4.00"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "road.highway.controlled_access",
-                    //             "elementType": "geometry.stroke",
-                    //             "stylers": [
-                    //                 {
-                    //                     "weight": "1"
-                    //                 },
-                    //                 {
-                    //                     "gamma": "0.6"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "road.arterial",
-                    //             "elementType": "geometry",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#aeaeae"
-                    //                 },
-                    //                 {
-                    //                     "lightness": 18
-                    //                 },
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "road.arterial",
-                    //             "elementType": "geometry.stroke",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#b6b6b6"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "road.local",
-                    //             "elementType": "all",
-                    //             "stylers": [
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 },
-                    //                 {
-                    //                     "color": "#656565"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "road.local",
-                    //             "elementType": "geometry",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#c6c6c6"
-                    //                 },
-                    //                 {
-                    //                     "lightness": 16
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "road.local",
-                    //             "elementType": "geometry.stroke",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#b1b1b1"
-                    //                 },
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "road.local",
-                    //             "elementType": "labels.text.stroke",
-                    //             "stylers": [
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 },
-                    //                 {
-                    //                     "color": "#ffffff"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "transit",
-                    //             "elementType": "geometry",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#bdbdbd"
-                    //                 },
-                    //                 {
-                    //                     "lightness": 19
-                    //                 },
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 }
-                    //             ]
-                    //         },
-                    //         {
-                    //             "featureType": "water",
-                    //             "elementType": "geometry",
-                    //             "stylers": [
-                    //                 {
-                    //                     "color": "#c0d8e3"
-                    //                 },
-                    //                 {
-                    //                     "lightness": 17
-                    //                 },
-                    //                 {
-                    //                     "visibility": "on"
-                    //                 }
-                    //             ]
-                    //         }
-                    //     ],
-                    scrollwheel: false,
-                    navigationControl: false,
-                    scaleControl: false,
-                    draggable: false
-                };
-                var mapElement = document.getElementById('map');
-                var map = new google.maps.Map(mapElement, mapOptions);
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(50.4393913, 30.5030251),
-                    map: map,
-                    title: 'Project',
-                    animation: google.maps.Animation.DROP,
-                    // icon: 'https://volta.one/img/icons/marker.png'
-                });
-            }
-          </script>
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCghHhOudfnxm7aSYdRnLaR_Wk3-IBQox8&amp;callback=init" async="" defer=""></script>
-        </div>
-        <div class="container container-contacts">
+      <section class="section-planning section-planning-choosed section-back">
+        <div class="container">
           <div class="row">
-            <div class="offset-lg-1 col-xl-5 col-lg-6 col-md-8">
-              <div class="map-contacts__block">
-                <ul class="map-contacts__list">
-                  <li class="map-contacts__list__li">
-                    <div class="map-contacts__list__li_icon"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="19px" height="25px" viewBox="0 0 19 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>Location</title>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan plan-address plan-address-choosed">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Контакти" transform="translate(-398.000000, -388.000000)">
-            <g id="Group-3" transform="translate(397.000000, 380.000000)">
-                <g id="Location" transform="translate(1.000000, 8.000000)">
-                    <path d="M9.02444026,0 C5.74615137,0.000166966621 2.72576286,1.77804844 1.13449018,4.6442357 C-0.456782502,7.51042295 -0.368658935,11.0141129 1.36468922,13.7966805 L9.02444026,25 L16.6841913,13.7966805 C18.4175395,11.0141129 18.505663,7.51042295 16.9143903,4.6442357 C15.3231177,1.77804844 12.3027292,0.000166966621 9.02444026,0 Z M9.02444026,12.3443983 C7.19112989,12.3443983 5.70493818,10.8582066 5.70493818,9.02489627 C5.70493818,7.19158589 7.19112989,5.70539419 9.02444026,5.70539419 C10.8577506,5.70539419 12.3439423,7.19158589 12.3439423,9.02489627 C12.3439423,9.90528295 11.9942101,10.7496113 11.3716827,11.3721387 C10.7491553,11.9946661 9.90482695,12.3443983 9.02444026,12.3443983 Z" id="Shape" fill="#BBC4D7" fill-rule="nonzero"></path>
-                    <rect id="Rectangle-2" x="17" y="0" width="3" height="27"></rect>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
                 </g>
             </g>
         </g>
     </g>
 </svg>
-                    </div>
-                    <div class="map-contacts__list__li_name">Відділ  продажу</div>
-                    <div class="map-contacts__list__li_link"><a href="" title="">Україна, м. Київ,  просп. Відрадний, 103</a></div>
-                  </li>
-                  <li class="map-contacts__list__li">
-                    <div class="map-contacts__list__li_icon"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="11px" height="27px" viewBox="0 0 11 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>Phone</title>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+                <div class="plan-address__block">Берковецька, 1, кв. 365 (11 поверх)</div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan plan-discount plan-address plan-address-choosed">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Контакти" transform="translate(-402.000000, -453.000000)">
-            <g id="Group-3" transform="translate(397.000000, 380.000000)">
-                <g id="Phone" transform="translate(5.000000, 73.000000)">
-                    <path d="M6.2986985,0 C-1.40269848,6.68524044 -1.40269848,20.0557213 6.2986985,26.7409617 L10.7010402,23.6026464 L8.13390786,18.97646 C7.62582959,17.9603035 4.77446368,18.5314865 4.77446368,18.5314865 C3.2234879,15.9643542 3.2234879,10.8300895 4.77446368,8.23621622 C4.77446368,8.23621622 7.62582959,8.61721043 8.13390786,7.60105388 L10.7010402,2.9748675 L6.2986985,0 Z" fill="#BBC4D7" fill-rule="nonzero"></path>
-                    <rect id="Rectangle" x="10.7010402" y="0" width="4.43409494" height="27"></rect>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
                 </g>
             </g>
         </g>
     </g>
 </svg>
-                    </div>
-                    <div class="map-contacts__list__li_name">Телефон</div>
-                    <div class="map-contacts__list__li_link"><a href="" title="">+38 (044) 299 48 52</a><a href="" title=""> +38 (044) 299 48 52</a></div>
-                  </li>
-                  <li class="map-contacts__list__li">
-                    <div class="map-contacts__list__li_icon"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="21px" height="15px" viewBox="0 0 21 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+                <div class="plan-address__block">Берковецька, 1, кв. 365 (11 поверх)</div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan plan-address">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Контакти" transform="translate(-397.000000, -532.000000)" fill="#BBC4D7" fill-rule="nonzero">
-            <g id="Group-3" transform="translate(397.000000, 380.000000)">
-                <g id="Group" transform="translate(0.000000, 152.000000)">
-                    <g id="Shape">
-                        <path d="M21,1.15384615 L21,15 L0,15 L0,1.15384615 L10.5,8.07692308 L21,1.15384615 Z M0,0 L21,0 L10.4812499,6.92307692 L0,0 Z"></path>
-                    </g>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
                 </g>
             </g>
         </g>
     </g>
 </svg>
-                    </div>
-                    <div class="map-contacts__list__li_name">E-mail</div>
-                    <div class="map-contacts__list__li_link"><a href="" title=""> info@lalaland.kiev.ua</a></div>
-                  </li>
-                </ul><a class="btn" href="" title="">замовити консультацію</a>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+                <div class="plan-address__block">Ви не обрали будинок та поверх</div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan plan-address">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+                <div class="plan-address__block">Ви не обрали будинок та поверх</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="spacer-70"></div>
+              <h2 class="text-center color-yellow">Ви також переглядали</h2>
+            </div>
+          </div>
+          <div class="row slider-planning">
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan plan-discount">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <div class="plan">
+                <div class="plan_star"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1060.000000, -47.000000)" fill="#FFDD00" fill-rule="nonzero">
+            <g id="Group-27">
+                <g id="Вибране" transform="translate(1060.000000, 47.000000)">
+                    <path d="M20.1657542,24.3413512 L12.5001386,21.0363603 L4.83452313,24.3413512 L5.60981924,16.0293783 L0.0973418823,9.76073763 L8.24155579,7.92953037 L12.5001386,0.75 L16.7584442,7.92980765 L24.9026581,9.76101492 L19.3901808,16.0296555 L20.1657542,24.3413512 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="plan_percent">%</div><a class="plan__link" href="" title="">
+                  <div class="plan__image"><img src="img/illus/planning/plan1.png" title="" alt=""/>
+                  </div>
+                  <div class="plan__description">
+                    <h5>1-кімнатна, 1Л</h5>
+                    <ul class="project-statistics">
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Загальна</div>
+                        <div class="project-statistics__li_description">35,91  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Житлова</div>
+                        <div class="project-statistics__li_description">17,01  м²</div>
+                      </li>
+                      <li class="project-statistics__li">
+                        <div class="project-statistics__li_heading">Балкон</div>
+                        <div class="project-statistics__li_description">4,52  м²</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn">Переглянути</div></a>
               </div>
             </div>
           </div>

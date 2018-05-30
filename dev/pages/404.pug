@@ -1,0 +1,24 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | LALALAND - 404
+
+block content
+
+
+
+    section.section-404.section-back
+        .container
+            .row
+                .col-sm-8.col-lg-6.order-2.order-sm-1
+                    h1.h1-small.color-white Перепрошуємо,  сторінку не знайдено
+                    p.color-pink-light.text-20 Але на решті сторінок все на місці :)
+                    .spacer-50
+                    +btn-wt('На головну')
+                .col-sm-4.col-lg-6.order-sm-2
+                    +img('img/illus/pic/pic-404.svg', 'img-flat img-change_image')
+
+
+
+

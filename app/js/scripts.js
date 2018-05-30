@@ -58,6 +58,8 @@
 
         sliderRepair: $('.slider-repair'),
 
+        sliderPlanning: $('.slider-planning'),
+
         cookieClose: $('#close-cookie'),
         cookie: $('.cookie'),
 
@@ -165,8 +167,34 @@
             FORMs.formOrderSuccess.removeClass('hidden');
         });
 
-        // FORM ANIMATION 2
+        // PLANNING
+        var PLANs = {
+            planningLink: $('.tabs-flat_link'),
+            planningBtn: $('.header-planning .btn-filter'),
+            planningSection: $('.section-planning'),
+            planStar: $('.plan_star')
+        };
 
+        PLANs.planningLink.click(function (e) {
+            e.preventDefault();
+            PLANs.planningLink.removeClass('active');
+            $(this).addClass('active');
+            PLANs.planningBtn.addClass('choosed');
+            PLANs.planningSection.addClass('section-planning-change');
+        });
+
+        PLANs.planningBtn.click(function (e) {
+            e.preventDefault();
+            if ($(this).hasClass('choosed')) {
+                $(this).removeClass('choosed');
+                PLANs.planningLink.removeClass('active');
+                PLANs.planningSection.removeClass('section-planning-change');
+            }
+        });
+
+        PLANs.planStar.click(function () {
+            $(this).toggleClass('active');
+        });
 
         // CAMERA
         DOMs.cameraTooltipClose.click(function () {
@@ -209,11 +237,30 @@
             nextArrow: DOMs.angleRight,
             dots: false
         });
+
+        DOMs.sliderPlanning.slick({
+            arrows: false,
+            dots: false,
+            variableWidth: true,
+            responsive: [{
+                breakpoint: 40000,
+                settings: "unslick"
+            }, {
+                breakpoint: 567,
+                setting: {
+                    arrows: false,
+                    dots: false,
+                    variableWidth: true
+                }
+            }]
+        });
+
         DOMs.sliderManager.slick({
             prevArrow: DOMs.angleLeft,
             nextArrow: DOMs.angleRight,
             dots: false
         });
+
         DOMs.sliderRepair.slick({
             prevArrow: DOMs.angleLeftWt,
             nextArrow: DOMs.angleRightWt,

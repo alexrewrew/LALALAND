@@ -135,12 +135,16 @@
 
     $(document).ready(function () {
 
-        // FORM ANIMATION
+        // FORM ANIMATION 1
         var FORMs = {
-            formManagerBtn: $('.form-manager button'),
-            formManagerBtnBack: $('.form-manager_back'),
+            formManagerBtn: $('.form-order-manager button'),
+            formManagerBtnBack: $('.form-order-manager_back'),
             formManagerForm: $('.manager-block-row-form'),
-            formManagerSuccess: $('.manager-block-row-success')
+            formManagerSuccess: $('.manager-block-row-success'),
+
+            formOrderBtn: $('.form-order button'),
+            formOrderForm: $('.form-main__form'),
+            formOrderSuccess: $('.form-main__success')
         };
 
         FORMs.formManagerBtn.click(function (e) {
@@ -154,6 +158,15 @@
             FORMs.formManagerForm.removeClass('hidden');
             FORMs.formManagerSuccess.addClass('hidden');
         });
+
+        FORMs.formOrderBtn.click(function (e) {
+            e.preventDefault();
+            FORMs.formOrderForm.addClass('hidden');
+            FORMs.formOrderSuccess.removeClass('hidden');
+        });
+
+        // FORM ANIMATION 2
+
 
         // CAMERA
         DOMs.cameraTooltipClose.click(function () {

@@ -6,9 +6,20 @@
     mb(43)
   &:after
     ba()
-    left: calc(50% - (585px / 2))
+    left: calc(50% + 255px)
     bg(#b4ebff)
     bottom 0
     height 300vh
     width 300vh
     z-index -1
+
+.form-main
+  position relative
+  &__success
+    position absolute
+    top 0
+    left 0
+  &__success, &__form
+    trans()
+    &.hidden
+      @extends $invisible

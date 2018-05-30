@@ -11,16 +11,26 @@ block content
 
     section.section-form
         .container
-            .row
-                .col-6
-                    h1 Ваша мрія  вже зовсім поряд!
-                    p.color-blue.text-20 Заповніть форму і наш менеджер  
-                        br
-                        | з Вами зв’яжеться
-                    .spacer-50
-                    +manager-form()
-                .col-6
-                    +img('img/illus/pic/pic-flat.svg', 'img-flat')
+            .row.img-change
+                .col-sm-8.col-lg-6
+                    .form-main
+                        .form-main__form
+                            h1.img-change_heading Ваша мрія  вже зовсім поряд!
+                            p.color-blue.text-20 Заповніть форму і наш менеджер  
+                                br
+                                | з Вами зв’яжеться
+                            .spacer-50
+                            +manager-form()
+
+                        .form-main__success.hidden
+                            h1 Вітаємо з успішним вибором!
+                            p.color-blue.text-20 Наш менеджер зателефонує
+                                br
+                                |  у зручний для вас час
+                            .spacer-50
+                            +btn('На головну')
+                .col-sm-4.col-lg-6.img-change_place
+                    +img('img/illus/pic/pic-flat.svg', 'img-flat img-change_image')
 
 
 

@@ -1,3 +1,13 @@
+.form-main__success.hidden, .form-main__form.hidden, .project__image_wt, .project:hover .project__image_co {
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+.project:hover .project__image_wt {
+	opacity: 1;
+	visibility: visible;
+	z-index: 1;
+}
 @font-face {
 	font-family: 'Ubuntu';
 	src: url('../fonts/Ubuntu/Ubuntu-Regular.eot');
@@ -1459,6 +1469,13 @@ button:focus {
 .img-flat {
 	position: relative;
 	left: -100px;
+}
+@media (max-width: 567px) {
+	.img-flat {
+		margin-bottom: 1.25rem;
+		left: -50px;
+		max-width: 100%;
+	}
 }
 .img-back {
 	position: absolute;
@@ -3739,12 +3756,25 @@ select:focus {
 	content: '';
 	display: block;
 	position: absolute;
-	left: calc(50% - (585px / 2));
+	left: calc(50% + 255px);
 	background-color: #b4ebff;
 	bottom: 0;
 	height: 300vh;
 	width: 300vh;
 	z-index: -1;
+}
+.form-main {
+	position: relative;
+}
+.form-main__success {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.form-main__success, .form-main__form {
+	-webkit-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 .discount {
 	position: relative;
@@ -3810,16 +3840,6 @@ select:focus {
 }
 .discount__image img {
 	max-width: 100%;
-}
-.project__image_wt, .project:hover .project__image_co {
-	opacity: 0;
-	visibility: hidden;
-	z-index: -1;
-}
-.project:hover .project__image_wt {
-	opacity: 1;
-	visibility: visible;
-	z-index: 1;
 }
 .project {
 	display: block;

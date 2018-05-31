@@ -53,12 +53,11 @@
         cameraTooltip: $('.nav-widgets__camera__tooltip'),
 
         sliderDiscount: $('.slider-discount'),
-
         sliderManager: $('.slider-manager'),
-
         sliderRepair: $('.slider-repair'),
-
         sliderPlanning: $('.slider-planning'),
+        sliderBlog: $('.slider-blog'),
+        sliderDiscountBig: $('.slider-discount-big'),
 
         cookieClose: $('#close-cookie'),
         cookie: $('.cookie'),
@@ -259,6 +258,38 @@
             prevArrow: DOMs.angleLeft,
             nextArrow: DOMs.angleRight,
             dots: false
+        });
+
+        DOMs.sliderBlog.slick({
+            prevArrow: DOMs.angleLeft,
+            nextArrow: DOMs.angleRight,
+            dots: false,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    variableWidth: true,
+                    arrows: false
+                }
+            }]
+        });
+
+        DOMs.sliderDiscountBig.slick({
+            prevArrow: DOMs.angleLeft,
+            nextArrow: DOMs.angleRight,
+            dots: true,
+            slidesToShow: 2,
+            responsive: [{
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 1
+                }
+            }, {
+                breakpoint: 767,
+                settings: {
+                    variableWidth: true,
+                    arrows: false
+                }
+            }]
         });
 
         DOMs.sliderRepair.slick({

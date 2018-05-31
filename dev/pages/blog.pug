@@ -1,0 +1,69 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | LALALAND - Новини
+
+
+block content
+
+    +breadcrumbs-section('Новини')
+
+    +header-news()
+
+    section.section-back.section-blog
+        .container
+            .row.justify-content-center
+                .col-12
+                    .slider.slider-blog
+                        .slide
+                            +blog-slide()
+                        .slide
+                            +blog-slide()
+
+                .col-md-10
+                    h2.text-center Актуальні акції
+                    .slider.slider-discount-big
+                        div
+                            +discount-blue('img/illus/discount/discount1.svg', 'Акція!', 'Отримай знижку на місце для парковки до 25 березня')
+                        div
+                            +discount-blue('img/illus/discount/discount1.svg', 'Акція!', 'Отримай знижку на місце для парковки до 25 березня')
+                        div
+                            +discount-blue('img/illus/discount/discount1.svg', 'Акція!', 'Отримай знижку на місце для парковки до 25 березня')
+                        div
+                            +discount-blue('img/illus/discount/discount1.svg', 'Акція!', 'Отримай знижку на місце для парковки до 25 березня')
+                .col-12
+                    h2.text-center Останні оновлення
+                    ul.blog-tabs
+                        li
+                            +a('Всі', 'blog-tabs_link active')
+                        li
+                            +a('Фотозвіти', 'blog-tabs_link')
+                        li
+                            +a('Новини', 'blog-tabs_link')
+            .row
+                .col-lg-4.col-sm-6
+                    +blog()
+                .col-lg-4.col-sm-6
+                    +blog()
+                .col-lg-4.col-sm-6
+                    +blog()
+                .col-lg-4.col-sm-6
+                    +blog()
+                .col-lg-4.col-sm-6
+                    +blog()
+                .col-lg-4.col-sm-6
+                    +blog()
+
+
+
+
+
+
+
+
+
+
+
+
+

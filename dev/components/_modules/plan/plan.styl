@@ -3,7 +3,7 @@
   box-shadow: 0 2px 25px 0 rgba(78, 78, 78, 0.2)
   mb(30)
   position relative
-
+  trans()
   &_star
     position absolute
     right 0
@@ -29,49 +29,109 @@
   &__link
     display block
     padding r(32) r(50) r(36)
-    +xs()
-      pb(100)
+    +mob()
+      pb(110)
     .btn
-      display none
       position absolute
       bottom 30px
       left 25px
       right 25px
       width auto
-      +xs()
-        display block
+      bg($wt)
+      co(#064778)
+      opacity 0
+      visibility hidden
+      z-index -1
+      +mob()
+        opacity 1
+        visibility visible
+        z-index 1
+        bg(#EB53C0)
+        co($wt)
   &__image
-    text-align center
     mb(22)
+    text-align center
     img
       height 160px
+      margin 0 auto
+    &_wt
+      display none !important
   &__description
     h5
       co(#61c8e0)
       text-align center
       mb(16)
+      trans()
     .project-statistics
       padding-left r(15)
       fs(14)
+      trans()
       li
         mb(2)
+  +mmin(768px)
+    &:hover
+      bg(#eb53c0)
+      .plan__link .btn
+        opacity 1
+        visibility visible
+        z-index 1
+      .project-statistics
+        opacity 0
+        visibility hidden
+        z-index -1
+      h5
+        co(#841566)
+      .plan__image_co
+        display none !important
+      .plan__image_wt
+        display block !important
 
-  &.plan-discount
-    .plan_percent
-      display flex
+&.plan-discount
+  .plan_percent
+    display flex
 
-  &.plan-address
-    max-height unset
-    .plan__link .btn
-      +xs()
-        bottom 90px
+&.plan-address
+  max-height unset
+  overflow hidden
+  .plan__link
+    +mob()
+      pb(105)
+  .plan-address__block
+    bg(#ebf7ff)
+    font-size: e(12)
+    font-weight: 500;
+    color: #3d6c7d;
+    text-align center
+    padding r(23) r(15) r(25)
+    position: relative;
+    trans()
+    +mob()
+      transform translateY(-80px)
+    &:after
+      ba()
+      top 100%
+      left 0
+      right 0
+      bg(#b40f86)
+      height 80px
+      trans()
+      opacity 0
+      +mob()
+        opacity 1
+        bg(#ebf7ff)
+
+  &.plan-address-choosed
     .plan-address__block
-      bg(#ebf7ff)
-      font-size: e(12)
-      font-weight: 500;
-      color: #3d6c7d;
-      text-align center
-      padding r(23) r(15) r(25)
-    &.plan-address-choosed
-      .plan-address__block
+      bg(#b4ebff)
+      &:after
         bg(#b4ebff)
+
+  &:hover
+    +mmin(768px)
+      .plan-address__block
+        transform translateY(-80px)
+        bg(#b40f86)
+        co($wt)
+        &:after
+          opacity 1
+          bg(#b40f86)

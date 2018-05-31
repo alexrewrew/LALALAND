@@ -1,0 +1,91 @@
+.blog-tabs
+  display flex
+  margin 0 auto r(60)
+  justify-content center
+  li
+    margin 0 r(13)
+  &_link
+    border: solid 1px #064778;
+    border-radius: 20px;
+    width 166px
+    height 40px
+    color: #064778;
+    display flex
+    align-items center
+    justify-content center
+    pb(3)
+    +mob()
+      width 80px
+      height 26px
+      fs(12)
+    &:hover
+      bg(#61c8e0)
+      co(#064778)
+    &.active
+      bg(#064778)
+      co($wt)
+
+
+.blog
+  background-color: #ffffff;
+  box-shadow: 0 0 25px 0 rgba(78, 78, 78, 0.15)
+  mb(30)
+  display block
+  +mob()
+    mb(70)
+  &__image
+    position relative
+    height 200px
+    overflow hidden
+    display flex
+    align-items center
+    justify-content center
+    img
+      height 100%
+      width auto
+      trans()
+      flex  0 0 auto
+    &_photo
+      position absolute
+      right 0
+      top 0
+      co(#968200)
+      background-color: #ffdd00;
+      width: 100px;
+      height: 40px;
+      display flex
+      align-items center
+      justify-content center
+      pb(3)
+  &__description
+    padding r(25) r(30) r(48)
+    position relative
+    +mob()
+      padding r(20) r(25) r(43)
+    h3
+      font-size: e(20)
+      line-height: 1.3;
+      color: #61c8e0;
+      mb(10)
+    p
+      fs(14)
+      mb(37)
+    &_date
+      font-size: e(14)
+      font-weight: 500;
+      line-height: 1.71;
+      color: #bbc4d7;
+    .link-detail
+      position absolute
+      right 30px
+      bottom 50px
+      +mob()
+        bottom 43px
+        right 0
+
+  &:hover
+    .blog__image img
+      opacity .45
+
+
+

@@ -12,6 +12,34 @@ mixin plan-discount()
         .plan_percent %
         +plan-description()
 
+mixin plan-description()
+    .plan__link
+        .plan__image
+            +img('img/illus/planning/plan1.png', 'plan__image_co')
+            +img('img/illus/planning/plan2.png', 'plan__image_wt')
+        .plan__description
+            h5 1-кімнатна, 1Л
+            ul.project-statistics
+                li.project-statistics__li
+                    .project-statistics__li_heading Загальна
+                    .project-statistics__li_description 35,91  м²
+                li.project-statistics__li
+                    .project-statistics__li_heading Житлова
+                    .project-statistics__li_description 17,01  м²
+
+                li.project-statistics__li
+                    .project-statistics__li_heading Балкон
+                    .project-statistics__li_description 4,52  м²
+        +btn('Переглянути')
+
+
+
+
+
+
+
+
+
 mixin plan-address()
     .plan.plan-address
         .plan_star
@@ -45,21 +73,3 @@ mixin plan-discount-address-choosed()
         .plan-address__block Берковецька, 1, кв. 365 (11 поверх)
 
 
-mixin plan-description()
-    a(href='' title='').plan__link
-        .plan__image
-            +img('img/illus/planning/plan1.png')
-        .plan__description
-            h5 1-кімнатна, 1Л
-            ul.project-statistics
-                li.project-statistics__li
-                    .project-statistics__li_heading Загальна
-                    .project-statistics__li_description 35,91  м²
-                li.project-statistics__li
-                    .project-statistics__li_heading Житлова
-                    .project-statistics__li_description 17,01  м²
-
-                li.project-statistics__li
-                    .project-statistics__li_heading Балкон
-                    .project-statistics__li_description 4,52  м²
-        .btn Переглянути

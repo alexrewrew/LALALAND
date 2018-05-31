@@ -6,3 +6,13 @@ mixin discount(img, heading, text)
             h3= heading
             p= text
             +link-detail('Детальніше')
+
+
+mixin discount-blue(img, heading, text)
+    .discount.discount-blue
+        .discount__image
+            +img(img)
+        .discount__description
+            h3= heading
+            p= text
+            +link-detail('Детальніше')

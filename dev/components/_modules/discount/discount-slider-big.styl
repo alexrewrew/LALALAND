@@ -1,0 +1,25 @@
+.slider-discount-big
+  mb(55)
+  +land()
+    margin 0 -30px r(55)
+  +xs()
+    margin 0 -15px r(55)
+  .discount
+    margin 10px 15px 20px
+    +mob()
+      max-width 266px
+  .arrow
+    width 45px
+    height 45px
+    bottom: calc(50% - 23px);
+    &.right
+      right: -75px
+    &.left
+      right auto
+      left -75px
+    svg
+      height 42px
+      width 100%
+      g, path
+        fill #accade
+        stroke #accade

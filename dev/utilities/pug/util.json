@@ -1,0 +1,44 @@
+{
+  "pages": {
+    "index": {
+      "title": "Головна",
+      "href": "index.html"
+    },
+    "about": {
+      "title": "Про комплекс",
+      "href": "about.html"
+    },
+    "builder": {
+      "title": "Забудовник",
+      "href": "builder.html"
+    },
+    "location": {
+      "title": "Розташування",
+      "href": "location.html"
+    },
+    "contacts": {
+      "title": "Контакти",
+      "href": "contacts.html"
+    },
+    "online": {
+      "title": "Онлайн-трансляція",
+      "href": "online.html"
+    },
+    "form": {
+      "title": "Форма",
+      "href": "form.html"
+    },
+    "planning": {
+      "title": "Планування",
+      "href": "planning.html"
+    },
+    "chosen": {
+      "title": "Вибране",
+      "href": "chosen.html"
+    },
+    "404": {
+      "title": "Сторінка не знайдена",
+      "href": "404.html"
+    }
+  }
+}

@@ -2,6 +2,9 @@ html
   font-size $base-font-pixels
 
 html, body
+  display: flex
+  min-height: 100vh
+  flex-direction: column
   overflow-x hidden
 
 body
@@ -12,6 +15,9 @@ body
   pt(115)
   +mob()
     pt(76)
+
+main
+  flex: 1 0 auto
 
 .spacer-20
   height 20px

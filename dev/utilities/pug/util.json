@@ -2,47 +2,63 @@
   "pages": {
     "index": {
       "title": "Головна",
-      "href": "index.html"
+      "href": "index.html",
+      "navigation": false
     },
     "about": {
       "title": "Про комплекс",
-      "href": "about.html"
-    },
-    "builder": {
-      "title": "Забудовник",
-      "href": "builder.html"
-    },
-    "location": {
-      "title": "Розташування",
-      "href": "location.html"
-    },
-    "contacts": {
-      "title": "Контакти",
-      "href": "contacts.html"
-    },
-    "online": {
-      "title": "Онлайн-трансляція",
-      "href": "online.html"
-    },
-    "form": {
-      "title": "Форма",
-      "href": "form.html"
+      "href": "about.html",
+      "navigation": true
     },
     "planning": {
       "title": "Планування",
-      "href": "planning.html"
+      "href": "planning.html",
+      "navigation": true
     },
-    "chosen": {
-      "title": "Вибране",
-      "href": "chosen.html"
+    "location": {
+      "title": "Розташування",
+      "href": "location.html",
+      "navigation": false
     },
-    "404": {
-      "title": "Сторінка не знайдена",
-      "href": "404.html"
+    "repair-type": {
+      "title": "Типи ремонту",
+      "href": "repairs-type.html",
+      "navigation": true
     },
     "news": {
       "title": "Новини",
-      "href": "news.html"
+      "href": "news.html",
+      "navigation": true
+    },
+    "builder": {
+      "title": "Забудовник",
+      "href": "builder.html",
+      "navigation": true
+    },
+    "contacts": {
+      "title": "Контакти",
+      "href": "contacts.html",
+      "navigation": true
+    },
+    "online": {
+      "title": "Онлайн-трансляція",
+      "href": "online.html",
+      "navigation": false
+    },
+    "form": {
+      "title": "Форма",
+      "href": "form.html",
+      "navigation": false
+    },
+    "chosen": {
+      "title": "Вибране",
+      "href": "chosen.html",
+      "navigation": false
+    },
+    "404": {
+      "title": "Сторінка не знайдена",
+      "href": "404.html",
+      "navigation": false
     }
   }
 }

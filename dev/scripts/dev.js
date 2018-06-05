@@ -182,8 +182,6 @@
 
 
 
-
-
         // ========== MENU ==========
 
         DOMs.menuTrigger.click(function (e) {
@@ -209,8 +207,27 @@
 
         // ========== SLIDER ==========
 
-
         // ----- SLICK SLIDER -----
+        $('.prospects__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            nextArrow: DOMs.angleRight,
+            prevArrow: DOMs.angleLeft,
+            // fade: true,
+            asNavFor: '.prospects__slider-nav'
+        });
+
+        $('.prospects__slider-nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.prospects__slider',
+            vertical: true,
+            dots: false,
+            arrows: false,
+            focusOnSelect: true
+        });
+
         DOMs.sliderDiscount.slick({
             prevArrow: DOMs.angleLeft,
             nextArrow: DOMs.angleRight,
@@ -373,5 +390,7 @@
     });
 
 })(jQuery);
+
+
 
 

@@ -1,0 +1,137 @@
+extend layouts/_layout.pug
+
+block title
+    = pages.news.title
+
+block content
+    .start
+        .container
+            .start__wrapper
+                .row
+                    .offset-1.col-lg-8
+                        h3.start__title
+                            | Щоб прискорити будівництво, закуплено  ще чотири крани
+                    .offset-1.col-lg-2
+                        .start__post-date
+                            | 29 листопада 2018 р.
+    .article
+        .container
+            .offset-1.col-11
+                h3.article__title
+                    | Технічні характеристики
+            .offset-2.col-8
+                p.article__body.article__body--mb-34
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames ac. Tortor consequat id porta nibh venenatis cras. Adipiscing enim eu turpis egestas pretium aenean pharetra. Sit amet dictum sit amet justo donec enim diam vulputate. Elit duis tristique sollicitudin nibh sit. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. At volutpat diam ut venenatis tellus in metus vulputate eu. Quis risus sed vulputate odio ut enim blandit volutpat. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. Elit scelerisque mauris pellentesque pulvinar pellentesque. Fames ac turpis egestas integer. Sed cras ornare arcu dui vivamus arcu felis bibendum. Aliquet porttitor lacus luctus accumsan.
+                p.article__hint.article__hint--highlight
+                    | Один кран може щодня в середньому піднімає
+                p.article__hint.article__hint--highlight
+                    | 326 бетонних плит, будує 12 квартир
+                p.article__body.article__body--mt-49.article__body--mb-25
+                    | Tristique senectus et netus et malesuada fames. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Urna porttitor rhoncus dolor purus non enim. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Leo duis ut diam quam nulla. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Sed egestas egestas fringilla phasellus faucibus. Tristique senectus et netus et malesuada fames ac. Feugiat pretium nibh ipsum consequat nisl vel pretium. Aliquam malesuada bibendum arcu vitae elementum curabitur. Lectus magna fringilla urna porttitor rhoncus. Aliquet sagittis id consectetur purus ut. Odio morbi quis commodo odio aenean sed adipiscing. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Tempus urna et pharetra pharetra massa massa ultricies. Cursus euismod quis viverra nibh cras pulvinar mattis. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Malesuada fames ac turpis egestas maecenas. Aliquam nulla facilisi cras fermentum odio eu.
+                .offset-2.col-8
+                    h3.article__list-title
+                        | Підзаголовок ненумерованого списку
+                    ul.article__list.article__list--squared(type="square")
+                        li Neque egestas congue quisque egestas diam in arcu cursus euismod. Pretium quam vulputate dignissim suspendisse in est ante in.
+                        li Enim facilisis gravida neque convallis a.
+                        li Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan.
+                .article__body.article__body--mt-49.article__body--mb-32
+                    | Neque egestas congue quisque egestas diam in arcu cursus euismod. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Mauris vitae ultricies leo integer malesuada nunc. Pretium quam vulputate dignissim suspendisse in est ante in. Enim facilisis gravida neque convallis a. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Nunc non blandit massa enim. Sit amet est placerat in egestas. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Imperdiet sed euismod nisi porta. Ipsum a arcu cursus vitae. Ipsum nunc aliquet bibendum enim facilisis gravida.
+                .offset-2.col-7
+                    h3.article__list-title
+                        | Підзаголовок ненумерованого списку
+                    ol.article__list
+                        li Neque egestas congue quisque egestas diam in arcu cursus euismod. Pretium quam vulputate dignissim suspendisse in est ante in.
+                        li Enim facilisis gravida neque convallis a.
+                        li Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan.
+                p.article__body.article__body--mt-47
+                    | Amet tellus cras adipiscing enim. Scelerisque varius morbi enim nunc. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Diam volutpat commodo sed egestas. Lacus sed turpis tincidunt id aliquet. Lectus mauris ultrices eros in cursus. Semper feugiat nibh sed pulvinar proin. Mauris ultrices eros in cursus. Lectus magna fringilla urna porttitor rhoncus dolor purus. Arcu bibendum at varius vel pharetra vel turpis. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Porttitor rhoncus dolor purus non. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Cursus risus at ultrices mi. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Tortor pretium viverra suspendisse potenti nullam ac tortor. Vulputate ut pharetra sit amet aliquam. Tortor id aliquet lectus proin. In tellus integer feugiat scelerisque varius morbi.
+    .section-online
+        .container
+            .row.justify-content-center
+                .col-11.col-md-10
+                    a(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").link-video
+                        +img('img/illus/pic/pic-video.png', 'link-video_img')
+                        .link-video__play
+                            +img('img/icons/play.svg')
+                        .section-online__information
+                            | Відеозвіт ходу будівництва. Листопад 2018
+    .prospects
+        .container
+            .offset-1.col-11
+                h3.prospects__title
+                    | Що зміниться на будівництві
+            .offset-2.col-8
+                p.prospects__body.prospects__body--mb-77
+                    | Adipiscing elit ut aliquam purus. Bibendum enim facilisis gravida neque convallis a cras semper auctor. In pellentesque massa placerat duis ultricies lacus. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Tellus elementum sagittis vitae et leo duis ut diam quam. At varius vel pharetra vel turpis. Mattis enim ut tellus elementum sagittis vitae et. Sit amet aliquam id diam maecenas. Dictumst vestibulum rhoncus est pellentesque elit. Dolor sit amet consectetur adipiscing elit ut aliquam.
+
+            .offset-1.col-11
+                .row
+                    .col-8
+                        .prospects__slider
+                            img.slide(src="img/slick/slick-slide.jpg")
+                            img.slide(src="img/slick/slick-slide.jpg")
+                            img.slide(src="img/slick/slick-slide.jpg")
+                            img.slide(src="img/slick/slick-slide.jpg")
+                            img.slide(src="img/slick/slick-slide.jpg")
+                            img.slide(src="img/slick/slick-slide.jpg")
+                    .col-2
+                        .prospects__slider-nav
+                            img.slide(src="img/slick/slick-slide.jpg")
+                            img.slide(src="img/slick/slick-slide.jpg")
+                            img.slide(src="img/slick/slick-slide.jpg")
+                            img.slide(src="img/slick/slick-slide.jpg")
+                            img.slide(src="img/slick/slick-slide.jpg")
+                            img.slide(src="img/slick/slick-slide.jpg")
+
+            .offset-2.col-8
+                p.prospects__body.prospects__body--mt-90.prospects__body--mb-83
+                    | Ut tortor pretium viverra suspendisse. Velit ut tortor pretium viverra suspendisse potenti nullam. Lectus quam id leo in vitae. Lacus suspendisse faucibus interdum posuere lorem ipsum. Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Arcu odio ut sem nulla. Quis eleifend quam adipiscing vitae proin. Blandit cursus risus at ultrices mi tempus imperdiet. Ac tortor vitae purus faucibus ornare suspendisse sed. Sit amet cursus sit amet dictum.
+                    br
+                    br
+                    | Diam donec adipiscing tristique risus. In nulla posuere sollicitudin aliquam ultrices. Adipiscing enim eu turpis egestas pretium aenean. In hendrerit gravida rutrum quisque non tellus orci ac. Suspendisse potenti nullam ac tortor vitae. Eleifend donec pretium vulputate sapien nec. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Tincidunt id aliquet risus feugiat in ante metus dictum. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Ornare aenean euismod elementum nisi quis. In vitae turpis massa sed elementum tempus egestas. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Ut venenatis tellus in metus.
+            .offset-1.col-10
+                figure.prospects__figure
+                    img.prospects__image(src="img/illus/news/news-image-1.jpg")
+                    figurecaption.prospects__figure-caption
+                        | Фото: Підпис до фото
+            .offset-2.col-8
+                p.prospects__body.prospects__body--mt-89
+                    | Ut tortor pretium viverra suspendisse. Velit ut tortor pretium viverra suspendisse potenti nullam. Lectus quam id leo in vitae. Lacus suspendisse faucibus interdum posuere lorem ipsum. Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Arcu odio ut sem nulla. Quis eleifend quam adipiscing vitae proin. Blandit cursus risus at ultrices mi tempus imperdiet. Ac tortor vitae purus faucibus ornare suspendisse sed. Sit amet cursus sit amet dictum.
+                    br
+                    br
+                    | Diam donec adipiscing tristique risus. In nulla posuere sollicitudin aliquam ultrices. Adipiscing enim eu turpis egestas pretium aenean. In hendrerit gravida rutrum quisque non tellus orci ac. Suspendisse potenti nullam ac tortor vitae. Eleifend donec pretium vulputate sapien nec. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Tincidunt id aliquet risus feugiat in ante metus dictum. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Ornare aenean euismod elementum nisi quis. In vitae turpis massa sed elementum tempus egestas. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Ut venenatis tellus in metus.
+    .social
+        .container
+            .social__wrapper.flex-sm-column
+                h3.social__title
+                    | Поділитися
+                .social__items-wrapper
+                    a(href="#").social__item
+                        svg(width='25', height='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M0 0h25v25H0V0zm19.421 11.855l-5.708-5.709c-.178-.177-.488-.06-.488.192v3.564c-4.378.34-7.824 3.994-7.824 8.46 0 .266.045.71.06.961 0 .045.073.06.088.015a8.49 8.49 0 0 1 7.676-4.85v3.74c0 .252.31.37.488.193l5.708-5.709a.607.607 0 0 0 0-.857z', fill='#EB53C0', fill-rule='nonzero')
+                    a(href="#").social__item
+                        svg(width='25', height='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M0 0v25h25V0H0zm16.539 6.88h-1.954c-.387 0-.778.4-.778.698V9.57h2.728c-.11 1.528-.335 2.925-.335 2.925h-2.407v8.659h-3.586v-8.66H8.461V9.581h1.746V7.198c0-.435-.088-3.352 3.674-3.352h2.658V6.88z', fill='#EB53C0', fill-rule='nonzero')
+                    a(href="#").social__item
+                        svg(width='25', height='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M0 0v25h25V0H0zm19.382 8.97c.007.153.01.306.01.46 0 4.692-3.571 10.103-10.103 10.103-2.005 0-3.872-.588-5.443-1.596a7.173 7.173 0 0 0 5.257-1.47A3.554 3.554 0 0 1 5.786 14a3.539 3.539 0 0 0 1.604-.06 3.553 3.553 0 0 1-2.849-3.483v-.044a3.537 3.537 0 0 0 1.609.444 3.549 3.549 0 0 1-1.099-4.74 10.081 10.081 0 0 0 7.32 3.71 3.551 3.551 0 0 1 6.05-3.239 7.107 7.107 0 0 0 2.255-.862 3.561 3.561 0 0 1-1.562 1.964 7.1 7.1 0 0 0 2.04-.559 7.21 7.21 0 0 1-1.772 1.838z', fill='#EB53C0', fill-rule='nonzero')
+                    a(href="#").social__item
+                        svg(width='25', height='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M0 0v25h25V0H0zm8.884 18.829a6.29 6.29 0 0 1-6.33-6.329 6.29 6.29 0 0 1 6.33-6.329c1.717 0 3.164.633 4.249 1.718l-1.718 1.627c-.452-.452-1.266-.994-2.531-.994-2.17 0-3.888 1.808-3.888 3.978s1.718 3.978 3.888 3.978c2.531 0 3.435-1.808 3.616-2.712H8.884v-2.17h5.967c.09.362.09.633.09 1.085 0 3.616-2.441 6.148-6.057 6.148zm13.561-5.425h-1.808v1.808h-1.808v-1.808H17.02v-1.808h1.809V9.788h1.808v1.808h1.808v1.808z', fill='#EB53C0', fill-rule='nonzero')
+
+
+
+    .related-news
+        .container
+            .row
+                .col-12
+                    h3.related-news__title
+                        | Схожі новини
+            .row
+                .col-lg-4.col-sm-6
+                    +blog()
+                .col-lg-4.col-sm-6
+                    +blog()
+                .col-lg-4.col-sm-6
+                    +blog()

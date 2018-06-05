@@ -27,7 +27,7 @@
     },
     "news": {
       "title": "Новини",
-      "href": "news.html",
+      "href": "news-in.html",
       "navigation": true
     },
     "builder": {
@@ -53,6 +53,11 @@
     "chosen": {
       "title": "Вибране",
       "href": "chosen.html",
+      "navigation": false
+    },
+    "blog": {
+      "title": "Блог",
+      "href": "blog.html",
       "navigation": false
     },
     "404": {

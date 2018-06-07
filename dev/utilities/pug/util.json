@@ -40,6 +40,11 @@
       "href": "contacts.html",
       "navigation": true
     },
+    "repair": {
+      "title": "Дизайнерський ремонт",
+      "href": "repair-design.html",
+      "navigation": false
+    },
     "online": {
       "title": "Онлайн-трансляція",
       "href": "online.html",

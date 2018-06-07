@@ -34,7 +34,6 @@ mixin manager-form()
 
 
 mixin section-manager()
-
     section.section-manager
         .container
             .row
@@ -56,3 +55,16 @@ mixin section-manager()
                                 h2 Дякуємо за заявку!
                                 p Христина зателефонує у зручний для вас час
                                 +a('Заповнити форму ще раз', 'form-manager_back')
+
+mixin slider()
+    .prospects__slider-wrapper
+        .offset-lg-1.col-lg-11.col-sm-12
+            .row
+                .col-8
+                    .prospects__slider
+                        each _ in new Array(6)
+                            img.slide(src="img/slick/slick-slide.jpg")
+                .col-2
+                    .prospects__slider-nav
+                        each _ in new Array(6)
+                            img.slide(src="img/slick/slick-slide.jpg")

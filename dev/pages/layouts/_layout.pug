@@ -2,11 +2,14 @@ include ../../utilities/pug/utilities.pug
 
 doctype html
 
+block vars
+    - var bodyClass
+
 html
 
     include ../../components/_layout/head/head
 
-    body
+    body(class=bodyClass)
         //include ../../components/_layout/preloader/preloader
 
         include ../../components/_layout/navigation/navigation

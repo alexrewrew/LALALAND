@@ -42,25 +42,33 @@
     margin-bottom: r(34);
   }
 
-  &__hint {
-    display: inline-block;
-    position: relative;
+  blockquote, q{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    quotes: none;
+
+    &:before, &:after, q:before, q:after {
+      content:none;
+    }
+  }
+
+  &__quate-span {
     font-weight: 300;
     font-size: 26px;
     color: #51525A;
     line-height: 40px;
 
     &--highlight {
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 6px;
-        height: 12px;
-        width: 100%;
-        background-color: #FFDD00;
-        z-index: -1;
-      }
+      box-shadow:
+              inset 0 -0.075em white,
+              inset 0  0em #FFDD00,
+              inset 0 -0.15em white,
+              inset 0 -0.46em #FFDD00;
     }
   }
 
@@ -76,26 +84,39 @@
     font-size: 14px;
     line-height: 24px;
 
-    ol {
-      counter-reset: item;
+    &--numbered {
+      list-style: none;
+      counter-reset: li;
 
       li {
-        display: block;
+        counter-increment: li
 
         &::before {
-          content: counter(item) ". ";
-          counter-increment: item;
-          color: red;
+          content: counter(li);
+          color: #FFDD00;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em
+          margin-right: r(30)
+        }
+      }
+    }
+
+    &--squared {
+      list-style: none;
+
+      li {
+        &::before {
+          content: "■";
+          color: #FFDD00;
+          font-size: 25px;
+          margin-right: r(30)
         }
       }
     }
 
     & > li {
       color: #8F91A3;
-    }
-
-    &--squared {
-      list-style: square;
     }
   }
 
@@ -165,6 +186,7 @@
 
   &__image {
     height: 530px;
+    max-width: 100%;
     margin-bottom: r(12);
   }
 
@@ -239,11 +261,21 @@
   margin-top: r(84);
   margin-bottom: r(91);
 
+  +xs() {
+    margin-bottom: r(120);
+  }
+
   .link-video {
     &__play {
       &::after {
         display: none;
       }
+    }
+  }
+
+  & .link-video {
+    &__img {
+      height: 181px;
     }
   }
 
@@ -259,6 +291,14 @@
     color: #51525A;
     line-height: 40px;
     padding: r(7) r(30);
+
+    +xs() {
+      font-size: 14px;
+      color: #51525A;
+      bottom: -71px;
+      line-height: 20px;
+      padding: r(12) 0 r(19) r(17);
+    }
   }
 }
 

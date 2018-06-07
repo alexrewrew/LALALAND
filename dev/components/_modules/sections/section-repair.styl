@@ -1,10 +1,43 @@
 offset = r(-382);
 
 .repair-design {
-  .description {
-    position: relative;
-    bottom: -52px;
+  .start-design-repair {
+    background-color: #B4EBFF;
 
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      background-color: #fff;
+      height: r(334);
+      width: 100%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      background-color: #fff;
+      height: r(410);
+      width: 100%;
+    }
+  }
+
+  .soft-blue-background {
+    position: relative;
+    background-color: #EBF7FF;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      background-color: #fff;
+      height: r(280);
+      width: 100%;
+    }
+  }
+
+  .description {
     &__title {
       font-size: 34px;
       font-weight: bold;
@@ -48,6 +81,7 @@ offset = r(-382);
     }
 
     &--offset {
+      padding-top: r(130);
       margin-bottom: offset;
     }
 
@@ -59,8 +93,15 @@ offset = r(-382);
   }
 
   .advantages {
-    padding-top: r(251);
-    margin-bottom: r(591);
+    &__title {
+      font-size: 34px;
+      font-weight: bold;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: 55px;
+      margin-top: r(85);
+      margin-bottom: r(89);
+    }
 
     &__enum-image {
       position: absolute;
@@ -68,8 +109,16 @@ offset = r(-382);
       left: 0;
       z-index: -1;
 
-      &--spade {
+      &--aligner {
+        top: -30%;
+      }
 
+      &--money {
+        top: -20%;
+      }
+
+      &--lamp {
+        top: -30%;
       }
     }
 
@@ -78,7 +127,7 @@ offset = r(-382);
       font-size: 14px;
       color: #51525A;
       line-height: 24px;
-      min-height: 120px;
+      min-height: 142px;
     }
 
     &__enum-body {
@@ -87,21 +136,13 @@ offset = r(-382);
 
     .prospects__slider-wrapper {
       position: relative;
-      bottom: -180px;
+      margin-top: r(80);
+      z-index: 1;
     }
   }
 
-  .section-manager {
-    position: relative;
-    top: offset;
-    padding: 0;
-  }
-
   .what-you-get {
-    position: relative;
-    top: offset
     padding: 0;
-    margin-bottom: r(191);
 
     &__item {
       box-shadow: 0 2px 25px 0 #E6E6EF;
@@ -149,8 +190,6 @@ offset = r(-382);
   }
 
   .repair-types {
-    position: relative;
-    top: offset
     padding-top: r(103);
     padding-bottom: r(100);
 

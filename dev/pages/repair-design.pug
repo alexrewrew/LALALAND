@@ -8,10 +8,10 @@ block title
 
     -
         var advantagesBody = [
-            'Ви заощаджжуєте нерви та час,  не маючи справ з ремонтом та бригадами',
-            'Ваші сусіди не робитимуть ремонт, адже всі квартирі в секції вже готові',
-            'Ви заощаджуєте на матеріалах та вартості робіт, адже ми надаємо їх за оптовими цінами',
-            'Ми відповідаємо за якість приладів та матеріалів, їх екологічність та економність'
+            { body: 'Ви заощаджжуєте нерви та час,  не маючи справ з ремонтом та бригадами', helper: 'advantages__enum-image--aligner'},
+            { body: 'Ваші сусіди не робитимуть ремонт, адже всі квартирі в секції вже готові', helper: 'advantages__enum-image--aligner'},
+            { body: 'Ви заощаджуєте на матеріалах та вартості робіт, адже ми надаємо їх за оптовими цінами', helper: 'advantages__enum-image--money'},
+            { body: 'Ми відповідаємо за якість приладів та матеріалів, їх екологічність та економність', helper: 'advantages__enum-image--lamp'}
         ]
 
     -
@@ -29,35 +29,38 @@ block title
         ]
 
 block content
-    .description
-        .container
-            .row
-                .col-lg-12
-                    .description__title
-                        | Дизайнерський ремонт
-            .row
-                .offset-lg-1.col-lg-5
-                    .description__body
-                        | Купуючи квартиру, ви отримуєте не лише готове до життя помешкання, але відсутність шуму.
-                        | Ми зробили дизайнерський ремонт у всіх квартирах будинку — Берковецька, 2, секція 2.
-                    a.description__cta-href(href="#")
-                        .description__cta
-                            | Обрати на генплані
-                .offset-lg-1.col-lg-5
-                    +img('./img/illus/repair/repair-design-chair.svg').description__right-image
-    .aglomeration.aglomeration--soft-blue.aglomeration--offset-start
+    section.start-design-repair
+        .description
+            .container
+                .row
+                    .col-lg-12
+                        .description__title
+                            | Дизайнерський ремонт
+                .row
+                    .offset-lg-1.col-lg-5
+                        .description__body
+                            | Купуючи квартиру, ви отримуєте не лише готове до життя помешкання, але відсутність шуму.
+                            | Ми зробили дизайнерський ремонт у всіх квартирах будинку — Берковецька, 2, секція 2.
+                        a.description__cta-href(href="#")
+                            .description__cta
+                                | Обрати на генплані
+                    .offset-lg-1.col-lg-5
+                        +img('./img/illus/repair/repair-design-chair.svg').description__right-image
         .advantages
+            .container
+                .advantages__title.text-center
+                    | Переваги дизайнерського ремонту
             .container
                 .row
                     each advantage, index in advantagesBody
                         .offset-lg-1.col-lg-5
                             .advantages__enum
                                 .advantages__enum-item
-                                    .advantages__enum-body= advantage
-                                    +img(`./img/illus/repair/advantages-item-${index + 1}.svg`, 'advantages__enum-image')
+                                    .advantages__enum-body= advantage.body
+                                    +img(`./img/illus/repair/advantages-item-${index + 1}.svg`, `advantages__enum-image ${advantage.helper}`)
             .container
                 +slider()
-    .aglomeration.aglomeration--dark-blue.aglomeration--offset
+    .soft-blue-background
         section.what-you-get
             .container
                 h2.text-center

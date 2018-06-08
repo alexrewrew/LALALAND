@@ -1,5 +1,9 @@
+# IDE
+
 /.idea
 /.vscode
-/src
-/dist
+
+# Project structure
+
+/app
 /node_modules

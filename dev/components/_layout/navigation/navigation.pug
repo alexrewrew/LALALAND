@@ -7,28 +7,16 @@ nav
 
             .col-6.nav-mobile
                 .nav-icon#menu-trigger
-                    span
-                    span
-                    span
-                    span
+                    each _ in new Array(4)
+                        span
             .col-md.nav-panel
                 .nav-panel__row
                     .col-md.col-nav-2
                         ul.nav-menu
-                            li
-                                a(href='' title='').active Про комплекс
-                            li
-                                a(href='' title='') Планування
-                            li
-                                a(href='' title='') Розташування
-                            li
-                                a(href='' title='') Типи ремонту
-                            li
-                                a(href='' title='') Новини
-                            li
-                                a(href='' title='') Забудовник
-                            li
-                                a(href='' title='') Контакти
+                            each item in pages
+                                if (item && item.navigation === true)
+                                    li
+                                        a(href=item.href title=item.title)= item.title
                     .col-md.col-nav-3
                         ul.nav-widgets
                             li

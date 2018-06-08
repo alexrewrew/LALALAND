@@ -3,20 +3,15 @@ extend layouts/_layout-pages.pug
 block title
     | Сторінки
 
-
 block content
-
-    -var n = 1
-
-    -array = [{name: 'Головна', href: 'index.html'}, {name: 'Про комплекс', href: 'about.html'}, {name: 'Забудовник', href: 'builder.html'}, {name: 'Розташування', href: 'location.html'}, {name: 'Контакти', href: 'contacts.html'}, {name: 'Онлайн-трансляція', href: 'online.html'}, {name: 'Форма', href: 'form.html'}, {name: 'Планування', href: 'planning.html'}, {name: 'Вибране', href: 'choosed.html'}, {name: 'blog', href: 'blog.html'}, {name: '404', href: '404.html'}]
-
     section
         .container
             .row
-                each val in array
+                - var num = 0
+                each page in pages
                     .col-md-4.col-lg-3
-                        a(href= val.href title='' target='_blank' style='margin-bottom:25px').btn
-                            = n++
+                        a(href= page.href title='' target='_blank' style='margin-bottom:25px').btn
+                            = num++
                             | .
                             | &nbsp;
-                            = val.name
+                            = page.title

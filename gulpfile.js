@@ -9,7 +9,15 @@ global.$ = {
     minify: require('gulp-clean-css'),
     autoprefixer: require('gulp-autoprefixer'),
     sourcemaps: require('gulp-sourcemaps'),
+    plumber: require('gulp-plumber'),
+    svgmin: require('gulp-svgmin'),
+    svgStore: require('gulp-svgstore'),
+    rename: require('gulp-rename'),
     notify: require('gulp-notify'),
+    cheerio: require('cheerio'),
+    gCheerio: require('gulp-cheerio'),
+    through2: require('through2'),
+    consolidate: require('gulp-consolidate'),
     concat: require('gulp-concat'),
     imagemin: require('gulp-imagemin'),
     del: require('del'),
@@ -17,6 +25,8 @@ global.$ = {
     htmlmin: require('gulp-htmlmin'),
     browserSync: require('browser-sync').create(),
     babel : require('gulp-babel'),
+    data: require('gulp-data'),
+    fs: require('fs'),
 
     path: {
         tasks: require('./gulp/config/tasks.js')
@@ -25,7 +35,7 @@ global.$ = {
 
 $.path.tasks.forEach(function (taskPath) {
     require(taskPath)();
-})
+});
 
 $.gulp.task('default', $.gulp.series(
     $.gulp.parallel('pug', 'stylus', 'scripts:lib', 'scripts'),

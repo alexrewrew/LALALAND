@@ -1,6 +1,9 @@
 module.exports = function () {
     $.gulp.task('pug', function () {
         return $.gulp.src('dev/pages/*.pug')
+            .pipe($.data(function () {
+                return JSON.parse($.fs.readFileSync('./dev/utilities/pug/util.json'))
+            }))
             .pipe($.pug({
                 'pretty': true
             }))

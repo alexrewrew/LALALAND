@@ -1,0 +1,74 @@
+{
+  "pages": {
+    "index": {
+      "title": "Головна",
+      "href": "index.html",
+      "navigation": false
+    },
+    "about": {
+      "title": "Про комплекс",
+      "href": "about.html",
+      "navigation": true
+    },
+    "planning": {
+      "title": "Планування",
+      "href": "planning.html",
+      "navigation": true
+    },
+    "location": {
+      "title": "Розташування",
+      "href": "location.html",
+      "navigation": false
+    },
+    "repair-type": {
+      "title": "Типи ремонту",
+      "href": "repairs-type.html",
+      "navigation": true
+    },
+    "news": {
+      "title": "Новини",
+      "href": "news-in.html",
+      "navigation": true
+    },
+    "builder": {
+      "title": "Забудовник",
+      "href": "builder.html",
+      "navigation": true
+    },
+    "contacts": {
+      "title": "Контакти",
+      "href": "contacts.html",
+      "navigation": true
+    },
+    "repair": {
+      "title": "Дизайнерський ремонт",
+      "href": "repair-design.html",
+      "navigation": false
+    },
+    "online": {
+      "title": "Онлайн-трансляція",
+      "href": "online.html",
+      "navigation": false
+    },
+    "form": {
+      "title": "Форма",
+      "href": "form.html",
+      "navigation": false
+    },
+    "chosen": {
+      "title": "Вибране",
+      "href": "chosen.html",
+      "navigation": false
+    },
+    "blog": {
+      "title": "Блог",
+      "href": "blog.html",
+      "navigation": false
+    },
+    "404": {
+      "title": "Сторінка не знайдена",
+      "href": "404.html",
+      "navigation": false
+    }
+  }
+}

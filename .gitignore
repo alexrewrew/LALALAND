@@ -1,5 +1,17 @@
+# IDEA files
+
 /.idea
 /.vscode
+
+# Project fiels
+
 /src
 /dist
 /node_modules
+
+# Ignore everything inside app except img folder
+
+/app/*.html
+/app/css
+/app/fonts
+/app/js
